@@ -1,3 +1,5 @@
+import ContainerMain from "../components/ContainerMain";
+
 /* eslint-disable react-refresh/only-export-components */
 export const theme = {
   background: "bg-gray-300",
@@ -11,7 +13,7 @@ export const theme = {
 
 export const ClacesInfantiles = () => {
   return (
-    <div className={`${theme.background} p-8`}>
+    <ContainerMain className={`${theme.background} p-8`}>
       <section className={`${theme.primary} p-6 rounded-lg`}>
         <h1 className="text-3xl font-semibold text-white">Artes Marciales para Niños</h1>
         <p className="mt-2 text-lg">Una de nuestras líneas de especialización es la enseñanza de artes marciales a niños y jóvenes desde los 3 a los 14 años.</p>
@@ -105,6 +107,6 @@ export const ClacesInfantiles = () => {
           </section>
         </section>
       </div>
-    </div>
+    </ContainerMain>
   );
 }

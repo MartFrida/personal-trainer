@@ -1,3 +1,5 @@
+import ContainerMain from "../components/ContainerMain";
+
 // import { theme } from '../helpers/theme';
 const theme = {
   background: "bg-gray-100",
@@ -11,7 +13,7 @@ const theme = {
 
 export const FisicoCulturismo = () => {
   return (
-    <div className={`${theme.background} p-8 mt-20`}>
+    <ContainerMain className={`${theme.background} p-8 mt-20`}>
       <p className={`${theme.text}`}>Bajar de peso, musculacion, rehabilitacion, definicion muscular, preparacion fisica, preparacion a oposiciones para policia nacional, bomberos, mossos de escuadra</p>
 
       <div className={`${theme.text} mt-8`}>
@@ -57,6 +59,6 @@ export const FisicoCulturismo = () => {
         </div>
       </section> */}
 
-    </div>
+    </ContainerMain>
   )
 }

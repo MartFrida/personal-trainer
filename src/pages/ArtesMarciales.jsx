@@ -1,3 +1,4 @@
+import ContainerMain from "../components/ContainerMain";
 import { theme } from "../helpers/theme"
 import { FaFistRaised } from "react-icons/fa";
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,7 +25,7 @@ export const ArtesMarciales = () => {
   // ];
 
   return (
-    <div className={`${theme.background} p-8`}>
+    <ContainerMain className={`${theme.background} p-8`}>
       {/* <div className="p-6">
         <h2 className="text-2xl font-bold text-center mb-4">Estilos de Artes Marciales</h2>
         <Swiper spaceBetween={10} slidesPerView={3} loop={true} className="flex justify-center ">
@@ -52,6 +53,6 @@ export const ArtesMarciales = () => {
         </ul>
 
       </section>
-    </div>
+    </ContainerMain>
   )
 }

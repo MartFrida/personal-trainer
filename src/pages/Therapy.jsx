@@ -1,3 +1,5 @@
+import ContainerMain from "../components/ContainerMain";
+
 const theme = {
   background: "bg-blue-50",
   primary: "bg-gradient-to-r from-blue-600 to-gray-950 text-white",
@@ -10,7 +12,7 @@ const theme = {
 
 export const Therapy = () => {
   return (
-    <div className={`${theme.background} p-6 mt-20 ${theme.text}`}>Rehabilitation and recovery services.
+    <ContainerMain className={`${theme.background} p-6 mt-20 ${theme.text}`}>Rehabilitation and recovery services.
       <p>Acupunctura, Quiropracia, Digitopunctura, Masages Terapeutico, Vendaje en Neuro Muscular, Infrarojos, Masage Limfatico, Osteopatia, Meditacion, Terapia posparto, Terapia de Suepo Pelvico, Reiki,Shiaptcu, Ki Yong, Fisioterapia Deportiva, Embarazo Activo, Ejercisios Terapeuticos</p>
       <div className={`${theme.text} mt-8`}>
         <section id="runt">
@@ -46,6 +48,6 @@ export const Therapy = () => {
 
         <button className={`${theme.buttonbg}`}>Button</button>
       </div>
-    </div>
+    </ContainerMain>
   )
 }

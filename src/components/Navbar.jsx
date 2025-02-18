@@ -5,7 +5,7 @@ import Dropdown from './Dropdown'
 const linksPT = [
   { path: "#running", label: "Running" },
   { path: "#calistenia", label: "Calistenia" },
-  { path: "#alteriofilia", label: "Alteriofilia" },
+  { path: "#halterofilia", label: "Halterofilia" },
   { path: "#culturismo", label: "Culturismo" },
   { path: "#fitnes", label: "Fitnes" },
   { path: "#natacion", label: "Natacion" },

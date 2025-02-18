@@ -1,3 +1,5 @@
+import ContainerMain from "../components/ContainerMain";
+
 const theme = {
   background: "bg-emerald-50",
   primary: "bg-gradient-to-r from-emerald-600 to-emerald-950 text-white",
@@ -10,7 +12,7 @@ const theme = {
 
 export const Nutrition = () => {
   return (
-    <div className={`${theme.background} p-6 ${theme.text}`}>Personalized meal plans and dietary advice.
+    <ContainerMain className={`${theme.background} p-6 ${theme.text}`}>Personalized meal plans and dietary advice.
       <p>Dieta, Nutricion</p>
       <div className={`${theme.text} mt-8`}>
         <section id="runt">
@@ -46,7 +48,7 @@ export const Nutrition = () => {
 
         <button className={`${theme.buttonbg}`}>Button</button>
       </div>
-    </div>
+    </ContainerMain>
 
   )
 }

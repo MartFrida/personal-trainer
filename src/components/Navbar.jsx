@@ -32,7 +32,7 @@ const Navbar = () => {
           links={linksPT}
         />
         <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`}>Artes Marciales</Link>
-        <Link to="/sports-coaching" className={`${theme.text} ${theme.hover} p-2 rounded`}>Fisico Culturismo</Link>
+        <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`}>Fisico Culturismo</Link>
         <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded`}>Claces Infantiles</Link>
         <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`}>Nutrition & Diet</Link>
         <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`}>Physical Therapy</Link>

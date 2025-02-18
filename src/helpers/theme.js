@@ -23,7 +23,8 @@ export const theme = {
   primary: "bg-gradient-to-r from-gray-600 to-gray-950 text-white",
   secondary: "bg-gray-700 text-white",
   text: "text-gray-800",
-  hover: "hover:bg-gray-700",
-  accent: "bg-amber-500",
-  // buttonbg: 'bg-gradient-to-r from-gray-500 to-gray-700',
+  hover: "hover:bg-gray-800 transition duration-200",
+  accent: "bg-amber-400 hover:bg-amber-600 transition duration-200",
+  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800",
+  shadow2xl: "shadow-gray-900",
 };

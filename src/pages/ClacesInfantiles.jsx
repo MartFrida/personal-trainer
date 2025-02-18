@@ -1,12 +1,12 @@
 /* eslint-disable react-refresh/only-export-components */
 export const theme = {
-  background: "bg-white",
-  primary: "bg-gradient-to-r from-green-400 to-green-600 text-white",
-  secondary: "bg-blue-600 text-white",
-  accent: "bg-amber-500 text-white",
+  background: "bg-gray-300",
+  primary: "bg-gradient-to-r from-gray-600 to-gray-950 text-white",
+  secondary: "bg-gray-700 text-white",
   text: "text-gray-800",
-  hover: "hover:bg-green-700",
-  buttonbg: "bg-gradient-to-r from-green-400 to-green-600 text-white",
+  hover: "hover:bg-gray-800 transition duration-200",
+  accent: "bg-amber-500 hover:bg-amber-600 transition duration-200",
+  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800",
 };
 
 export const ClacesInfantiles = () => {
@@ -16,13 +16,14 @@ export const ClacesInfantiles = () => {
         <h1 className="text-3xl font-semibold text-white">Artes Marciales para Niños</h1>
         <p className="mt-2 text-lg">Una de nuestras líneas de especialización es la enseñanza de artes marciales a niños y jóvenes desde los 3 a los 14 años.</p>
         <p>Taekondo, Judo, MMA, Hapkido, Cursos de Verano, Exurciones, Actividades Ludicas al Aire Libre, Juegos Recreacionales, Artes Interpretativas</p>
+
       </section>
 
       <div className={`${theme.text} mt-8`}>
         <p className="mb-6">
           Tenemos clases regulares durante todo el curso escolar y también organizamos cursos intensivos y casales de verano, invierno y semana santa. Todas las actividades están diseñadas en colaboración con expertos en educación infantil y siempre intentamos limitar el número de alumnos por clase para ofrecerles la máxima atención en todo momento.
         </p>
-
+        <button className={`${theme.buttonbg}`}>Button</button>
         <p className="mb-6">
           Y como extra ofrecemos a nuestros clientes la posibilidad de organizar su fiesta de cumpleaños en el centro.
         </p>

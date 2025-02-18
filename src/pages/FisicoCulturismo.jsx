@@ -1,17 +1,19 @@
+// import { theme } from '../helpers/theme';
 const theme = {
-  background: "bg-blue-50",
-  primary: "bg-gradient-to-r from-blue-600 to-gray-950 text-white",
-  secondary: "bg-indigo-500 text-white",
+  background: "bg-gray-100",
+  primary: "bg-gradient-to-r from-red-600 to-red-950 text-white",
+  secondary: "bg-yellow-400 text-white",
   text: "text-gray-800",
   hover: "hover:bg-gray-800 transition duration-200",
-  accent: "bg-gray-800 hover:bg-gray-600 transition duration-200",
-  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800",
+  accent: "bg-gray-900 hover:bg-amber-600 transition duration-200",
+  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white",
 };
 
-export const Therapy = () => {
+export const FisicoCulturismo = () => {
   return (
-    <div className={`${theme.background} p-6 mt-20 ${theme.text}`}>Rehabilitation and recovery services.
-      <p>Acupunctura, Quiropracia, Digitopunctura, Masages Terapeutico, Vendaje en Neuro Muscular, Infrarojos, Masage Limfatico, Osteopatia, Meditacion, Terapia posparto, Terapia de Suepo Pelvico, Reiki,Shiaptcu, Ki Yong, Fisioterapia Deportiva, Embarazo Activo, Ejercisios Terapeuticos</p>
+    <div className={`${theme.background} p-8 mt-20`}>
+      <p className={`${theme.text}`}>Bajar de peso, musculacion, rehabilitacion, definicion muscular, preparacion fisica, preparacion a oposiciones para policia nacional, bomberos, mossos de escuadra</p>
+
       <div className={`${theme.text} mt-8`}>
         <section id="runt">
           <h2 className={`${theme.accent} text-2xl text-white p-4 rounded-lg`}>Running</h2>
@@ -46,6 +48,15 @@ export const Therapy = () => {
 
         <button className={`${theme.buttonbg}`}>Button</button>
       </div>
+
+      {/* With photo */}
+      {/* <section className="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" style={{ backgroundImage: "url('../../public/img/amaruk2.jpg')" }}>
+        <div className=" p-6 rounded-lg">
+          <h1 className="text-4xl font-bold">ENTRENADOR PERSONAL EN BARCELONA</h1>
+          <p className="text-lg mt-4">La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.</p>
+        </div>
+      </section> */}
+
     </div>
   )
 }

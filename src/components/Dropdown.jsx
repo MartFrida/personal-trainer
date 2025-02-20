@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import { theme } from "../helpers/theme";
 
-const Dropdown = ({ title, links, mainPath }) => {
+const Dropdown = ({ title, links, mainPath, onItemClick }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
+
+  const handleItemClick = () => {
+    setOpen(false); // Закрываем вложенный список
+    if (onItemClick) onItemClick(); // Закрываем главное меню
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -36,7 +41,7 @@ const Dropdown = ({ title, links, mainPath }) => {
               key={path}
               href={path}
               className="block px-4 py-2 hover:bg-gray-200"
-              onClick={() => setOpen(false)}
+              onClick={handleItemClick}
             >
               {label}
             </a>

@@ -4,7 +4,7 @@ import { theme } from '../helpers/theme';
 const Home = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      <section className="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" style={{ backgroundImage: "url('../../public/img/hero.png')" }}>
+      <section className="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" style={{ backgroundImage: "url('/img/hero.png')" }}>
         <div className=" p-6 rounded-lg">
           <h1 className="text-4xl font-bold" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD</h1>
           {/* <p className="text-lg mt-4 " style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.</p> */}

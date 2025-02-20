@@ -11,6 +11,7 @@ import { PersonalizedTraining } from './pages/PersonalizedTraining'
 import { ArtesMarciales } from './pages/ArtesMarciales';
 import { ClacesInfantiles } from './pages/ClacesInfantiles';
 import { FisicoCulturismo } from './pages/FisicoCulturismo';
+import ScrollToTop from './helpers/ScrollToTop';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen min-w-screen overflow-hidden box-border">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

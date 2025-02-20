@@ -1,6 +1,6 @@
 import ContainerMain from "../components/ContainerMain";
 import SectionRegular from "../components/SectionRegular";
-import ninosGroup from '../../public/img/ninos-group2.jpg'
+import ninosGroup from '../assets/ninos-group2.jpg'
 
 /* eslint-disable react-refresh/only-export-components */
 export const theme = {

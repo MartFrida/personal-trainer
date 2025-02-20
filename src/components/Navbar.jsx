@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { theme } from "../helpers/theme";
 import Dropdown from "./Dropdown";
-import { Menu, X } from "lucide-react"; // Иконки для меню
+import { Menu, X } from "lucide-react"; // Иконки бургер-меню
 
 const linksPT = [
   { path: "#running", label: "Running" },
@@ -25,11 +25,14 @@ const linksPT = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Функция для закрытия меню при клике на пункт
+  const handleClose = () => setIsOpen(false);
+
   return (
     <div className="fixed top-0 left-0 w-full z-10">
       <nav className={`${theme.primary} p-4 text-white flex justify-between items-center`}>
         {/* Логотип */}
-        <Link to="/" className={`${theme.text} ${theme.hover} p-2 rounded text-xl`}>
+        <Link to="/" className={`${theme.text} ${theme.hover} p-2 rounded text-xl`} onClick={handleClose}>
           Home
         </Link>
 
@@ -56,13 +59,25 @@ const Navbar = () => {
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
         <div className={`${theme.primary} md:hidden flex flex-col items-center p-4 space-y-3`}>
-          <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} />
-          <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`}>Artes Marciales</Link>
-          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`}>Fisico Culturismo</Link>
-          <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded`}>Claces Infantiles</Link>
-          <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`}>Nutrition & Diet</Link>
-          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`}>Physical Therapy</Link>
-          <Link to="/acupuncture" className={`${theme.text} ${theme.hover} p-2 rounded`}>Tarifas</Link>
+          <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} onItemClick={handleClose} />
+          <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Artes Marciales
+          </Link>
+          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Fisico Culturismo
+          </Link>
+          <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Claces Infantiles
+          </Link>
+          <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Nutrition & Diet
+          </Link>
+          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Physical Therapy
+          </Link>
+          <Link to="/acupuncture" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Tarifas
+          </Link>
         </div>
       )}
     </div>

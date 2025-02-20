@@ -30,10 +30,10 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-10">
-      <nav className={`${theme.primary} p-4 text-white flex justify-between items-center`}>
+      <nav className={`${theme.primary} p-2 text-white flex justify-between items-center`}>
         {/* Логотип */}
-        <Link to="/" className={`${theme.text} ${theme.hover} p-2 rounded text-xl`} onClick={handleClose}>
-          Home
+        <Link to="/" className={`${theme.text} rounded text-xl `} onClick={handleClose}>
+          <img src="/logo.png" alt="Logo" className="h-16 w-auto hover:scale-120 transition duration-200" />
         </Link>
 
         {/* Кнопка бургер-меню для мобильных устройств */}

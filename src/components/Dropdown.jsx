@@ -26,13 +26,13 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
   }, []);
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className={`${theme.text} ${theme.hover} p-2 rounded relative`} ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
         className="p-2 rounded flex items-center focus:outline-none"
       >
         <Link to={mainPath} className="mr-2">{title}</Link>
-        <FaChevronDown />
+        <FaChevronDown className="text-white" />
       </button>
       {open && (
         <div className={`${theme.primary} absolute left-0 mt-2  rounded shadow-lg w-48 z-50`}>

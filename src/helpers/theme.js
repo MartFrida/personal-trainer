@@ -18,11 +18,14 @@
 //   buttonbg: 'bg-gradient-to-r from-neutral-500 to-neutral-700',
 // };
 
+import bgmain from '../../public/img/grunge-wall-texture.jpg'
+
 export const theme = {
-  background: "bg-gray-300",
+  background: "bg-neutral-200",
+  backgroundImage: `url(${bgmain})`,
   primary: "bg-gradient-to-r from-gray-600 to-gray-950 text-white",
   secondary: "bg-gray-700 text-white",
-  text: "text-gray-800",
+  text: "text-gray-900",
   hover: "hover:bg-gray-800 transition duration-200",
   accent: "bg-amber-400 hover:bg-amber-600 transition duration-200",
   buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800",

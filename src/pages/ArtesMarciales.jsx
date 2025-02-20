@@ -36,6 +36,11 @@ export const ArtesMarciales = () => {
           ))}
         </Swiper>
       </div> */}
+      <img
+        src='/img/artes-marc.png'
+        alt="Niños practicando artes marciales"
+        className="my-4 h-[60vh] w-auto rounded-lg shadow-lg"
+      />
       <section className={`${theme.primary} p-6 rounded-lg`}>
         <h1 className="text-5xl font-semibold text-white text-center">Artes marciales con Amaruk Kaishapanta</h1>
         <p>Taekwondo, Hapkido, Jut Jitsu, Kick Boxing, Full Contack, Judo </p>

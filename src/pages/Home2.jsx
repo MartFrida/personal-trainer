@@ -6,13 +6,21 @@ import ContainerMain from '../components/ContainerMain'
 const Home = () => {
   return (
     <ContainerMain >
-      <section className="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" style={{ backgroundImage: "url('/img/hero-men.png')" }}>
-        <div className=" p-6 rounded-lg">
-          <h1 className="text-4xl font-bold" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD</h1>
-          {/* <p className="text-lg mt-4 " style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.</p> */}
+      <section className="relative my-4 bg-zinc-900/40 rounded-lg" >
+        <div className="p-6 flex items-center justify-start text-center bg-cover bg-center rounded-lg bg-no-repeat w-full h-screen"
+          style={{ backgroundImage: "url('/img/hero-without-bg.png')" }}>
+
+          <h1 className=" font-bold w-2/3 pr-20"
+            style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
+            CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
+          </h1>
+
+          <p className="text-lg mt-4 " style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>
+            La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.
+          </p>
         </div>
       </section>
-      <div className={` p-8 mt-2 bg-fixed bg-cover`} style={{ backgroundImage: "url('/img/grunge-wall-texture.jpg')" }}>
+      <div className={` py-8 mt-2 bg-fixed bg-cover`} style={{ backgroundImage: "url('/img/grunge-wall-texture.jpg')" }}>
         <section className={`${theme.primary} p-6 rounded-lg`}>
           <h1 className="text-3xl font-semibold text-white">Entrenador personal Amaruk Kaishapanta</h1>
           <p>Running, Calistenia, Alteriofilia, Culturismo, Fitnes, Natacion, Senderismo, Espining, Defensa Personal, Artes MArciales Mixtas, Taichi, Estreching, Pilates, Yoga, Boxing</p>

@@ -28,6 +28,6 @@ export const theme = {
   text: "text-gray-900",
   hover: "hover:bg-gray-800 transition duration-200",
   accent: "bg-amber-400 hover:bg-amber-600 transition duration-200",
-  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800",
+  buttonmy: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white",
   shadow2xl: "shadow-gray-900",
 };

@@ -40,7 +40,7 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
             <a
               key={path}
               href={path}
-              className="block px-4 py-2 hover:bg-gray-200"
+              className="block px-4 py-2 hover:bg-gray-800"
               onClick={handleItemClick}
             >
               {label}

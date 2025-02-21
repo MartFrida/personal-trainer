@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {/* Кнопка бургер-меню для мобильных устройств */}
         <button
-          className="md:hidden p-2 focus:outline-none"
+          className="md:hidden p-2 focus:outline-none bg-transparent"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}

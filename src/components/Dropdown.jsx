@@ -32,7 +32,7 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
         className="p-2 rounded flex items-center focus:outline-none"
       >
         <Link to={mainPath} className="mr-2">{title}</Link>
-        <FaChevronDown className="text-white" />
+        <FaChevronDown className="text-white bg-transparent" />
       </button>
       {open && (
         <div className={`${theme.primary} absolute left-0 mt-2  rounded shadow-lg w-48 z-50`}>

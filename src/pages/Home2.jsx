@@ -6,19 +6,18 @@ import ContainerMain from '../components/ContainerMain'
 const Home = () => {
   return (
     <ContainerMain >
-      <section className="relative my-4 bg-zinc-900/40 rounded-lg" >
-        <div className="p-6 flex items-center justify-start text-center bg-cover bg-center rounded-lg bg-no-repeat w-full h-screen gap-[20%]"
+      <section className="relative rounded-lg" >
+        <div className="px-8  flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-cover h-screen"
           style={{ backgroundImage: "url('/img/hero-without-bg.png')" }}>
           <div className='bg-zinc-900/40 p-8 rounded-lg'>
-            <h1 className=" font-bold leading-relaxed tracking-wide"
+            <h1 className=" font-bold leading-relaxed tracking-wide text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
               CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
             </h1>
-            <p className="text-2xl mt-4 " style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>
+            <p className="text-2xl mt-4 text-center text-white" style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>
               La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.
             </p>
           </div>
-
         </div>
       </section>
 

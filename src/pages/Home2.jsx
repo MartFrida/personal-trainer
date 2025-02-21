@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
-        <div className="px-8  flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-cover h-screen"
+        <div className=" flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-no-repeat bg-top h-screen"
           style={{ backgroundImage: "url('/img/hero-without-bg.png')" }}>
           <div className='bg-zinc-900/40 p-8 rounded-lg'>
             <h1 className=" font-bold leading-relaxed tracking-wide text-center text-white"

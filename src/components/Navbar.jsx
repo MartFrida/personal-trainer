@@ -52,7 +52,7 @@ const Navbar = () => {
           <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded`}>Claces Infantiles</Link>
           <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`}>Nutrition & Diet</Link>
           <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`}>Physical Therapy</Link>
-          <Link to="/acupuncture" className={`${theme.text} ${theme.hover} p-2 rounded`}>Tarifas</Link>
+          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`}>Tarifas</Link>
         </div>
       </nav>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
           <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Physical Therapy
           </Link>
-          <Link to="/acupuncture" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Tarifas
           </Link>
         </div>

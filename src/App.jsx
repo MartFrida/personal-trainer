@@ -7,7 +7,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { Nutrition } from './pages/Nutrition';
 import { Therapy } from './pages/Therapy';
-import { Acupuncture } from './pages/Acupuncture';
+import Tarifas from './pages/Tarifas';
 import { PersonalizedTraining } from './pages/PersonalizedTraining'
 import { ArtesMarciales } from './pages/ArtesMarciales';
 import { ClacesInfantiles } from './pages/ClacesInfantiles';
@@ -31,7 +31,7 @@ function App() {
           <Route path="/claces-infantiles" element={<ClacesInfantiles />} />
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/therapy" element={<Therapy />} />
-          <Route path="/acupuncture" element={<Acupuncture />} />
+          <Route path="/tarifas" element={<Tarifas />} />
         </Routes>
       </div>
       <Footer />

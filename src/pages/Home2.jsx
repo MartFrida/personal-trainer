@@ -2,6 +2,7 @@ import SectionRegular from '../components/SectionRegular';
 import { theme } from '../helpers/theme';
 // import backgroundImage from '../../public/img/personal-trainer-barcelona.jpg'
 import ContainerMain from '../components/ContainerMain'
+import TeamSection from '../components/TeamSection';
 
 const Home = () => {
   return (
@@ -41,9 +42,8 @@ const Home = () => {
               </p>
             </div>
             <div className='flex justify-end w-full mt-4 md:mt-0'>
-              <button className={`${theme.buttonmy}`}>Reserva tu sesión</button>
+              <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">Reserva tu sesión</button>
             </div>
-
           </SectionRegular>
 
           <SectionRegular>
@@ -56,6 +56,7 @@ const Home = () => {
             </ul>
           </SectionRegular>
 
+          <TeamSection />
 
           <SectionRegular>
             <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>¿Por qué elegirnos?</h2>
@@ -68,7 +69,7 @@ const Home = () => {
           </SectionRegular>
 
           <SectionRegular className="mt-8">
-            <h2 className={`${theme.primary} text-2xl p-4 rounded-lg`}>Nuestros programas más solicitados</h2>
+            <h2 className={`${theme.primary} text-2xl p-4 rounded-lg`}>Las programas más solicitados</h2>
             <h3 className="text-xl font-semibold p-4 ">Entrenamiento para perder peso</h3>
             <p>Te ayudamos a alcanzar tu peso ideal con un plan estructurado que incluye:</p>
             <ul className="list-inside list-disc pl-6 list-none">
@@ -93,22 +94,14 @@ const Home = () => {
               <li>✔️ Evaluaciones biomecánicas para mejorar el rendimiento.</li>
             </ul>
 
-
-
-
-
-
-
-
-
             <div className="mb-6">
               <h3 className="text-xl font-semibold p-4 ">La ventaja de un enfoque integral</h3>
               <p>Nuestros entrenadores y terapeutas trabajan juntos para potenciar tu salud desde todos los ángulos. No solo mejorarás físicamente, sino que también sentirás una mayor armonía y equilibrio en tu vida diaria.</p>
               <p>📍 ¡Únete a nuestra comunidad y empieza tu transformación hoy mismo!</p>
             </div>
-
-
           </SectionRegular>
+
+
         </div>
       </div >
     </ContainerMain >

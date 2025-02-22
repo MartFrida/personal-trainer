@@ -22,6 +22,18 @@ const linksPT = [
   { path: "#boxing", label: "Boxing" },
 ];
 
+const linksCI = [
+  { path: "#taekwondo", label: "Taekwondo" },
+  { path: "#judo", label: "Judo" },
+  { path: "#mma", label: "MMA" },
+  { path: "#hapkido", label: "Hapkido" },
+  { path: "#cursos-de-verano", label: "Cursos de Veranotnes" },
+  { path: "#excursiones", label: "Excursiones" },
+  { path: "#air-libre", label: "Actividades Lúdicas al Aire Libre" },
+  { path: "#juegos", label: "Juegos Recreacionales" },
+  { path: "#artes-interpretativas", label: "Artes Interpretativas" },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -47,12 +59,13 @@ const Navbar = () => {
         {/* Навигация для ПК */}
         <div className="hidden md:flex space-x-4">
           <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} />
-          <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`}>Artes Marciales</Link>
-          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`}>Fisico Culturismo</Link>
-          <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded`}>Claces Infantiles</Link>
-          <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`}>Nutrition & Diet</Link>
-          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`}>Physical Therapy</Link>
-          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`}>Tarifas</Link>
+          <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Artes Marciales</Link>
+          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Fisico Culturismo</Link>
+          <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} />
+          {/* <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Claces Infantiles</Link> */}
+          <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded my-auto `}>Nutrition & Diet</Link>
+          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Physical Therapy</Link>
+          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
         </div>
       </nav>
 

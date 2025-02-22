@@ -61,7 +61,7 @@ const TeamSection = () => {
           <div className="md:w-1/2 flex justify-center">
             <img
               src="/img/equipo/founder.jpg"
-              alt="David Lawrence"
+              alt="Amaruk Kaishapanta"
               className="rounded-lg shadow-lg max-h-[59vh] object-cover"
             />
           </div>
@@ -83,9 +83,9 @@ const TeamSection = () => {
                   alt={trainer.name}
                   className="w-full h-auto mx-auto  object-cover mb-4"
                 />
-                <h3 className="text-xl font-semibold text-gray-700">
+                {/* <h3 className="text-xl font-semibold text-gray-700">
                   {trainer.name}
-                </h3>
+                </h3> */}
                 <p className="text-sm text-gray-500 font-medium">
                   {trainer.role}
                 </p>

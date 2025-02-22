@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
-        <div className=" flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-no-repeat bg-top h-screen"
+        <div className=" flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-no-repeat bg-top h-screen mt-[-20px]"
           style={{ backgroundImage: "url('/img/hero-without-bg.png')" }}>
           <div className='bg-zinc-900/40 p-8 rounded-lg'>
             <h1 className=" font-bold leading-relaxed tracking-wide text-center text-white"
@@ -22,7 +22,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className={` py-8 mt-2 bg-fixed bg-cover`} style={{ backgroundImage: "url('/img/grunge-wall-texture.jpg')" }}>
+      <div className={`   bg-fixed bg-cover`} style={{ backgroundImage: "url('/img/grunge-wall-texture.jpg')" }}>
         <section className={`${theme.primary} p-6 rounded-lg`}>
           <h1 className="text-3xl font-semibold text-white">Entrenador personal Amaruk Kaishapanta</h1>
           {/* <p>Running, Calistenia, Alteriofilia, Culturismo, Fitnes, Natacion, Senderismo, Espining, Defensa Personal, Artes MArciales Mixtas, Taichi, Estreching, Pilates, Yoga, Boxing</p> */}

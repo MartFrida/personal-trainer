@@ -28,7 +28,7 @@ const Home = () => {
           {/* <p>Running, Calistenia, Alteriofilia, Culturismo, Fitnes, Natacion, Senderismo, Espining, Defensa Personal, Artes MArciales Mixtas, Taichi, Estreching, Pilates, Yoga, Boxing</p> */}
         </section>
 
-        <div className={`${theme.text} mt-8`}>
+        <div className={`${theme.text} mt-8 flex flex-col gap-4`}>
           <SectionRegular>
             <div>
               <p className="mb-4 text-lg font-semibold text-gray-800">¿Te gustaría participar en una sesión de entrenamiento personalizada especialmente para ti?</p>
@@ -100,8 +100,6 @@ const Home = () => {
               <p>📍 ¡Únete a nuestra comunidad y empieza tu transformación hoy mismo!</p>
             </div>
           </SectionRegular>
-
-
         </div>
       </div >
     </ContainerMain >

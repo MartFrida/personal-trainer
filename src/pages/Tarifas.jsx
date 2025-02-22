@@ -1,5 +1,5 @@
 import ContainerMain from "../components/ContainerMain";
-import SectionRegular from "../components/SectionRegular"
+
 import { theme } from "../helpers/theme"
 
 const tarifasData = [

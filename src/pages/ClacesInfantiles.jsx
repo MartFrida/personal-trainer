@@ -16,16 +16,18 @@ export const theme = {
 export const ClacesInfantiles = () => {
   return (
     <ContainerMain className={`${theme.background} p-8`}>
-      <section className={`${theme.primary} p-6 rounded-lg flex gap-4`}>
-        <img
-          src={ninosGroup}
-          alt="Niños practicando artes marciales"
-          className="mt-4 h-[60vh] w-auto rounded-lg shadow-lg"
-        />
-        <div>
+      <section className={`${theme.primary} flex flex-col lg:flex-row p-6 rounded-lg gap-4 w-full`}>
+        <div className="flex-1 flex items-center">
+          <img
+            src={ninosGroup}
+            alt="Niños practicando artes marciales"
+            className="rounded-lg shadow-lg w-full h-auto lg:h-full object-cover"
+          />
+        </div>
+        <div className="flex-1 flex flex-col justify-center">
           <h1 className="text-3xl font-semibold text-white">Artes Marciales para Niños</h1>
           <p className="mt-2 text-lg">Una de nuestras líneas de especialización es la enseñanza de artes marciales a niños y jóvenes desde los 3 a los 14 años.</p>
-          <p>Taekondo, Judo, MMA, Hapkido, Cursos de Verano, Exurciones, Actividades Ludicas al Aire Libre, Juegos Recreacionales, Artes Interpretativas</p>
+          <p>Taekwondo, Judo, MMA, Hapkido, Cursos de Verano, Excursiones, Actividades Lúdicas al Aire Libre, Juegos Recreacionales, Artes Interpretativas</p>
           <ul className="mt-4 list-disc list-inside text-white">
             <li>Mejora la coordinación y condición física</li>
             <li>Fomenta la disciplina y el respeto</li>
@@ -33,8 +35,8 @@ export const ClacesInfantiles = () => {
             <li>Clases seguras y supervisadas por expertos</li>
           </ul>
         </div>
-
       </section>
+
 
       <SectionRegular id="calistenia" >
         <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>A través de una metodología dinámica y divertida, promovemos el desarrollo físico, mental y emocional de los más pequeños.</h2>

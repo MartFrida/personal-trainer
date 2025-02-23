@@ -1,20 +1,14 @@
 import ContainerMain from "../components/ContainerMain";
-
-// import { theme } from '../helpers/theme';
-const theme = {
-  background: "bg-gray-100",
-  primary: "bg-gradient-to-r from-red-600 to-red-950 text-white",
-  secondary: "bg-yellow-400 text-white",
-  text: "text-gray-800",
-  hover: "hover:bg-gray-800 transition duration-200",
-  accent: "bg-gray-900 hover:bg-amber-600 transition duration-200",
-  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800 text-white",
-};
+import SectionRegular from "../components/SectionRegular";
+import { theme } from "../helpers/theme"
 
 export const FisicoCulturismo = () => {
   return (
-    <ContainerMain className={`${theme.background} p-8 mt-20`}>
-      <p className={`${theme.text}`}>Bajar de peso, musculacion, rehabilitacion, definicion muscular, preparacion fisica, preparacion a oposiciones para policia nacional, bomberos, mossos de escuadra</p>
+    <ContainerMain className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}>
+      <SectionRegular>
+        <p className={`${theme.text}`}>Bajar de peso, musculacion, rehabilitacion, definicion muscular, preparacion fisica, preparacion a oposiciones para policia nacional, bomberos, mossos de escuadra</p>
+      </SectionRegular>
+
 
       <div className={`${theme.text} mt-8`}>
         <section id="runt">

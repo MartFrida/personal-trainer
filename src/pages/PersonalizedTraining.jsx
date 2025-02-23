@@ -10,7 +10,6 @@ console.log(contentPT)
 export const PersonalizedTraining = () => {
   return (
     <ContainerMain className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}>
-
       <SectionRegular id="running" >
         <InfoSection
           title={contentPT.running.title}
@@ -91,11 +90,11 @@ export const PersonalizedTraining = () => {
       </SectionRegular>
 
       <SectionRegular id='mma' className="mt-8">
-        <InfoSection
+        <SectionWithImage
           title={contentPT.mma.title}
           description={contentPT.mma.description}
           items={contentPT.mma.items}
-          callToAction={contentPT.mma.callToAction}
+          imageUrl={contentPT.mma.imageUrl}
         />
       </SectionRegular>
 

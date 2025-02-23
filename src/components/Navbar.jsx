@@ -27,11 +27,11 @@ const linksCI = [
   { path: "#judo", label: "Judo" },
   { path: "#mma", label: "MMA" },
   { path: "#hapkido", label: "Hapkido" },
-  { path: "#cursos-de-verano", label: "Cursos de Veranotnes" },
+  { path: "#cursosdeverano", label: "Cursos de Veranotnes" },
   { path: "#excursiones", label: "Excursiones" },
-  { path: "#air-libre", label: "Actividades Lúdicas al Aire Libre" },
+  { path: "#airlibre", label: "Actividades Lúdicas al Aire Libre" },
   { path: "#juegos", label: "Juegos Recreacionales" },
-  { path: "#artes-interpretativas", label: "Artes Interpretativas" },
+  { path: "#artesinterpretativas", label: "Artes Interpretativas" },
 ];
 
 const Navbar = () => {
@@ -58,7 +58,7 @@ const Navbar = () => {
 
         {/* Навигация для ПК */}
         <div className="hidden md:flex space-x-4">
-          <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} />
+          <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksPT} />
           <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Artes Marciales</Link>
           <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Fisico Culturismo</Link>
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} />

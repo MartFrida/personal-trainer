@@ -6,23 +6,29 @@ const tarifasData = [
   {
     title: 'Entrenamiento a Distancia (ONLINE)',
     description: 'Entrenamiento personalizado desde la comodidad de tu hogar.',
-    price: 50,
-    priceResult: 500,
-    discountPrice: 450, // Цена со скидкой за 10 занятий
+    priceMin: 20,
+    priceResultMin: 160,
+    discountPriceMin: 150,
+    priceResultDose: 240,
+    discountPriceDose: 220,
   },
   {
     title: 'Entrenamiento en Domicilio / Parque',
     description: 'Entrenamiento personal en tu hogar o en un parque cercano.',
-    price: 70,
-    priceResult: 700,
-    discountPrice: 630, // Цена со скидкой за 10 занятий
+    priceMin: 25,
+    priceResultMin: 200,
+    discountPriceMin: 180,
+    priceResultDose: 300,
+    discountPriceDose: 280,
   },
   {
     title: 'Entrenamiento en Gimnasio',
     description: 'Entrenamiento en un gimnasio con acceso a todas las instalaciones.',
-    price: 80,
-    priceResult: 800,
-    discountPrice: 720, // Цена со скидкой за 10 занятий
+    priceMin: 35,
+    priceResultMin: 280,
+    discountPriceMin: 250,
+    priceResultDose: 420,
+    discountPriceDose: 380,
   },
 ];
 
@@ -38,15 +44,19 @@ const Tarifas = () => {
               <p className="text-gray-800 mb-4">{tarifa.description}</p>
 
               <span>
-                <span className="text-gray-800 text-lg font-bold">${tarifa.price}</span>
-                <span className="text-gray-800 text-lg"> por 1 clase</span>
+                <span className="text-gray-800 text-lg font-bold"> €{tarifa.priceMin}</span>
+                <span className="text-gray-800 text-lg"> por 1 clase / 1 hora</span>
+              </span>
+              <span>
+                <span className="text-gray-800 line-through "> €{tarifa.priceResultMin}</span>
+                <span className="text-gray-800 text-lg font-bold"> €{tarifa.discountPriceMin}</span>
+                <span className="text-gray-800 text-lg"> por 1 mes / 8 horas</span>
               </span>
 
-              <p className="text-gray-800 line-through ">${tarifa.priceResult}</p>
-
               <span>
-                <span className="text-gray-800 text-lg font-bold">${tarifa.discountPrice}</span>
-                <span className="text-gray-800 text-lg"> por 10 clases</span>
+                <span className="text-gray-800 line-through "> €{tarifa.priceResultDose}</span>
+                <span className="text-gray-800 text-lg font-bold"> €{tarifa.discountPriceDose}</span>
+                <span className="text-gray-800 text-lg"> 1 mes / 12 horas</span>
               </span>
 
               <button

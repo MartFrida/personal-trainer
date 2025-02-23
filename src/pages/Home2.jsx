@@ -3,6 +3,7 @@ import { theme } from '../helpers/theme';
 // import backgroundImage from '../../public/img/personal-trainer-barcelona.jpg'
 import ContainerMain from '../components/ContainerMain'
 import TeamSection from '../components/TeamSection';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
   return (
@@ -37,6 +38,11 @@ const Home = () => {
         </section>
 
         <div className={`${theme.text} mt-8 flex flex-col gap-4`}>
+
+          <section id="contact-section">
+            <ContactForm />
+          </section>
+
           <SectionRegular>
             <div>
               <p className="mb-4 text-lg font-semibold text-gray-800">¿Te gustaría participar en una sesión de entrenamiento personalizada especialmente para ti?</p>

@@ -25,7 +25,7 @@ const linksPT = [
 const linksCI = [
   { path: "#taekwondo", label: "Taekwondo" },
   { path: "#judo", label: "Judo" },
-  { path: "#mma", label: "MMA" },
+  { path: "#mmaNinos", label: "MMA" },
   { path: "#hapkido", label: "Hapkido" },
   { path: "#cursosdeverano", label: "Cursos de Veranotnes" },
   { path: "#excursiones", label: "Excursiones" },
@@ -79,9 +79,7 @@ const Navbar = () => {
           <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Fisico Culturismo
           </Link>
-          <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Claces Infantiles
-          </Link>
+          <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} onItemClick={handleClose} />
           <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Nutrition & Diet
           </Link>

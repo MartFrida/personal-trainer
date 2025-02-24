@@ -18,7 +18,7 @@ export const theme = {
 const sections = [
   { id: "taekwondo", content: contentCInf.taekwondo },
   { id: "judo", content: contentCInf.judo },
-  { id: "mma", content: contentCInf.mma },
+  { id: "mmaNinos", content: contentCInf.mma },
   { id: "hapkido", content: contentCInf.hapkido },
   { id: "cursosdeverano", content: contentCInf.cursosDeVerano },
   { id: "excursiones", content: contentCInf.excursiones },

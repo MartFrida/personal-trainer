@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen min-w-screen overflow-hidden box-border">
+      <div className="flex flex-col min-h-screen w-[100vw] overflow-hidden box-border">
         <Navbar />
         <ScrollToTop />
         <Routes>

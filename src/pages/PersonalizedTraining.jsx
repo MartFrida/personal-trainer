@@ -5,8 +5,6 @@ import { SectionWithImage } from "../components/SectionWithImage"
 import { theme } from "../helpers/theme"
 import contentPT from '../data/personal-training-data.json'
 
-
-console.log(contentPT)
 export const PersonalizedTraining = () => {
   return (
     <ContainerMain className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}>

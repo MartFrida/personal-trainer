@@ -1,11 +1,16 @@
+/* eslint-disable no-unused-vars */
+import { useState } from 'react';
 import SectionRegular from '../components/SectionRegular';
 import { theme } from '../helpers/theme';
 // import backgroundImage from '../../public/img/personal-trainer-barcelona.jpg'
 import ContainerMain from '../components/ContainerMain'
 import TeamSection from '../components/TeamSection';
 import ContactForm from '../components/ContactForm';
+import ContactModal from '../components/ContactModal';
 
 const Home = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
@@ -56,7 +61,11 @@ const Home = () => {
               </p>
             </div>
             <div className='flex justify-end w-full mt-4 md:mt-0'>
-              <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">Reserva tu sesión</button>
+              <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
+                onClick={() => setIsModalOpen(true)}>
+                Reserva tu sesión
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
           </SectionRegular>
 

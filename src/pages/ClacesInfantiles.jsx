@@ -67,6 +67,7 @@ export const ClacesInfantiles = () => {
               items={items}
               imageUrl={imageUrl}
               callToAction={callToAction}
+              sectionParrentID={section.id}
             />
           </SectionRegular>
         );

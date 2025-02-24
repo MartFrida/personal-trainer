@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
-        <div className=" flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-no-repeat bg-top h-screen mt-[-20px]"
+        <div className=" flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-no-repeat bg-top h-screen mt-[-100px] md:mt-[-20px]"
           style={{ backgroundImage: "url('/img/amaruk-hero-smc.png')" }}>
           <div className='bg-zinc-900/60 p-8 rounded-lg'>
             <p className=" tracking-widest text-7xl font-bold leading-relaxed tracking-wide text-center text-white"

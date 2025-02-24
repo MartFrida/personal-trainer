@@ -50,14 +50,14 @@ const Navbar = () => {
 
         {/* Кнопка бургер-меню для мобильных устройств */}
         <button
-          className="md:hidden p-2 focus:outline-none bg-transparent"
+          className="lg:hidden p-2 focus:outline-none bg-transparent"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
         {/* Навигация для ПК */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden lg:flex space-x-4">
           <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksPT} />
           <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Artes Marciales</Link>
           <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Fisico Culturismo</Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
-        <div className={`${theme.primary} md:hidden flex flex-col items-center p-4 space-y-3`}>
+        <div className={`${theme.primary} lg:hidden flex flex-col items-center p-4 space-y-3`}>
           <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} onItemClick={handleClose} />
           <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Artes Marciales

@@ -3,7 +3,7 @@ import { theme } from "../helpers/theme"
 
 const SectionRegular = ({ id, children }) => {
   return (
-    <div id={id} className={`${theme.background} p-6 rounded-lg ${theme.shadow2xl} scroll-mt-24`}>
+    <div id={id} className={`${theme.background} p-4 lg:p-6 rounded-lg ${theme.shadow2xl} scroll-mt-24`}>
       {children}
     </div>
   )

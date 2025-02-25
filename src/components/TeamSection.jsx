@@ -52,7 +52,7 @@ const TeamSection = () => {
       {/* founder */}
       <section className={`${theme.primary}  p-4 rounded-lg mb-8 `}>
         <div className="container mx-auto flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left p-6">
+          <div className="md:w-1/2 text-center md:text-left py-4 lg:p-6">
             <p className="text-xl italic mb-4">
               &quot;Invertir en ti mismo es la inversión más valiosa que puedes hacer. Estaremos encantados de guiarle en su camino hacia una mejor salud, estado físico y rendimiento.&quot;
             </p>
@@ -76,7 +76,7 @@ const TeamSection = () => {
             {trainers.map((trainer, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-2xl transition"
+                className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 text-center hover:shadow-2xl transition"
               >
                 <img
                   src={trainer.image}

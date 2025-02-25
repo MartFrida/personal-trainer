@@ -1,5 +1,6 @@
+import ContactModal from "../components/ContactModal";
 import ContainerMain from "../components/ContainerMain";
-
+import { useState } from "react"
 import { theme } from "../helpers/theme"
 
 const tarifasData = [
@@ -33,6 +34,7 @@ const tarifasData = [
 ];
 
 const Tarifas = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <ContainerMain>
       <section className={`${theme.primary} p-6 rounded-lg`}>
@@ -59,11 +61,11 @@ const Tarifas = () => {
                 <span className="text-gray-800 text-lg"> 1 mes / 12 horas</span>
               </span>
 
-              <button
-                className="w-full bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white mt-4"
-              >
+              <button className="mt-4 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
+                onClick={() => setIsModalOpen(true)}>
                 Elegir
               </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
           ))}
         </div>

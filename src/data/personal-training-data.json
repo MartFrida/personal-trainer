@@ -92,7 +92,8 @@
         "Quema calorías y mejora tu condición física con sesiones de alta intensidad.",
         "Fortalece tu corazón y pulmones con entrenamientos cardiovasculares efectivos.",
         "Reduce el estrés y mejora tu estado de ánimo gracias a la combinación de ejercicio y música motivadora."
-      ]
+      ],
+      "imageUrl": "/img/foto-section/cycling-spinning.jpg"
     },
     "defensa": {
       "title": "Defensa Personal. Aprende a Defenderte y Gana Confianza",
@@ -102,7 +103,8 @@
         "🔹 Mejora tu estado físico con entrenamientos dinámicos que fortalecen tu cuerpo.",
         "🔹 Reduce el estrés y refuerza tu mentalidad al sentirte preparado ante cualquier situación.",
         "🔹 Aprende a actuar en momentos de peligro con estrategias de respuesta rápida."
-      ]
+      ],
+      "imageUrl": "/img/foto-section/defenza-personal.jpg"
     },
     "mma": {
       "title": "Domina las MMA y Supera tus Límites",
@@ -124,7 +126,8 @@
         "🔹 Fortalece tu cuerpo y mente con una práctica que mejora la flexibilidad y la circulación.",
         "🔹 Aumenta tu energía vital con un entrenamiento que armoniza cuerpo y espíritu."
       ],
-      "callToAction": "Conéctate con tu cuerpo y mente a través del Tai Chi. Escríbeme para más información y reserva tu primera sesión. ¡Empieza tu camino hacia una vida más armoniosa!"
+      "callToAction": "Conéctate con tu cuerpo y mente a través del Tai Chi. Escríbeme para más información y reserva tu primera sesión. ¡Empieza tu camino hacia una vida más armoniosa!",
+      "imageUrl": "/img/foto-section/amaruk-tai-chi.jpg"
     },
     "estreching": {
       "title": "Flexibilidad, Movilidad y Bienestar con Stretching",
@@ -135,7 +138,8 @@
         "🔹 Previene lesiones y mejora tu rendimiento en cualquier actividad física.",
         "🔹 Reduce el estrés y la fatiga a través de movimientos suaves y controlados."
       ],
-      "callToAction": "Empieza a Sentirte Más Libre y Ágil! No esperes a sentir molestias para mejorar tu movilidad. Escríbeme y reserva tu primera sesión de stretching. ¡Tu cuerpo te lo agradecerá!"
+      "callToAction": "Empieza a Sentirte Más Libre y Ágil! No esperes a sentir molestias para mejorar tu movilidad. Escríbeme y reserva tu primera sesión de stretching. ¡Tu cuerpo te lo agradecerá!",
+      "imageUrl": "/img/foto-section/streching.jpg"
     },
     "pilates": {
       "title": "Fortalece tu Cuerpo y Mente con Pilates",
@@ -146,7 +150,8 @@
         "🔹 Aumenta tu flexibilidad y movilidad con movimientos fluidos y precisos.",
         "🔹 Reduce el estrés y mejora tu concentración a través de la respiración y el control del cuerpo."
       ],
-      "callToAction": "Cuida tu cuerpo y mente con un entrenamiento diseñado para mejorar tu bienestar. Escríbeme para más información y reserva tu primera sesión. ¡Tu cambio empieza hoy!"
+      "callToAction": "Cuida tu cuerpo y mente con un entrenamiento diseñado para mejorar tu bienestar. Escríbeme para más información y reserva tu primera sesión. ¡Tu cambio empieza hoy!",
+      "imageUrl": "/img/foto-section/pilates.jpg"
     },
     "yoga": {
       "title": "Equilibra tu Cuerpo y Mente con Yoga",
@@ -157,7 +162,8 @@
         "🔹Reduce el estrés y la ansiedad a través de técnicas de respiración y meditación.",
         "🔹 Aumenta tu energía y bienestar al conectar cuerpo, mente y respiración."
       ],
-      "callToAction": "Empieza Tu Viaje con el Yoga Conéctate contigo mismo a través del yoga. Escríbeme para más información y reserva tu primera sesión. ¡Tu bienestar te espera!"
+      "callToAction": "Empieza Tu Viaje con el Yoga Conéctate contigo mismo a través del yoga. Escríbeme para más información y reserva tu primera sesión. ¡Tu bienestar te espera!",
+      "imageUrl": "/img/foto-section/yoga.jpg"
     },
     "boxing": {
       "title": "Entrena Como un Boxeador, Transforma tu Cuerpo",
@@ -168,6 +174,7 @@
         "🔹 Quema calorías y mejora tu condición física con rutinas dinámicas y desafiantes.",
         "🔹 Reduce el estrés y mejora tu concentración a través de la disciplina del boxeo."
       ],
-      "callToAction": "Escríbeme y agenda tu primera sesión. ¡Es hora de subir al ring!"
+      "callToAction": "Escríbeme y agenda tu primera sesión. ¡Es hora de subir al ring!",
+      "imageUrl": "/img/foto-section/boxing.jpg"
     }
   }

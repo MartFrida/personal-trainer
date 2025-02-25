@@ -8,7 +8,8 @@
         "🔹Aumenta la Fuerza y Resistencia: Las clases intensivas ayudarán a tus niños a mejorar su acondicionamiento físico, manteniéndolos activos y saludables.",
         "🔹Desarrollo Social y Trabajo en Equipo: Las sesiones en grupo fomentan la camaradería y enseñan la importancia de trabajar juntos para alcanzar objetivos comunes."
       ],
-      "callToAction": "¡Inscríbete Ahora y Despierta el Guerrero que Llevan Dentro!"
+      "callToAction": "¡Inscríbete Ahora y Despierta el Guerrero que Llevan Dentro!",
+      "imageUrl": "/img/foto-clases-ninos/karate.jpg"
     },
     "judo": {
       "title": "¡Entrena Como un Campeón! Desarrolla Habilidades y Confianza a Través del Judo",
@@ -30,7 +31,8 @@
         "🔹 Desarrollo de Habilidades de Defensa Personal: Los niños aprenderán técnicas efectivas para defenderse, lo que les dará seguridad tanto en el dojo como en la vida diaria.",
         "🔹 Trabajo en Equipo y Amistad: Las clases en grupo fomentan la camaradería y enseñan la importancia de apoyarse mutuamente en el camino hacia el éxito."
       ],
-      "callToAction": "💥 ¡Inscríbete Ahora y Desata el Potencial del Luchador que Llevan Dentro!💥"
+      "callToAction": "💥 ¡Inscríbete Ahora y Desata el Potencial del Luchador que Llevan Dentro!💥",
+      "imageUrl": "/img/foto-clases-ninos/trena.jpeg"
     },
     "hapkido": {
       "title": "¡Entrena Como un Maestro! Desarrolla Equilibrio y Confianza a Través del Hapkido",

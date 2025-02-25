@@ -59,12 +59,11 @@ const Navbar = () => {
         {/* Навигация для ПК */}
         <div className="hidden lg:flex space-x-4">
           <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksPT} />
-          <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Artes Marciales</Link>
-          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Fisico Culturismo</Link>
+          {/* <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Artes Marciales</Link>
+          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Fisico Culturismo</Link> */}
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} />
-          {/* <Link to="/claces-infantiles" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Claces Infantiles</Link> */}
-          <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded my-auto `}>Nutrition & Diet</Link>
-          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Physical Therapy</Link>
+          {/* <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded my-auto `}>Nutrition & Diet</Link>
+          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Physical Therapy</Link> */}
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
         </div>
       </nav>

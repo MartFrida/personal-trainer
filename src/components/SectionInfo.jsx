@@ -11,8 +11,8 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
       <h2 className={`${theme.primary} text-2xl p-4 rounded-lg  hover:scale-101 transition duration-300`}>
         {title}
       </h2>
-      <div className="flex flex-col lg:flex-row my-4 gap-4">
-        <div className="flex-1 pl-4">
+      <div className="flex flex-col lg:flex-row my-4 gap-4 ">
+        <div className="grow-3 pl-4">
           <p className="leading-relaxed tracking-wide text-gray-700 ">
             {description}
           </p>
@@ -23,7 +23,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
           </ul>
         </div>
         {imageUrl &&
-          <div className="flex-1">
+          <div className="grow-3 justify-items-end">
             <img
               src={imageUrl}
               alt='Training Image'

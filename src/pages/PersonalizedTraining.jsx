@@ -1,7 +1,6 @@
 import ContainerMain from "../components/ContainerMain"
 import { InfoSection } from "../components/SectionInfo"
 import SectionRegular from "../components/SectionRegular"
-import { SectionWithImage } from "../components/SectionWithImage"
 import { theme } from "../helpers/theme"
 import contentPT from '../data/personal-training-data.json'
 
@@ -13,7 +12,7 @@ export const PersonalizedTraining = () => {
           title={contentPT.running.title}
           description={contentPT.running.description}
           items={contentPT.running.items}
-          callToAction={contentPT.running.imageUrl}
+          imageUrl={contentPT.running.imageUrl}
         />
       </SectionRegular>
 
@@ -25,17 +24,18 @@ export const PersonalizedTraining = () => {
         />
       </SectionRegular>
 
-      <SectionRegular id='halterofilia' className="mt-8">
+      <SectionRegular id='halterofilia' >
         <InfoSection
           title={contentPT.halterofilia.title}
           description={contentPT.halterofilia.description}
           items={contentPT.halterofilia.items}
           callToAction={contentPT.halterofilia.callToAction}
+          imageUrl={contentPT.halterofilia.imageUrl}
         />
       </SectionRegular>
 
       <SectionRegular id="culturismo" >
-        <SectionWithImage
+        <InfoSection
           title={contentPT.culturismo.title}
           description={contentPT.culturismo.description}
           items={contentPT.culturismo.items}
@@ -50,6 +50,7 @@ export const PersonalizedTraining = () => {
           description={contentPT.fitnes.description}
           items={contentPT.fitnes.items}
           callToAction={contentPT.fitnes.callToAction}
+          imageUrl={contentPT.fitnes.imageUrl}
         />
       </SectionRegular>
 
@@ -59,6 +60,7 @@ export const PersonalizedTraining = () => {
           description={contentPT.natacion.description}
           items={contentPT.natacion.items}
           callToAction={contentPT.natacion.callToAction}
+          imageUrl={contentPT.natacion.imageUrl}
         />
       </SectionRegular>
 
@@ -88,7 +90,7 @@ export const PersonalizedTraining = () => {
       </SectionRegular>
 
       <SectionRegular id='mma' className="mt-8">
-        <SectionWithImage
+        <InfoSection
           title={contentPT.mma.title}
           description={contentPT.mma.description}
           items={contentPT.mma.items}

@@ -9,7 +9,8 @@
         "🔹Entrenamientos de fuerza y movilidad: ejercicios esenciales para desarrollar el cuerpo de un corredor.",
         "🔹Orientación nutricional personalizada: alimenta tus carreras de la manera correcta."
       ],
-      "imageUrl": "🚀 ¿Está listo para trabajar de manera más inteligente? ¡Contácteme hoy para una evaluación gratuita!"
+      "callToAction": "🚀 ¿Está listo para trabajar de manera más inteligente? ¡Contácteme hoy para una evaluación gratuita!",
+      "imageUrl": "/img/foto-section/running-sect.jpg"
     },
     "calistenia": {
       "title": "¡Libera todo tu potencial con calistenia!",
@@ -22,7 +23,7 @@
       ]
     },
     "halterofilia": {
-      "title": "🏋️‍♂️ Levanta más fuerza. Levanta más inteligentemente.🏋️‍♀️",
+      "title": "Halterofilia 🏋️‍♂️ Levanta más fuerza. Levanta más inteligentemente.🏋️‍♀️",
       "description": "¿Estás listo para superar tus límites y desarrollar fuerza real? Ya sea que quieras batir récords personales, mejorar tu técnica o ponerte en la mejor forma de tu vida, mi entrenamiento de levantamiento de pesas está diseñado para ayudarte a lograr tus objetivos de manera segura y efectiva.",
       "items": [
         "🔹Planes de levantamiento de pesas personalizados: adaptados a sus objetivos, ya sea que busque aumentar la fuerza, desarrollar músculos o mejorar la forma.",
@@ -31,7 +32,8 @@
         "🔹 Technique Coaching – Improve your lift form and execution to prevent injuries and maximize results.",
         "🔹 Strength & Mobility Workouts – Enhance your mobility and functional strength to improve performance."
       ],
-      "callToAction": "💥 Transforma tu fuerza: ¡comienza hoy!💥"
+      "callToAction": "💥 Transforma tu fuerza: ¡comienza hoy!💥",
+      "imageUrl": "/img/foto-section/halterofilia-foto.jpg"
     },
     "culturismo": {
       "title": "Culturismo 💪 ¡Construye el cuerpo que siempre has deseado!💪",
@@ -55,7 +57,8 @@
         "🔹 Programas de pérdida de peso: ejercicios efectivos y estrategias de nutrición para ayudarte a perder peso y no recuperarlo.",
         "🔹 Entrenamiento de postura y movilidad: mejore la flexibilidad, prevenga lesiones y mejore la movilidad con ejercicios especializados."
       ],
-      "imageUrl": "🚀 ¿Está listo para trabajar de manera más inteligente? ¡Contácteme hoy para una evaluación gratuita!"
+      "callToAction": "🚀 ¿Está listo para trabajar de manera más inteligente? ¡Contácteme hoy para una evaluación gratuita!",
+      "imageUrl": "/img/foto-section/fitnes-zumba.jpg"
     },
     "natacion": {
       "title": "Natacion 🏊‍♂️ ¡Sumérgete en tu mejor desempeño en natación!",
@@ -67,7 +70,8 @@
         "🔹 Entrenamiento de natación en aguas abiertas: entrenamiento para natación al aire libre, que incluye seguridad, técnica y estrategia para triatlones o fitness.",
         "🔹 Natación para mantenerse en forma y perder peso: entrenamientos de cuerpo completo de bajo impacto que queman calorías y mejoran la salud cardiovascular."
       ],
-      "callToAction": "🚀 ¡Alcanza tus objetivos de natación! Reserva una consulta hoy para hablar sobre tu plan de entrenamiento."
+      "callToAction": "🚀 ¡Alcanza tus objetivos de natación! Reserva una consulta hoy para hablar sobre tu plan de entrenamiento.",
+      "imageUrl": "/img/foto-section/nadar-foto.jpg"
     },
     "senderismo": {
       "title": "Senderismo 🥾 Entrena para los senderos: ¡desarrolla fuerza, resistencia y preparación para la aventura! 🌿",

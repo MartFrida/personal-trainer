@@ -1,6 +1,6 @@
 import ContainerMain from "../components/ContainerMain";
 import SectionRegular from "../components/SectionRegular";
-import ninosGroup from '../assets/ninos-group2.jpg'
+// import ninosGroup from '../assets/ninos-group2.jpg'
 import contentCInf from '../data/claces-infantiles.json'
 import { InfoSection } from "../components/SectionInfo";
 import HeroVideoSection from "../components/HeroVideoSection";
@@ -32,7 +32,7 @@ export const ClacesInfantiles = () => {
   return (
     <ContainerMain className={`${theme.background} p-8`}>
 
-      <section className={`${theme.primary} flex flex-col lg:flex-row p-6 rounded-lg gap-4 w-full`}>
+      <section className={`${theme.primary} flex flex-col lg:flex-row   rounded-lg gap-4 w-full`}>
         <HeroVideoSection />
         {/* <div className="flex-1 flex items-center">
           <img

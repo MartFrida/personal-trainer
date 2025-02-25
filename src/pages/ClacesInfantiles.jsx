@@ -3,6 +3,7 @@ import SectionRegular from "../components/SectionRegular";
 import ninosGroup from '../assets/ninos-group2.jpg'
 import contentCInf from '../data/claces-infantiles.json'
 import { InfoSection } from "../components/SectionInfo";
+import HeroVideoSection from "../components/HeroVideoSection";
 
 /* eslint-disable react-refresh/only-export-components */
 export const theme = {
@@ -30,8 +31,10 @@ const sections = [
 export const ClacesInfantiles = () => {
   return (
     <ContainerMain className={`${theme.background} p-8`}>
+
       <section className={`${theme.primary} flex flex-col lg:flex-row p-6 rounded-lg gap-4 w-full`}>
-        <div className="flex-1 flex items-center">
+        <HeroVideoSection />
+        {/* <div className="flex-1 flex items-center">
           <img
             src={ninosGroup}
             alt="Niños practicando artes marciales"
@@ -41,14 +44,13 @@ export const ClacesInfantiles = () => {
         <div className="flex-1 flex flex-col justify-center">
           <h1 className="text-3xl font-semibold text-white">Artes Marciales para Niños</h1>
           <p className="mt-2 text-lg">Una de nuestras líneas de especialización es la enseñanza de artes marciales a niños y jóvenes desde los 3 a los 14 años.</p>
-          <p>Taekwondo, Judo, MMA, Hapkido, Cursos de Verano, Excursiones, Actividades Lúdicas al Aire Libre, Juegos Recreacionales, Artes Interpretativas</p>
           <ul className="mt-4 list-disc list-inside text-white">
             <li>Mejora la coordinación y condición física</li>
             <li>Fomenta la disciplina y el respeto</li>
             <li>Incrementa la confianza y autoestima</li>
             <li>Clases seguras y supervisadas por expertos</li>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       {sections.map(section => {

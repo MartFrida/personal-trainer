@@ -32,7 +32,7 @@
         "🔹 Trabajo en Equipo y Amistad: Las clases en grupo fomentan la camaradería y enseñan la importancia de apoyarse mutuamente en el camino hacia el éxito."
       ],
       "callToAction": "💥 ¡Inscríbete Ahora y Desata el Potencial del Luchador que Llevan Dentro!💥",
-      "imageUrl": "/img/foto-clases-ninos/trena.jpeg"
+      "imageUrl": "/img/foto-clases-ninos/trena.jpg"
     },
     "hapkido": {
       "title": "¡Entrena Como un Maestro! Desarrolla Equilibrio y Confianza a Través del Hapkido",
@@ -44,7 +44,7 @@
         "Desarrollo de Habilidades de Defensa Personal: Con un enfoque en la defensa personal, tus hijos aprenderán a manejar situaciones difíciles de manera segura y efectiva."
       ],
       "callToAction": "💥 ¡Inscríbete Ahora y Desbloquea el Potencial del Guerrero Interior!💥",
-      "imageUrl": "/img/amaruk3.jpg"
+      "imageUrl": "/img/foto-clases-ninos/ninos-group.jpg"
     },
     "cursosDeVerano": {
       "title": "¡Diviértete y Aprende este Verano! Cursos de Entrenamiento Personal para Niños",
@@ -66,7 +66,8 @@
         "🔹Aumento de la Confianza y la Autoestima: Las nuevas experiencias y desafíos ayudan a los niños a superar sus límites, lo que fortalece su autoconfianza y les enseña a enfrentar situaciones desconocidas.",
         "🔹 Fomento de la Curiosidad y el Aprendizaje: Cada excursión está diseñada para ser educativa, estimulando la curiosidad y el deseo de aprender sobre el mundo que les rodea."
       ],
-      "callToAction": "¡Inscríbete Ahora y Prepárate para una Aventura Épica!"
+      "callToAction": "¡Inscríbete Ahora y Prepárate para una Aventura Épica!",
+      "imageUrl": "/img/foto-clases-ninos/excursiones.jpg"
     },
     "airLibre": {
       "title": "¡Diviértete al Aire Libre! Clases de Entrenamiento Personal para Niños",
@@ -88,7 +89,8 @@
         "Estimulación de la Creatividad: Los juegos permiten a los niños usar su imaginación, inventando nuevas formas de jugar y creando sus propias reglas.",
         "Aumento de la Confianza y la Autoestima: Al participar y triunfar en diversas actividades, los niños desarrollan una mayor confianza en sus habilidades y un sentido de logro."
       ],
-      "callToAction": "¡Inscríbete Ahora y Permite que el Juego Sea el Mejor Maestro!"
+      "callToAction": "¡Inscríbete Ahora y Permite que el Juego Sea el Mejor Maestro!",
+      "imageUrl": "/img/foto-clases-ninos/soccer.jpg"
     },
     "artesInterpretativas": {
       "title": "¡Expresa tu Creatividad! Clases de Entrenamiento Personal en Artes Interpretativas para Niños",

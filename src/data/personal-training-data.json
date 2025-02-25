@@ -20,7 +20,8 @@
         "👉 Fuerza, movilidad y pérdida de grasa",
         "👉 Niveles principiante a avanzado",
         "💥 ¡Entrena en cualquier lugar y en cualquier momento! 💥"
-      ]
+      ],
+      "imageUrl": "/img/foto-section/calistenia.jpg"
     },
     "halterofilia": {
       "title": "Halterofilia 🏋️‍♂️ Levanta más fuerza. Levanta más inteligentemente.🏋️‍♀️",
@@ -83,7 +84,8 @@
         "🔹 Movilidad y prevención de lesiones: reduzca el riesgo de dolor de rodilla, tobillo y espalda con ejercicios de flexibilidad y equilibrio.",
         "🔹 Preparación para caminatas a gran altitud y trekking: entrenamiento específico para caminatas en altura, mejorando la respiración y la eficiencia del oxígeno."
       ],
-      "callToAction": "🚀 ¡Prepárate para el senderismo! Ponte en contacto conmigo hoy mismo para comenzar tu programa de entrenamiento de senderismo personalizado."
+      "callToAction": "🚀 ¡Prepárate para el senderismo! Ponte en contacto conmigo hoy mismo para comenzar tu programa de entrenamiento de senderismo personalizado.",
+      "imageUrl": "/img/foto-section/senderizmo.jpg"
     },
     "espining": {
       "title": "Transforma tu energía con el Spinning",
@@ -163,7 +165,7 @@
         "🔹 Aumenta tu energía y bienestar al conectar cuerpo, mente y respiración."
       ],
       "callToAction": "Empieza Tu Viaje con el Yoga Conéctate contigo mismo a través del yoga. Escríbeme para más información y reserva tu primera sesión. ¡Tu bienestar te espera!",
-      "imageUrl": "/img/foto-section/yoga.jpg"
+      "imageUrl": "/img/foto-section/yoga-mom.jpg"
     },
     "boxing": {
       "title": "Entrena Como un Boxeador, Transforma tu Cuerpo",

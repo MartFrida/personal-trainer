@@ -1,11 +1,18 @@
 /* eslint-disable react/prop-types */
+
 import { useState } from "react"
 import { theme } from "../helpers/theme"
 import ContactModal from "./ContactModal";
 
 export const InfoSection = ({ title, description, items, callToAction, imageUrl }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [idElem, setIdElem] = useState()
 
+  const handleClick = (event) => {
+    const section = event.target.closest('[id]'); // Найдёт ближайший родительский элемент с id
+    setIdElem(section ? section.id : 'Не найдено')
+  };
+  console.log(idElem)
   return (
     <div>
       <h2 className={`${theme.primary} text-2xl p-4 rounded-lg  hover:scale-101 transition duration-300`}>
@@ -37,10 +44,13 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
       </p>
       <div className='flex justify-end w-full '>
         <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
-          onClick={() => setIsModalOpen(true)}>
+          onClick={(ev) => {
+            handleClick(ev)
+            setIsModalOpen(true)
+          }}>
           Reserva tu sesión
         </button>
-        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem} />
       </div>
     </div>
   );

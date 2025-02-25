@@ -72,19 +72,19 @@ const Navbar = () => {
       {isOpen && (
         <div className={`${theme.primary} lg:hidden flex flex-col items-center p-4 space-y-3`}>
           <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} onItemClick={handleClose} />
-          <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+          {/* <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Artes Marciales
           </Link>
           <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Fisico Culturismo
-          </Link>
+          </Link> */}
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} onItemClick={handleClose} />
-          <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+          {/* <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Nutrition & Diet
           </Link>
           <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Physical Therapy
-          </Link>
+          </Link> */}
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Tarifas
           </Link>

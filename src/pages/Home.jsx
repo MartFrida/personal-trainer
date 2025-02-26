@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import SectionRegular from '../components/SectionRegular';
 import { theme } from '../helpers/theme';

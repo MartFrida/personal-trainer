@@ -12,7 +12,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
     const section = event.target.closest('[id]'); // Найдёт ближайший родительский элемент с id
     setIdElem(section ? section.id : 'Не найдено')
   };
-  console.log(idElem)
+  // console.log(idElem)
   return (
     <div>
       <h2 className={`${theme.primary} text-2xl p-4 rounded-lg  hover:scale-101 transition duration-300`}>

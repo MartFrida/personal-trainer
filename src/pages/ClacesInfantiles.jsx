@@ -19,13 +19,13 @@ export const theme = {
 const sections = [
   { id: "taekwondo", content: contentCInf.taekwondo },
   { id: "judo", content: contentCInf.judo },
-  { id: "mmaNinos", content: contentCInf.mma },
+  { id: "mmaninos", content: contentCInf.mmaninos },
   { id: "hapkido", content: contentCInf.hapkido },
-  { id: "cursosdeverano", content: contentCInf.cursosDeVerano },
+  { id: "cursosdeverano", content: contentCInf.cursosdeverano },
   { id: "excursiones", content: contentCInf.excursiones },
-  { id: "airlibre", content: contentCInf.airLibre },
+  { id: "airlibre", content: contentCInf.airlibre },
   { id: "juegos", content: contentCInf.juegos },
-  { id: "artesinterpretativas", content: contentCInf.artesInterpretativas },
+  { id: "artesinterpretativas", content: contentCInf.artesinterpretativas },
 ];
 
 export const ClacesInfantiles = () => {

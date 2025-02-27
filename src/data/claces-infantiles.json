@@ -1,5 +1,6 @@
   {
     "taekwondo": {
+      "label": "Taekwondo",
       "title": "¡Entrena Como un Guerrero! Desarrolla Fuerza y Disciplina a Través del Taekwondo",
       "description": "Descubre el arte del Taekwondo y transforma no solo tu cuerpo, sino también tu mente. En nuestras clases personalizadas para niños, aprenderán técnicas de patadas, defensa personal y valores como el respeto y la perseverancia. ¡Únete hoy y comienza tu viaje hacia la excelencia!",
       "items": [
@@ -12,6 +13,7 @@
       "imageUrl": "/img/foto-clases-ninos/karate.jpg"
     },
     "judo": {
+      "label": "Judo",
       "title": "¡Entrena Como un Campeón! Desarrolla Habilidades y Confianza a Través del Judo",
       "description": "Descubre la emocionante disciplina del Judo, donde tus hijos aprenderán no solo técnicas de combate, sino también valores como la humildad y el respeto. Nuestras clases personalizadas están diseñadas para ayudar a los niños a desarrollar fuerza, agilidad y una mentalidad ganadora. ¡Únete hoy y comienza a construir un futuro lleno de logros!",
       "items": [
@@ -22,7 +24,8 @@
       ],
       "callToAction": "¡Inscríbete Ahora y Haz que Cada Caída Sea un Paso hacia el Éxito!"
     },
-    "mma": {
+    "mmaninos": {
+      "label": "MMA",
       "title": "¡Entrena Como un Luchador! Desarrolla Fuerza y Habilidades a Través de las Artes Marciales Mixtas",
       "description": "Descubre el emocionante mundo de las Artes Marciales Mixtas, donde tus hijos aprenderán técnicas de diversas disciplinas, incluyendo el boxeo, el judo y el kickboxing. Nuestras clases personalizadas están diseñadas para fomentar la confianza, la disciplina y el trabajo en equipo. ¡Únete hoy y empieza a construir habilidades que durarán toda la vida!",
       "items": [
@@ -35,6 +38,7 @@
       "imageUrl": "/img/foto-clases-ninos/trena.jpg"
     },
     "hapkido": {
+      "label": "Hapkido",
       "title": "¡Entrena Como un Maestro! Desarrolla Equilibrio y Confianza a Través del Hapkido",
       "description": "Descubre el arte marcial del Hapkido, donde tus hijos aprenderán a combinar técnicas de defensa personal, patadas, y llaves. Nuestras clases personalizadas están diseñadas para fomentar la confianza, el autocontrol y la disciplina. ¡Únete hoy y permite que tus niños se conviertan en guerreros seguros y respetuosos!",
       "items": [
@@ -46,7 +50,8 @@
       "callToAction": "💥 ¡Inscríbete Ahora y Desbloquea el Potencial del Guerrero Interior!💥",
       "imageUrl": "/img/foto-clases-ninos/ninos-group.jpg"
     },
-    "cursosDeVerano": {
+    "cursosdeverano": {
+      "label": "Cursos de Verano",
       "title": "¡Diviértete y Aprende este Verano! Cursos de Entrenamiento Personal para Niños",
       "description": "Este verano, ofrece a tus hijos una experiencia única llena de diversión, actividad física y aprendizaje. Nuestros cursos de verano están diseñados para mantener a los niños activos mientras desarrollan habilidades en diversas disciplinas deportivas. ¡Inscríbete hoy y dale a tus hijos un verano inolvidable!",
       "items": [
@@ -58,6 +63,7 @@
       "callToAction": "¡Inscríbete Ahora y Haz que Este Verano Sea el Mejor de Todos!"
     },
     "excursiones": {
+      "label": "Excursiones",
       "title": "¡Aventuras Inolvidables! Excursiones para Niños con Entrenamiento Personal",
       "description": "Este año, lleva a tus hijos a vivir experiencias únicas con nuestras emocionantes excursiones. Diseñadas para combinar diversión y aprendizaje, estas salidas les permitirán explorar la naturaleza, practicar deportes y hacer nuevos amigos. ¡Únete a nosotros y crea recuerdos que durarán toda la vida!",
       "items": [
@@ -69,7 +75,8 @@
       "callToAction": "¡Inscríbete Ahora y Prepárate para una Aventura Épica!",
       "imageUrl": "/img/foto-clases-ninos/excursiones.jpg"
     },
-    "airLibre": {
+    "airlibre": {
+      "label": "Actividades Lúdicas al Aire Libre",
       "title": "¡Diviértete al Aire Libre! Clases de Entrenamiento Personal para Niños",
       "description": "Este es el momento perfecto para que tus hijos se conecten con la naturaleza mientras se mantienen activos y saludables. Nuestras clases al aire libre ofrecen un ambiente emocionante y motivador donde los niños pueden aprender y jugar. ¡Inscríbete hoy y deja que la aventura comience!",
       "items": [
@@ -81,6 +88,7 @@
       "callToAction": "¡Inscríbete Ahora y Da el Primer Paso hacia la Diversión al Aire Libre!"
     },
     "juegos": {
+      "label": "Juegos Recreacionales",
       "title": "¡Juega y Aprende! Clases de Entrenamiento Personal para Niños a Través de Juegos",
       "description": "Transforma el tiempo de juego en una experiencia de aprendizaje activa y divertida. Nuestras clases de juegos están diseñadas para mantener a los niños en movimiento mientras desarrollan habilidades físicas, sociales y emocionales. ¡Inscríbete hoy y deja que tus hijos se diviertan mientras crecen!",
       "items": [
@@ -92,7 +100,8 @@
       "callToAction": "¡Inscríbete Ahora y Permite que el Juego Sea el Mejor Maestro!",
       "imageUrl": "/img/foto-clases-ninos/soccer.jpg"
     },
-    "artesInterpretativas": {
+    "artesinterpretativas": {
+      "label": "Artes Interpretativas",
       "title": "¡Expresa tu Creatividad! Clases de Entrenamiento Personal en Artes Interpretativas para Niños",
       "description": "Sumérgete en el emocionante mundo de las artes interpretativas, donde tus hijos pueden explorar su creatividad y aprender a comunicarse a través de la danza, el teatro y la música. Nuestras clases están diseñadas para fomentar la autoexpresión y el desarrollo emocional. ¡Inscríbete hoy y deja que la imaginación vuele!",
       "items": [

@@ -28,8 +28,14 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold">Contactos</h3>
           <ul className="mt-2 space-y-1">
-            <li className="flex justify-center md:justify-start items-center"><FaPhone className="mr-2" /> +34 123 789 450</li>
-            <li className="flex justify-center md:justify-start items-center"><FaEnvelope className="mr-2" /> info@mycompany.com</li>
+            <li className="flex justify-center md:justify-start items-center">
+              <a href="tel:+34123789450">
+                <FaPhone className="mr-2" /> +34 123 789 450</a>
+            </li>
+            <li className="flex justify-center md:justify-start items-center">
+              <a href="mailto:cieptis.atencion@gmail.com">
+                <FaEnvelope className="mr-2" /> cieptis.atencion@gmail.com</a>
+            </li>
             <li className="flex justify-center md:justify-start items-center"><FaMapMarkerAlt className="mr-2" /> Barcelona, Spain</li>
           </ul>
         </div>
@@ -37,14 +43,15 @@ const Footer = () => {
 
       {/* Социальные сети */}
       <div className="flex justify-center space-x-4 mt-4">
-        <a href="#" className="text-white text-xl hover:text-gray-400"><FaFacebook /></a>
-        <a href="#" className="text-white text-xl hover:text-gray-400"><FaInstagram /></a>
-        <a href="#" className="text-white text-xl hover:text-gray-400"><FaTwitter /></a>
-        <a href="#" className="text-white text-xl hover:text-gray-400"><FaWhatsapp /></a>
+        <a href="#" target="_blank" className="text-white text-xl hover:text-gray-400"><FaFacebook /></a>
+        <a href="https://www.instagram.com/centrentrenador_personal?igsh=MWE0bGRoeG0zNm0ycg==" target="_blank" className="text-white text-xl hover:text-gray-400"><FaInstagram /></a>
+        <a href="#" target="_blank" className="text-white text-xl hover:text-gray-400"><FaTwitter /></a>
+        <a href="#" target="_blank" className="text-white text-xl hover:text-gray-400"><FaWhatsapp /></a>
       </div>
 
       <div className="text-center mt-6 border-t border-gray-700 pt-4">
-        <p>&copy; {new Date().getFullYear()} CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD | Reservados todos los derechos</p>
+        <p>&copy; {new Date().getFullYear()} CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD</p>
+        <p> Reservados todos los derechos</p>
       </div>
     </footer>
   );

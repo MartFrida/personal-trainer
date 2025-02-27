@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { theme } from "../helpers/theme";
 import Dropdown from "./Dropdown";
 import { Menu, X } from "lucide-react"; // Иконки бургер-меню
+import linksCIL from '../data/claces-infantiles.json'
+
+const linkGH = Object.keys(linksCIL)
+console.log(linkGH)
+
+const linksCI = linkGH
+  .map(key => linksCIL[key]?.label ? { path: `#${key}`, label: linksCIL[key].label } : null)
+  .filter(Boolean);
+console.log(linkGH)
 
 const linksPT = [
   { path: "#running", label: "Running" },
@@ -22,23 +31,25 @@ const linksPT = [
   { path: "#boxing", label: "Boxing" },
 ];
 
-const linksCI = [
-  { path: "#taekwondo", label: "Taekwondo" },
-  { path: "#judo", label: "Judo" },
-  { path: "#mmaNinos", label: "MMA" },
-  { path: "#hapkido", label: "Hapkido" },
-  { path: "#cursosdeverano", label: "Cursos de Veranotnes" },
-  { path: "#excursiones", label: "Excursiones" },
-  { path: "#airlibre", label: "Actividades Lúdicas al Aire Libre" },
-  { path: "#juegos", label: "Juegos Recreacionales" },
-  { path: "#artesinterpretativas", label: "Artes Interpretativas" },
-];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null); // Реф для отслеживания кликов вне меню
 
-  // Функция для закрытия меню при клике на пункт
+  // Функция для закрытия меню
   const handleClose = () => setIsOpen(false);
+
+  // Закрытие при клике вне меню
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <div className="fixed top-0 left-0 w-full z-10">
@@ -59,32 +70,16 @@ const Navbar = () => {
         {/* Навигация для ПК */}
         <div className="hidden lg:flex space-x-4">
           <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksPT} />
-          {/* <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Artes Marciales</Link>
-          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Fisico Culturismo</Link> */}
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} />
-          {/* <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded my-auto `}>Nutrition & Diet</Link>
-          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Physical Therapy</Link> */}
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
         </div>
       </nav>
 
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
-        <div className={`${theme.primary} lg:hidden flex flex-col items-center p-4 space-y-3`}>
+        <div ref={menuRef} className={`${theme.primary} lg:hidden flex flex-col items-center p-4 space-y-3`}>
           <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} onItemClick={handleClose} />
-          {/* <Link to="/artes-marciales" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Artes Marciales
-          </Link>
-          <Link to="/fisico-culturismo" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Fisico Culturismo
-          </Link> */}
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} onItemClick={handleClose} />
-          {/* <Link to="/nutrition" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Nutrition & Diet
-          </Link>
-          <Link to="/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Physical Therapy
-          </Link> */}
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Tarifas
           </Link>

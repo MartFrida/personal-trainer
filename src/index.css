@@ -79,4 +79,9 @@ button:focus-visible {
   button {
     background-color: transparent;
   }
+
+  .overflow-hidden {
+    overflow-y: hidden !important;
+    height: 100vh;
+  }
 }

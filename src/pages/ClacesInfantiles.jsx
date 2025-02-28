@@ -5,6 +5,8 @@ import contentCInf from '../data/claces-infantiles.json'
 import { InfoSection } from "../components/SectionInfo";
 import HeroVideoSection from "../components/HeroVideoSection";
 
+const videopath = "/video/video_trena2.mp4"
+
 /* eslint-disable react-refresh/only-export-components */
 export const theme = {
   background: "bg-gray-300",
@@ -33,7 +35,7 @@ export const ClacesInfantiles = () => {
     <ContainerMain className={`${theme.background} p-8`}>
 
       <section className={`${theme.primary} flex flex-col lg:flex-row   rounded-lg gap-4 w-full`}>
-        <HeroVideoSection />
+        <HeroVideoSection videosrc={videopath} />
         {/* <div className="flex-1 flex items-center">
           <img
             src={ninosGroup}

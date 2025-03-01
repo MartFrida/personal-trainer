@@ -1,22 +1,12 @@
 import ContainerMain from "../components/ContainerMain";
 import SectionRegular from "../components/SectionRegular";
-// import ninosGroup from '../assets/ninos-group2.jpg'
 import contentCInf from '../data/claces-infantiles.json'
 import { InfoSection } from "../components/SectionInfo";
+import { theme } from "../helpers/theme";
 import HeroVideoSection from "../components/HeroVideoSection";
+import heroData from "../data/hero-data-all-sections.json"
 
-const videopath = "/video/video_trena2.mp4"
-
-/* eslint-disable react-refresh/only-export-components */
-export const theme = {
-  background: "bg-gray-300",
-  primary: "bg-gradient-to-r from-gray-600 to-gray-950 text-white",
-  secondary: "bg-gray-700 text-white",
-  text: "text-gray-800",
-  hover: "hover:bg-gray-800 transition duration-200",
-  accent: "bg-amber-500 hover:bg-amber-600 transition duration-200",
-  buttonbg: "bg-gradient-to-r from-gray-500 to-gray-700 hover:from-gray-600 hover:to-gray-800",
-};
+const { clacesInfantiles } = heroData
 
 const sections = [
   { id: "taekwondo", content: contentCInf.taekwondo },
@@ -33,26 +23,8 @@ const sections = [
 export const ClacesInfantiles = () => {
   return (
     <ContainerMain className={`${theme.background} p-8`}>
-
       <section className={`${theme.primary} flex flex-col lg:flex-row   rounded-lg gap-4 w-full`}>
-        <HeroVideoSection videosrc={videopath} />
-        {/* <div className="flex-1 flex items-center">
-          <img
-            src={ninosGroup}
-            alt="Niños practicando artes marciales"
-            className="rounded-lg shadow-lg w-full h-auto lg:h-full object-cover"
-          />
-        </div>
-        <div className="flex-1 flex flex-col justify-center">
-          <h1 className="text-3xl font-semibold text-white">Artes Marciales para Niños</h1>
-          <p className="mt-2 text-lg">Una de nuestras líneas de especialización es la enseñanza de artes marciales a niños y jóvenes desde los 3 a los 14 años.</p>
-          <ul className="mt-4 list-disc list-inside text-white">
-            <li>Mejora la coordinación y condición física</li>
-            <li>Fomenta la disciplina y el respeto</li>
-            <li>Incrementa la confianza y autoestima</li>
-            <li>Clases seguras y supervisadas por expertos</li>
-          </ul>
-        </div> */}
+        <HeroVideoSection videoHero={clacesInfantiles.videoSrc} title={clacesInfantiles.title} description={clacesInfantiles.description} />
       </section>
 
       {sections.map(section => {

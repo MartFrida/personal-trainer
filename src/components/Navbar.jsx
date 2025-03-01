@@ -3,34 +3,16 @@ import { Link } from "react-router-dom";
 import { theme } from "../helpers/theme";
 import Dropdown from "./Dropdown";
 import { Menu, X } from "lucide-react"; // Иконки бургер-меню
-import linksCIL from '../data/claces-infantiles.json'
+import namesClacesInfantiles from '../data/claces-infantiles.json'
+import namesTrenPersonal from '../data/claces-infantiles.json'
 
-const linkGH = Object.keys(linksCIL)
-console.log(linkGH)
-
-const linksCI = linkGH
-  .map(key => linksCIL[key]?.label ? { path: `#${key}`, label: linksCIL[key].label } : null)
+const linksCI = Object.keys(namesClacesInfantiles)
+  .map(key => namesClacesInfantiles[key]?.label ? { path: `#${key}`, label: namesClacesInfantiles[key].label } : null)
   .filter(Boolean);
-console.log(linkGH)
 
-const linksPT = [
-  { path: "#running", label: "Running" },
-  { path: "#calistenia", label: "Calistenia" },
-  { path: "#halterofilia", label: "Halterofilia" },
-  { path: "#culturismo", label: "Culturismo" },
-  { path: "#fitnes", label: "Fitnes" },
-  { path: "#natacion", label: "Natacion" },
-  { path: "#senderismo", label: "Senderismo" },
-  { path: "#espining", label: "Espining" },
-  { path: "#defensa", label: "Defensa Personal" },
-  { path: "#mma", label: "Artes Marciales Mixtas" },
-  { path: "#taichi", label: "Taichi" },
-  { path: "#estreching", label: "Estreching" },
-  { path: "#pilates", label: "Pilates" },
-  { path: "#yoga", label: "Yoga" },
-  { path: "#boxing", label: "Boxing" },
-];
-
+const linksTP = Object.keys(namesTrenPersonal)
+  .map(key => namesTrenPersonal[key]?.label ? { path: `#${key}`, label: namesTrenPersonal[key].label } : null)
+  .filter(Boolean);
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +51,7 @@ const Navbar = () => {
 
         {/* Навигация для ПК */}
         <div className="hidden lg:flex space-x-4">
-          <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksPT} />
+          <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksTP} />
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
         </div>
@@ -78,7 +60,7 @@ const Navbar = () => {
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
         <div ref={menuRef} className={`${theme.primary} lg:hidden flex flex-col items-center p-4 space-y-3`}>
-          <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksPT} onItemClick={handleClose} />
+          <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksTP} onItemClick={handleClose} />
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} onItemClick={handleClose} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Tarifas

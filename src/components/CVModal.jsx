@@ -30,7 +30,7 @@ const CVModal = ({ isOpen, onClose }) => {
             </ul>
 
 
-            <h3>Experiencia:</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Experiencia:</h3>
             <ul>
               <li>Director Técnico y Profesor de varios centros deportivos en España y Ecuador.</li>
               <li>Entrenador personal de deportistas de élite, celebrities, modelos y personas que quieren llevar una vida sana y saludable.</li>
@@ -42,8 +42,10 @@ const CVModal = ({ isOpen, onClose }) => {
               <li>Productor y periodista colegiado SPC-SPM - FEP de varios medios de comunicación.</li>
               <li>Terapeuta tradicional Andino y Motivador personal PNL. Conferencista y Catedrático educacional en universidades como: CAMU, UCM, UCE, PUSE, UAB, etc.</li>
             </ul>
+            <div className={`${theme.primary} w-full mt-2 p-2 rounded-lg`}>
+              <a href="https://en.wikipedia.org/wiki/Amaruk_Kayshapanta" target="_blank" >Más Información en Wikipedia.</a>
+            </div>
 
-            <p>Más Información en Wikipedia.</p>
           </div>
         </div>
       </div>

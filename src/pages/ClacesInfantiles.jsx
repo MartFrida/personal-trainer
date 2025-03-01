@@ -8,26 +8,18 @@ import heroData from "../data/hero-data-all-sections.json"
 
 const { clacesInfantiles } = heroData
 
-const sections = [
-  { id: "taekwondo", content: contentCInf.taekwondo },
-  { id: "judo", content: contentCInf.judo },
-  { id: "mmaninos", content: contentCInf.mmaninos },
-  { id: "hapkido", content: contentCInf.hapkido },
-  { id: "cursosdeverano", content: contentCInf.cursosdeverano },
-  { id: "excursiones", content: contentCInf.excursiones },
-  { id: "airlibre", content: contentCInf.airlibre },
-  { id: "juegos", content: contentCInf.juegos },
-  { id: "artesinterpretativas", content: contentCInf.artesinterpretativas },
-];
+const sectionsContent = Object.keys(contentCInf)
+  .map(key => contentCInf[key]?.label ? { id: `${key}`, content: contentCInf[key] } : null)
+  .filter(Boolean);
 
 export const ClacesInfantiles = () => {
   return (
     <ContainerMain className={`${theme.background} p-8`}>
-      <section className={`${theme.primary} flex flex-col lg:flex-row   rounded-lg gap-4 w-full`}>
+      <section className={`${theme.primary} flex flex-col lg:flex-row rounded-lg gap-4 w-full`}>
         <HeroVideoSection videoHero={clacesInfantiles.videoSrc} title={clacesInfantiles.title} description={clacesInfantiles.description} />
       </section>
 
-      {sections.map(section => {
+      {sectionsContent.map(section => {
         const { title, description, items, imageUrl, callToAction } = section.content || {};
 
         if (!title) {

@@ -4,17 +4,16 @@ import { theme } from "../helpers/theme";
 import Dropdown from "./Dropdown";
 import { Menu, X } from "lucide-react"; // Иконки бургер-меню
 import namesClacesInfantiles from '../data/claces-infantiles.json'
-import namesTrenPersonal from '../data/claces-infantiles.json'
-
-const linksCI = Object.keys(namesClacesInfantiles)
-  .map(key => namesClacesInfantiles[key]?.label ? { path: `#${key}`, label: namesClacesInfantiles[key].label } : null)
-  .filter(Boolean);
-
-const linksTP = Object.keys(namesTrenPersonal)
-  .map(key => namesTrenPersonal[key]?.label ? { path: `#${key}`, label: namesTrenPersonal[key].label } : null)
-  .filter(Boolean);
+import namesTrenPersonal from '../data/personal-training-data.json'
 
 const Navbar = () => {
+  const linksCI = Object.keys(namesClacesInfantiles)
+    .map(key => namesClacesInfantiles[key]?.label ? { path: `#${key}`, label: namesClacesInfantiles[key].label } : null)
+    .filter(Boolean);
+
+  const linksTP = Object.keys(namesTrenPersonal)
+    .map(key => namesTrenPersonal[key]?.label ? { path: `#${key}`, label: namesTrenPersonal[key].label } : null)
+    .filter(Boolean);
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Реф для отслеживания кликов вне меню
 
@@ -59,7 +58,7 @@ const Navbar = () => {
 
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
-        <div ref={menuRef} className={`${theme.primary} lg:hidden flex flex-col items-center p-4 space-y-3`}>
+        <div ref={menuRef} className={`${theme.primary} lg:hidden flex flex-col items-end p-2 space-y-3 w-auto right-0 absolute`}>
           <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksTP} onItemClick={handleClose} />
           <Dropdown title="Claces Infantiles" mainPath="/claces-infantiles" links={linksCI} onItemClick={handleClose} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>

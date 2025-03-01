@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { theme } from "../helpers/theme";
 
 const Dropdown = ({ title, links, mainPath, onItemClick }) => {
@@ -26,16 +26,21 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
   }, []);
 
   return (
-    <div className={`${theme.text} ${theme.hover} p-2 rounded relative`} ref={dropdownRef}>
+    <div className={`${theme.text} ${theme.hover} rounded relative`} ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
         className="p-2 rounded flex items-center focus:outline-none"
       >
         <Link to={mainPath} className="mr-2">{title}</Link>
-        <FaChevronDown className="text-white bg-transparent" />
+        {/* Условный рендеринг стрелочки */}
+        {open ? (
+          <FaChevronUp className="text-white bg-transparent" />
+        ) : (
+          <FaChevronDown className="text-white bg-transparent" />
+        )}
       </button>
       {open && (
-        <div className={`${theme.primary} absolute left-0 mt-2  rounded shadow-lg w-48 z-50`}>
+        <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-60 overflow-y-auto`}>
           {links.map(({ path, label }) => (
             <a
               key={path}

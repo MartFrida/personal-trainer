@@ -40,7 +40,7 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
         )}
       </button>
       {open && (
-        <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-60 overflow-y-auto`}>
+        <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-60 lg:max-h-[100vh] overflow-y-auto`}>
           {links.map(({ path, label }) => (
             <a
               key={path}

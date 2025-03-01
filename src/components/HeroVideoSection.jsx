@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
-export default function HeroVideoSection({ videoHero, title, description }) {
+import { theme } from "../helpers/theme";
+
+export default function HeroVideoSection({ videoHero, title }) {
 
   return (
-    <section className="relative w-full h-screen flex items-center justify-center bg-black rounded-lg">
+    <section className={`relative w-full md:h-screen flex items-center justify-center ${theme.secondary} rounded-lg`}>
       {/* Видео фон */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+        className="absolute top-0 left-0 w-full h-64 md:h-full object-cover rounded-lg"
         autoPlay
         loop
         muted
@@ -16,13 +18,13 @@ export default function HeroVideoSection({ videoHero, title, description }) {
       </video>
 
       {/* Затемнение для читаемости текста */}
-      <div className="absolute inset-0 bg-gray-950/50 md:bg-gray-950/85 rounded-lg"></div>
+      <div className=" absolute top-0 left-0 h-64 md:h-full inset-0 bg-gray-950/50 md:bg-gray-950/85 rounded-lg"></div>
 
       {/* Контент */}
-      <div className="relative  text-center text-white px-6">
-        <h1 className=" text-3xl md:text-5xl font-bold  leading-relaxed tracking-wide" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{title}</h1>
-        <p className="mt-4 text-xl tracking-widest leading-relaxed tracking-wide" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{description}
-        </p>
+      <div className="relative h-64 text-center align-middle text-white px-6">
+        <h2 className="text-4xl leading-relax md:text-5xl lg:text-6xl font-bold tracking-wide mt-8" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{title}</h2>
+        {/* <p className=" my-4 text-base md:text-xl tracking-widest leading-relaxed tracking-wide" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{description}
+        </p> */}
       </div>
     </section>
   );

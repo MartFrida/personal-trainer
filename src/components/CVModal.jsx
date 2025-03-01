@@ -5,14 +5,22 @@ const CVModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex justify-center backdrop-blur-sm z-50 m-2 rounded-lg">
-      <div className={`${theme.background} shadow-md rounded-lg md:w-2/3 p-0 relative max-h-[90vh] overflow-hidden`}>
-        <div className="max-h-[80vh] overflow-y-auto relative" onClick={(e) => e.stopPropagation()}>
+    <div className="fixed inset-0 flex justify-center backdrop-blur-sm z-50 rounded-lg">
+      <div className={`${theme.background} shadow-md rounded-lg md:w-2/3 p-0 m-2 relative max-h-[90vh] overflow-hidden`}>
+        <div className="max-h-full md:max-h-[80vh] overflow-y-auto relative " onClick={(e) => e.stopPropagation()}>
           <button className="absolute top-2 right-2 text-white z-20" onClick={onClose}>X</button>
-          <h2 className={`${theme.primary} text-2xl p-6 absolute top-0 w-full`}>AMARUK KAYSHAPANTA</h2>
+          <h2 className={`${theme.primary} text-xl md:text-2xl p-6 absolute top-0 w-full`}>AMARUK KAYSHAPANTA</h2>
 
-          <div className={`${theme.text} p-6 mt-20`}>
-            <h3 className="text-2xl font-semibold mb-2">Formación:</h3>
+          <div className={`${theme.text} p-2 md:p-6 mt-20`}>
+            <div className="float-right ml-2 mb-2 md:ml-4 md:mb-4">
+              <img
+                src="img/equipo/cv-foto.jpg"
+                alt="Amaruk Kayshapanta"
+                className="h-30 w-30 md:h-60 md:w-60 object-cover rounded-lg"
+              />
+            </div>
+
+            <h3 className="text-xl md:text-2xl font-semibold mb-2">Formación:</h3>
             <p className="">Licenciado en Ciencias de la Actividad Física y del Deporte por la Universidad Central del Ecuador Colegiado 52.5001.</p>
             <ul>
               <li>Profesor de Musculación y Fitness Orthos año 2001.</li>
@@ -21,13 +29,6 @@ const CVModal = ({ isOpen, onClose }) => {
               <li>Reconocido a nivel mundial por las Federaciones: WTF, ITF, WHF, WAKO, FIDAM, FET, ROPEC.</li>
             </ul>
 
-            <div className="float-right ml-4 mb-4">
-              <img
-                src="img/equipo/cv-foto.jpg"
-                alt="Amaruk Kayshapanta"
-                className="h-48 w-48 md:h-60 md:w-60 object-cover rounded-lg"
-              />
-            </div>
 
             <h3>Experiencia:</h3>
             <ul>

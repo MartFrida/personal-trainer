@@ -1,0 +1,53 @@
+/* eslint-disable react/prop-types */
+import { theme } from "../helpers/theme";
+
+const CVModal = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 flex justify-center backdrop-blur-sm z-50 m-2 rounded-lg">
+      <div className={`${theme.background} shadow-md rounded-lg md:w-2/3 p-0 relative max-h-[90vh] overflow-hidden`}>
+        <div className="max-h-[80vh] overflow-y-auto relative" onClick={(e) => e.stopPropagation()}>
+          <button className="absolute top-2 right-2 text-white z-20" onClick={onClose}>X</button>
+          <h2 className={`${theme.primary} text-2xl p-6 absolute top-0 w-full`}>AMARUK KAYSHAPANTA</h2>
+
+          <div className={`${theme.text} p-6 mt-20`}>
+            <h3 className="text-2xl font-semibold mb-2">Formación:</h3>
+            <p className="">Licenciado en Ciencias de la Actividad Física y del Deporte por la Universidad Central del Ecuador Colegiado 52.5001.</p>
+            <ul>
+              <li>Profesor de Musculación y Fitness Orthos año 2001.</li>
+              <li>Maestro multidisciplinar campeón Internacional de Sur América, tiene 6 Cinturones Negros 5to Dan en:</li>
+              <li>Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact.</li>
+              <li>Reconocido a nivel mundial por las Federaciones: WTF, ITF, WHF, WAKO, FIDAM, FET, ROPEC.</li>
+            </ul>
+
+            <div className="float-right ml-4 mb-4">
+              <img
+                src="img/equipo/cv-foto.jpg"
+                alt="Amaruk Kayshapanta"
+                className="h-48 w-48 md:h-60 md:w-60 object-cover rounded-lg"
+              />
+            </div>
+
+            <h3>Experiencia:</h3>
+            <ul>
+              <li>Director Técnico y Profesor de varios centros deportivos en España y Ecuador.</li>
+              <li>Entrenador personal de deportistas de élite, celebrities, modelos y personas que quieren llevar una vida sana y saludable.</li>
+              <li>Experto en Rendimiento Deportivo y oposiciones para Policías, Bomberos, Guardias de Seguridad.</li>
+              <li>Médico Acupunturista y Digito-puntura Diplomado en &quot;Center Acupuntura Kee Wong Youg&quot; Barcelona 2004.</li>
+              <li>Dietista y Nutricionista experto asesor para Culturistas profesionales y amateur.</li>
+              <li>Autor de 34 libros publicados en España y en Amazon a nivel mundial.</li>
+              <li>Entrenador Personal y creador del &quot;Sistem Power&quot; La transformación metamorfosis de mente, cuerpo, y espíritu.</li>
+              <li>Productor y periodista colegiado SPC-SPM - FEP de varios medios de comunicación.</li>
+              <li>Terapeuta tradicional Andino y Motivador personal PNL. Conferencista y Catedrático educacional en universidades como: CAMU, UCM, UCE, PUSE, UAB, etc.</li>
+            </ul>
+
+            <p>Más Información en Wikipedia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CVModal;

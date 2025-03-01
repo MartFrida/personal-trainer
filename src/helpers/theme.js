@@ -1,4 +1,4 @@
-import bgmain from '../../public/img/grunge-wall-texture.jpg'
+import bgmain from '/img/grunge-wall-texture.jpg'
 
 export const theme = {
   background: "bg-neutral-200",

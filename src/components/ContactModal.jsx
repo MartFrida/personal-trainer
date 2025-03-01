@@ -72,6 +72,8 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
       from_email: formData.email,
       message: formData.message,
       phone: formData.phone,
+      contact_method: formData.contactMethod,
+      time_range: formData.timeRange,
       location: window.location.href,
       section_id: sectionId || 'unknown',
     };

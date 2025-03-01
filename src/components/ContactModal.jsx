@@ -12,6 +12,8 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
     email: 'alisa.nenko@gmail.com',
     message: 'Test',
     phone: '+3123456789',
+    contactMethod: "phone",
+    timeRange: "9:00 - 12:00",
   });
 
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -77,7 +79,7 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
     emailjs.send(serviceId, templateID, templateParams, publicKey)
       .then(() => {
         setIsSent(true);
-        setFormData({ name: '', email: '', message: '', phone: '' });
+        setFormData({ name: "", phone: "", email: "", message: "", contactMethod: "phone", timeRange: "9:00 - 12:00" });
         setTimeout(() => {
           setIsSent(false),
             onClose()
@@ -89,8 +91,8 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center backdrop-blur-sm z-50">
-      <div className={`${theme.primary} text-white max-w-md p-6 rounded-lg shadow-lg relative`}>
+    <div className="fixed inset-0 flex items-top md:items-center justify-center backdrop-blur-sm z-50 ">
+      <div className={`${theme.primary} text-white max-w-md p-6 rounded-lg shadow-lg relative max-h-[90vh] overflow-y-auto`}>
         <button className="absolute top-2 right-2 text-white" onClick={onClose}>✖</button>
         <h2 className="text-2xl font-bold mb-4">Contáctenos</h2>
         {isSent && <p className="text-green-600 mb-4">¡Formulario enviado exitosamente!</p>}
@@ -101,6 +103,23 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
           <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Teléfono" className="w-full p-2 mb-2 border rounded-md" required />
           {errors.phone && <p className="text-red-400 text-sm">{errors.phone}</p>}
           <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Mensaje" className="w-full p-2 mb-2 border rounded-md" rows="4" />
+
+          <label className="block mb-2">Método de comunicación preferido:</label>
+          <select name="contactMethod" value={formData.contactMethod} onChange={handleChange} className="w-full p-2 mb-2 border rounded-md bg-gray-800 text-white">
+            <option value="phone">Llamar</option>
+            <option value="sms">SMS</option>
+            <option value="email">Email</option>
+          </select>
+
+          <label className="block mb-2">Elija un horario conveniente para usted para contactarnos:</label>
+          <select name="timeRange" value={formData.timeRange} onChange={handleChange} className="w-full p-2 mb-2 border rounded-md bg-gray-800 text-white">
+            <option value="9:00 - 12:00" >9:00 - 12:00</option>
+            <option value="12:00 - 15:00">12:00 - 15:00</option>
+            <option value="15:00 - 18:00">15:00 - 18:00</option>
+            <option value="18:00 - 21:00">18:00 - 21:00</option>
+            <option value="asap">Lo antes posible</option>
+          </select>
+
           <button type="submit" className="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500">Enviar</button>
         </form>
       </div>

@@ -48,7 +48,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
             handleClick(ev)
             setIsModalOpen(true)
           }}>
-          Reserva tu sesión
+          Contáctenos
         </button>
         <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem} />
       </div>

@@ -50,7 +50,7 @@ const Home = () => {
           <div className='flex justify-end w-full mt-4 md:mt-0'>
             <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
               onClick={() => setIsModalOpen(true)}>
-              Reserva tu sesión
+              Contáctenos
             </button>
             <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>
@@ -112,7 +112,7 @@ const Home = () => {
           <div className='flex justify-end w-full mt-4 md:mt-0'>
             <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
               onClick={() => setIsModalOpen(true)}>
-              Reserva tu sesión
+              Contáctenos
             </button>
             <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>

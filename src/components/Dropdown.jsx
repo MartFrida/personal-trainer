@@ -40,12 +40,12 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
         )}
       </button>
       {open && (
-        <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-60 lg:max-h-[85vh] overflow-y-auto`}>
+        <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-[80vh] overflow-y-auto`}>
           {links.map(({ path, label }) => (
             <a
               key={path}
               href={path}
-              className="block px-4 py-2 bg-transparent hover:bg-gray-800"
+              className="block px-4 pb-2 md:py-2 bg-transparent hover:bg-gray-800"
               onClick={handleItemClick}
             >
               {label}

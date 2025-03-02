@@ -18,9 +18,9 @@ const Footer = () => {
         <div className="mb-6 md:mb-0">
           <h3 className="text-lg font-semibold">Servicios</h3>
           <ul className="mt-2 space-y-1">
-            <li><a href="/personal-training" className="hover:underline">Personalized Training</a></li>
-            <li><a href="/claces-infantiles" className="hover:underline">Claces Infantiles</a></li>
-            <li><a href="/nutrition" className="hover:underline">Nutrition & Diet</a></li>
+            <li><Link to="/personal-training" className="hover:underline">Personalized Training</Link></li>
+            <li><Link to="/claces-infantiles" className="hover:underline">Claces Infantiles</Link></li>
+            {/* <li><Link to="/nutrition" className="hover:underline">Nutrition & Diet</Link></li> */}
           </ul>
         </div>
 
@@ -29,11 +29,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">Contactos</h3>
           <ul className="mt-2 space-y-1">
             <li className="flex justify-center md:justify-start items-center">
-              <a href="tel:+34123789450">
-                <FaPhone className="mr-2" /> +34 123 789 450</a>
+              <a href="tel:+34123789450" className="flex flex-row items-center"> <FaPhone className="mr-2" /> +34 123 789 450</a>
             </li>
             <li className="flex justify-center md:justify-start items-center">
-              <a href="mailto:cieptis.atencion@gmail.com">
+              <a href="mailto:cieptis.atencion@gmail.com" className="flex flex-row items-center">
                 <FaEnvelope className="mr-2" /> cieptis.atencion@gmail.com</a>
             </li>
             <li className="flex justify-center md:justify-start items-center"><FaMapMarkerAlt className="mr-2" /> Barcelona, Spain</li>

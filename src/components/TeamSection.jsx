@@ -14,7 +14,7 @@ const trainers = [
   {
     name: "Laura Martínez",
     role: "Coach de fitness funcional",
-    image: "/img/equipo/equipo-2.jpeg",
+    image: "/img/equipo/trener-fitnes.jpg",
     description:
       "Experta en entrenamiento funcional y movilidad. Certificación en CrossFit Level 2. Enfocada en mejorar el rendimiento y prevención de lesiones.",
   },
@@ -96,7 +96,7 @@ const TeamSection = () => {
                 <img
                   src={trainer.image}
                   alt={trainer.name}
-                  className="w-full h-auto mx-auto  object-cover mb-4"
+                  className="w-full h-auto mx-auto object-cover mb-4"
                 />
                 {/* <h3 className="text-xl font-semibold text-gray-700">
                   {trainer.name}

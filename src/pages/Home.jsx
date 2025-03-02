@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
-        <div className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top h-screen md:mt-[-20px]"
+        <div className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top h-screen mt-[-50px] mb:mt-[-20px]"
           style={{ backgroundImage: "url('/img/amaruk-hero-smc.png')" }}>
           <div className='bg-zinc-900/60 p-4 md:p-8 rounded-lg'>
-            <p className=" tracking-widest text-5xl md:text-7xl font-bold leading-relaxed  text-center text-white"
+            <p className=" tracking-widest text-5xl md:text-7xl font-bold leading-relaxed text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
               CIEPTIS
             </p>

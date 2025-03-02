@@ -181,6 +181,19 @@
       "callToAction": "Empieza Tu Viaje con el Yoga Conéctate contigo mismo a través del yoga. Escríbeme para más información y reserva tu primera sesión. ¡Tu bienestar te espera!",
       "imageUrl": "/img/foto-section/yoga-mom.jpg"
     },
+    "meditación": {
+      "label": "La Meditación al Aire Libre",
+      "title": "🌿 Clases Personalizadas de Meditación al Aire Libre 🌿",
+      "description": "Libérate del estrés y mejora tu bienestar con nuestras sesiones de meditación al aire libre. Diseñadas para ayudarte a conectar contigo mismo y con la naturaleza, estas clases te enseñarán técnicas de respiración, relajación y mindfulness para alcanzar un estado de calma y claridad mental. ¡Inscríbete hoy y da el primer paso hacia una vida más equilibrada!",
+      "items": [
+        "🔹 Reducción del Estrés y la Ansiedad 🧘‍♂️: Aprende a controlar tus emociones y a encontrar serenidad en medio del ritmo acelerado del día a día.",
+        "🔹 Mayor Concentración y Enfoque 🎯: La práctica de la meditación fortalece la mente, mejorando tu capacidad de atención y toma de decisiones.",
+        "🔹Conexión con la Naturaleza 🍃: Respirar aire puro y meditar en espacios abiertos potencia la sensación de bienestar y armonía interior.",
+        "🔹 Bienestar Físico y Emocional 💖: Relaja tu cuerpo, mejora la calidad del sueño y refuerza la autoestima a través de la meditación guiada."
+      ],
+      "callToAction": "¡Empieza tu camino hacia la tranquilidad hoy mismo!",
+      "imageUrl": "/img/foto-section/meditacion-al-aire-libre.webp"
+    },
     "boxing": {
       "label": "Boxeo",
       "title": "Entrena Como un Boxeador, Transforma tu Cuerpo",

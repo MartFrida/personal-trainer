@@ -6,10 +6,10 @@ const CVModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 flex justify-center backdrop-blur-sm z-50 rounded-lg">
-      <div className={`${theme.background} shadow-md rounded-lg md:w-2/3 p-0 m-2 relative max-h-[90vh] overflow-hidden`}>
+      <div className={`${theme.background} shadow-md rounded-lg md:w-2/3 py-2 m-2 relative max-h-[90vh] overflow-hidden`}>
         <div className="max-h-full md:max-h-[80vh] overflow-y-auto relative " onClick={(e) => e.stopPropagation()}>
           <button className="absolute top-2 right-2 text-white z-20" onClick={onClose}>X</button>
-          <h2 className={`${theme.primary} text-xl md:text-2xl p-6 absolute top-0 w-full`}>AMARUK KAYSHAPANTA</h2>
+          <h2 className={`${theme.primary} text-xl md:text-2xl p-4 absolute top-0 w-full`}>AMARUK KAYSHAPANTA</h2>
 
           <div className={`${theme.text} p-2 md:p-6 mt-20`}>
             <div className="float-right ml-2 mb-2 md:ml-4 md:mb-4">
@@ -22,7 +22,7 @@ const CVModal = ({ isOpen, onClose }) => {
 
             <h3 className="text-xl md:text-2xl font-semibold mb-2">Formación:</h3>
             <p className="">Licenciado en Ciencias de la Actividad Física y del Deporte por la Universidad Central del Ecuador Colegiado 52.5001.</p>
-            <ul>
+            <ul className="flex flex-col gap-y-2">
               <li>Profesor de Musculación y Fitness Orthos año 2001.</li>
               <li>Maestro multidisciplinar campeón Internacional de Sur América, tiene 6 Cinturones Negros 5to Dan en:</li>
               <li>Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact.</li>
@@ -30,8 +30,8 @@ const CVModal = ({ isOpen, onClose }) => {
             </ul>
 
 
-            <h3 className="text-xl md:text-2xl font-semibold mb-2">Experiencia:</h3>
-            <ul>
+            <h3 className="text-xl md:text-2xl font-semibold my-2">Experiencia:</h3>
+            <ul className="flex flex-col gap-y-2">
               <li>Director Técnico y Profesor de varios centros deportivos en España y Ecuador.</li>
               <li>Entrenador personal de deportistas de élite, celebrities, modelos y personas que quieren llevar una vida sana y saludable.</li>
               <li>Experto en Rendimiento Deportivo y oposiciones para Policías, Bomberos, Guardias de Seguridad.</li>

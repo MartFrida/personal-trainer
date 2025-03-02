@@ -122,7 +122,7 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
             <option value="asap">Lo antes posible</option>
           </select>
 
-          <button type="submit" className="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500">Enviar</button>
+          <button type="submit" className="mx-auto block py-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">Enviar</button>
         </form>
       </div>
     </div>

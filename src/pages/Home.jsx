@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
-        <div className=" flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-no-repeat bg-top h-screen mt-[-100px] md:mt-[-20px]"
+        <div className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top h-screen md:mt-[-20px]"
           style={{ backgroundImage: "url('/img/amaruk-hero-smc.png')" }}>
-          <div className='bg-zinc-900/60 p-8 rounded-lg'>
+          <div className='bg-zinc-900/60 p-4 md:p-8 rounded-lg'>
             <p className=" tracking-widest text-5xl md:text-7xl font-bold leading-relaxed  text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
               CIEPTIS
@@ -23,10 +23,6 @@ const Home = () => {
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
               CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
             </h2>
-            {/* <h3 className=" font-bold leading-relaxed tracking-wide text-center text-white"
-              style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
-              CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
-            </h3> */}
             <p className="text-xl md:text-2xl mt-4 text-center text-white" style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>
               La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.
             </p>

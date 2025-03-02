@@ -8,5 +8,10 @@
     "title": "Entrenamiento Personal para Niños: ¡Diversión y Movimiento!",
     "description": "¡Deja que tu hijo descubra el placer de moverse y estar activo!",
     "videoSrc": "/video/video_trena2.mp4"
+  },
+  "nutrition": {
+    "title": "Nutrition",
+    "description": "Dieta, Nutricion",
+    "videoSrc": ""
   }
 }

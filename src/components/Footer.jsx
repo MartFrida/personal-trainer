@@ -50,7 +50,7 @@ const Footer = () => {
 
       <div className="text-center mt-6 border-t border-gray-700 pt-4">
         <p>&copy; {new Date().getFullYear()} CENTRO INTERNACIONAL DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD</p>
-        <p> Reservados todos los derechos</p>
+        {/* <p> Reservados todos los derechos</p> */}
       </div>
     </footer>
   );

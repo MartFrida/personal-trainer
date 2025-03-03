@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import SectionRegular from '../components/SectionRegular';
 import { theme } from '../helpers/theme';
-// import backgroundImage from '../../public/img/personal-trainer-barcelona.jpg'
 import ContainerMain from '../components/ContainerMain'
 import TeamSection from '../components/TeamSection';
 import ContactModal from '../components/ContactModal';
@@ -12,8 +11,8 @@ const Home = () => {
   return (
     <ContainerMain >
       <section className="relative rounded-lg" >
-        <div className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top h-screen mt-[-50px] mb:mt-[-20px]"
-          style={{ backgroundImage: "url('/img/amaruk-hero-smc.png')" }}>
+        <div className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top bg-cover md:bg-contain h-screen mt-[-50px] mb:mt-[-20px]"
+          style={{ backgroundImage: "url('/img/amaruk-hero-smc.webp')" }}>
           <div className='bg-zinc-900/60 p-4 md:p-8 rounded-lg'>
             <p className=" tracking-widest text-5xl md:text-7xl font-bold leading-relaxed text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>

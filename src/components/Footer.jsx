@@ -29,13 +29,13 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">Contactos</h3>
           <ul className="mt-2 space-y-1">
             <li className="flex justify-center md:justify-start items-center">
-              <a href="tel:+34123789450" className="flex flex-row items-center"> <FaPhone className="mr-2" /> +34 123 789 450</a>
+              <a href="tel:+34696869949" className="flex flex-row items-center"> <FaPhone className="mr-2" /> +34 696 869 949</a>
             </li>
             <li className="flex justify-center md:justify-start items-center">
               <a href="mailto:cieptis.atencion@gmail.com" className="flex flex-row items-center">
                 <FaEnvelope className="mr-2" /> cieptis.atencion@gmail.com</a>
             </li>
-            <li className="flex justify-center md:justify-start items-center"><FaMapMarkerAlt className="mr-2" /> Barcelona, Spain</li>
+            <li className="flex justify-center md:justify-start items-center"><FaMapMarkerAlt className="mr-2" /> Barcelona, España</li>
           </ul>
         </div>
       </div>

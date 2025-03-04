@@ -14,7 +14,7 @@
     },
     "judo": {
       "label": "Judo",
-      "title": "¡Entrena Como un Campeón! Desarrolla Habilidades y Confianza a Través del Judo",
+      "title": "¡Entrena Como un Campeón! Desarrolla Habilidades y Confianza a Través del Judo y manejo de Nunchaku",
       "description": "Descubre la emocionante disciplina del Judo, donde tus hijos aprenderán no solo técnicas de combate, sino también valores como la humildad y el respeto. Nuestras clases personalizadas están diseñadas para ayudar a los niños a desarrollar fuerza, agilidad y una mentalidad ganadora. ¡Únete hoy y comienza a construir un futuro lleno de logros!",
       "items": [
         "Mejora la Fuerza y la Agilidad: 👉  A través de movimientos de lanzamiento y caídas, los niños desarrollarán una gran fuerza física y habilidades motoras. ",
@@ -22,7 +22,8 @@
         "👉 Aumenta la Confianza y la Autoestima: Al aprender y dominar nuevas técnicas, tus hijos ganarán confianza en sí mismos y en sus habilidades.",
         "💥 Desarrollo de Habilidades Sociales: Las clases en grupo fomentan el trabajo en equipo y el respeto hacia los demás, creando lazos de amistad y camaradería.💥"
       ],
-      "callToAction": "¡Inscríbete Ahora y Haz que Cada Caída Sea un Paso hacia el Éxito!"
+      "callToAction": "¡Inscríbete Ahora y Haz que Cada Caída Sea un Paso hacia el Éxito!",
+      "imageUrl": "/img/foto-clases-ninos/judo.jpg"
     },
     "mmaninos": {
       "label": "MMA",
@@ -60,7 +61,8 @@
         "🔹Desarrollo de la Disciplina y la Concentración: Las clases están diseñadas para enseñar a los niños la importancia de la dedicación y el enfoque, ayudándoles a aplicar estos valores en otros aspectos de su vida.",
         "🔹 Diversión y Creatividad: Cada curso incluye actividades creativas y entretenidas que mantienen a los niños motivados y emocionados por aprender."
       ],
-      "callToAction": "¡Inscríbete Ahora y Haz que Este Verano Sea el Mejor de Todos!"
+      "callToAction": "¡Inscríbete Ahora y Haz que Este Verano Sea el Mejor de Todos!",
+      "imageUrl": "/img/foto-clases-ninos/group-people-working-out-together-outdoors.webp"
     },
     "excursiones": {
       "label": "Excursiones",
@@ -77,7 +79,7 @@
     },
     "airlibre": {
       "label": "Actividades Lúdicas al Aire Libre",
-      "title": "¡Diviértete al Aire Libre! Clases de Entrenamiento Personal para Niños",
+      "title": "¡Diviértete al Aire Libre! Clases de Entrenamiento Personal para Niños y Adultos",
       "description": "Este es el momento perfecto para que tus hijos se conecten con la naturaleza mientras se mantienen activos y saludables. Nuestras clases al aire libre ofrecen un ambiente emocionante y motivador donde los niños pueden aprender y jugar. ¡Inscríbete hoy y deja que la aventura comience!",
       "items": [
         "🔹 Conexión con la Naturaleza: Las actividades al aire libre fomentan el amor y el respeto por el medio ambiente, permitiendo a los niños explorar y disfrutar del aire fresco.",
@@ -85,7 +87,8 @@
         "🔹 Fomento de Habilidades Sociales: Las actividades grupales promueven el trabajo en equipo y la comunicación, ayudando a los niños a hacer amigos y desarrollar habilidades interpersonales.",
         "🔹 Aumento de la Creatividad y la Imaginación: El entorno natural estimula la creatividad, permitiendo a los niños inventar juegos y actividades mientras se divierten."
       ],
-      "callToAction": "¡Inscríbete Ahora y Da el Primer Paso hacia la Diversión al Aire Libre!"
+      "callToAction": "¡Inscríbete Ahora y Da el Primer Paso hacia la Diversión al Aire Libre!",
+      "imageUrl": "/img/foto-clases-ninos/kardio-kiikboxing.jpg"
     },
     "juegos": {
       "label": "Juegos Recreacionales",

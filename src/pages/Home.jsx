@@ -65,39 +65,60 @@ const Home = () => {
 
         <SectionRegular>
           <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>¿Por qué elegirnos?</h2>
-          <ul className="list-inside list-decimal my-4 md:pl-6 list-none">
-            <li>✔️ Resultados rápidos y efectivos con entrenamientos adaptados a tu nivel y evolución.</li>
-            <li>✔️ Atención personalizada con profesionales certificados en entrenamiento y salud.</li>
-            <li>✔️ Flexibilidad de horarios para que entrenes cuando mejor te convenga.</li>
-            <li>✔️ Métodos innovadores que combinan ejercicio, recuperación y bienestar integral.</li>
-          </ul>
+          <div className='flex flex-col lg:flex-row my-4 gap-4 '>
+            <ul className=" list-inside list-decimal my-4 md:pl-6 list-none">
+              <li>✔️ Resultados rápidos y efectivos con entrenamientos adaptados a tu nivel y evolución.</li>
+              <li>✔️ Atención personalizada con profesionales certificados en entrenamiento y salud.</li>
+              <li>✔️ Flexibilidad de horarios para que entrenes cuando mejor te convenga.</li>
+              <li>✔️ Métodos innovadores que combinan ejercicio, recuperación y bienestar integral.</li>
+            </ul>
+            <div className="grow-3 justify-items-end">
+              <img
+                src="/img/amaruk-elegir-nosotros.jpg"
+                alt='Training Image'
+                className='rounded-lg shadow-lg max-h-[59vh] object-cover'
+              />
+            </div>
+          </div>
+
         </SectionRegular>
 
         <SectionRegular className="mt-8">
           <h2 className={`${theme.primary} text-2xl p-4 rounded-lg`}>Las programas más solicitados</h2>
-          <h3 className="text-xl font-semibold py-4 ">Entrenamiento para perder peso</h3>
-          <p>Te ayudamos a alcanzar tu peso ideal con un plan estructurado que incluye:</p>
-          <ul className="list-inside list-disc md:pl-6 list-none">
-            <li>✔️ Ejercicios cardiovasculares y de alta intensidad para quemar grasa.</li>
-            <li>✔️ Tonificación y fortalecimiento muscular.</li>
-            <li>✔️ Asesoramiento en hábitos saludables y nutrición.</li>
-          </ul>
+          <div className='flex flex-col lg:flex-row my-4 gap-4'>
+            <div>
+              <h3 className="text-xl font-semibold py-4 ">Entrenamiento para perder peso</h3>
+              <p>Te ayudamos a alcanzar tu peso ideal con un plan estructurado que incluye:</p>
+              <ul className="list-inside list-disc md:pl-6 list-none">
+                <li>✔️ Ejercicios cardiovasculares y de alta intensidad para quemar grasa.</li>
+                <li>✔️ Tonificación y fortalecimiento muscular.</li>
+                <li>✔️ Asesoramiento en hábitos saludables y nutrición.</li>
+              </ul>
 
-          <h3 className="text-xl font-semibold py-4 ">Entrenamiento para ganar masa muscular</h3>
-          <p>Aumenta tu fuerza y define tu musculatura con sesiones enfocadas en:</p>
-          <ul className="list-inside list-disc md:pl-6 list-none">
-            <li>✔️ Rutinas de fuerza con cargas progresivas.</li>
-            <li>✔️ Técnicas avanzadas como superseries y entrenamiento funcional.</li>
-            <li>✔️ Desarrollo equilibrado del cuerpo, previniendo lesiones.</li>
-          </ul>
+              <h3 className="text-xl font-semibold py-4 ">Entrenamiento para ganar masa muscular</h3>
+              <p>Aumenta tu fuerza y define tu musculatura con sesiones enfocadas en:</p>
+              <ul className="list-inside list-disc md:pl-6 list-none">
+                <li>✔️ Rutinas de fuerza con cargas progresivas.</li>
+                <li>✔️ Técnicas avanzadas como superseries y entrenamiento funcional.</li>
+                <li>✔️ Desarrollo equilibrado del cuerpo, previniendo lesiones.</li>
+              </ul>
 
-          <h3 className="text-xl font-semibold py-4 ">Terapias integrales de la salud</h3>
-          <p>Complementamos tu entrenamiento con terapias diseñadas para mejorar tu bienestar físico y mental:</p>
-          <ul className="list-inside list-disc md:pl-6 list-none">
-            <li>✔️ Osteopatía y fisioterapia para la recuperación muscular.</li>
-            <li>✔️ Terapias de relajación y reducción del estrés.</li>
-            <li>✔️ Evaluaciones biomecánicas para mejorar el rendimiento.</li>
-          </ul>
+              <h3 className="text-xl font-semibold py-4 ">Terapias integrales de la salud</h3>
+              <p>Complementamos tu entrenamiento con terapias diseñadas para mejorar tu bienestar físico y mental:</p>
+              <ul className="list-inside list-disc md:pl-6 list-none">
+                <li>✔️ Osteopatía y fisioterapia para la recuperación muscular.</li>
+                <li>✔️ Terapias de relajación y reducción del estrés.</li>
+                <li>✔️ Evaluaciones biomecánicas para mejorar el rendimiento.</li>
+              </ul>
+            </div>
+            <div className="grow-3 justify-items-end">
+              <img
+                src="/img/amaruk-hero-end.jpg"
+                alt='Training Image'
+                className='rounded-lg shadow-lg max-h-[59vh] object-cover'
+              />
+            </div>
+          </div>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold py-4 ">La ventaja de un enfoque integral</h3>

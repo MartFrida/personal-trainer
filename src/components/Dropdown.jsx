@@ -1,16 +1,22 @@
 /* eslint-disable react/prop-types */
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { theme } from "../helpers/theme";
 
 const Dropdown = ({ title, links, mainPath, onItemClick }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const navigate = useNavigate(); // Хук для программного перехода
 
   const handleItemClick = () => {
     setOpen(false); // Закрываем вложенный список
     if (onItemClick) onItemClick(); // Закрываем главное меню
+  };
+
+  const handleToggle = () => {
+    setOpen(!open);
+    navigate(mainPath); // Переход на основной путь при клике на стрелку
   };
 
   useEffect(() => {
@@ -28,11 +34,10 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
   return (
     <div className={`${theme.text} ${theme.hover} rounded relative`} ref={dropdownRef}>
       <button
-        onClick={() => setOpen(!open)}
+        onClick={handleToggle}
         className="p-2 rounded flex items-center focus:outline-none"
       >
-        <Link to={mainPath} className="mr-2">{title}</Link>
-        {/* Условный рендеринг стрелочки */}
+        <span className="mr-2 text-white">{title}</span>
         {open ? (
           <FaChevronUp className="text-white bg-transparent" />
         ) : (
@@ -42,14 +47,14 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
       {open && (
         <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-[80vh] overflow-y-auto`}>
           {links.map(({ path, label }) => (
-            <a
+            <Link
               key={path}
               href={path}
               className="block px-4 pb-2 md:py-2 bg-transparent hover:bg-gray-800"
               onClick={handleItemClick}
             >
               {label}
-            </a>
+            </Link>
           ))}
         </div>
       )}

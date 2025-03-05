@@ -32,14 +32,20 @@ const Home = () => {
       <div className={`${theme.text} flex flex-col gap-4`}>
         <SectionRegular>
           <div>
-            <p className="mb-4 text-lg font-semibold text-gray-800">¿Te gustaría participar en una sesión de entrenamiento personalizada especialmente para ti?</p>
+            <p className="mb-4 text-lg font-semibold text-gray-800">¡Conoce a nuestros entrenadores personales en Barcelona! 🏋️‍♀️ </p>
             <p className="mb-6 text-gray-600">
-              A través de reuniones individualizadas, nuestros entrenadores personales diseñarán un plan de entrenamiento adaptado completamente a tus necesidades con el fin de ayudarte a lograr tus metas. Te asistirán en mantenerte motivado, entrenar de manera efectiva, mejorar tu técnica y desempeño, evitar estancamientos y fomentar un estilo de vida saludable.
+              Creamos planes de entrenamiento personalizados, adaptados a tus necesidades y objetivos. Ya sea que quieras mejorar tu forma física, perder peso o aumentar tu actividad, diseñaremos un programa único que se ajuste a ti.
             </p>
 
-            <p className="mb-4 text-lg font-semibold text-gray-800">¿Encuentras difícil asistir a clases grupales o prefieres contar con un entrenador personal solo para ti en Barcelona?</p>
+            <p className="mb-4 text-lg font-semibold text-gray-800">Entrenamientos individuales o en grupo, ¡tú eliges! </p>
             <p className="mb-6 text-gray-600">
-              Esta es la solución perfecta: indícanos dónde y cuándo, y nosotros nos encargaremos del resto.
+              Aquí recibirás el apoyo total de un entrenador personal que trabajará solo contigo para ayudarte a alcanzar los mejores resultados. 💪
+            </p>
+            <p className="mb-6 text-gray-600">
+              Un estilo de vida saludable y activo será tu nueva rutina  ¡Solo dinos dónde y cuándo,y nosotros nos encargamos de todo lo demás! 🙌
+            </p>
+            <p className="mb-4 text-lg font-semibold text-gray-800">
+              ¡Barcelona te espera, vamos a alcanzar tus metas juntos! 🌟
             </p>
           </div>
           <div className='flex justify-end w-full mt-4 md:mt-0'>

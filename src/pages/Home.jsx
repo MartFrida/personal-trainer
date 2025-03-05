@@ -31,22 +31,27 @@ const Home = () => {
 
       <div className={`${theme.text} flex flex-col gap-4`}>
         <SectionRegular>
-          <div>
-            <p className="mb-4 text-lg font-semibold text-gray-800">¡Haz que tu bienestar sea una prioridad en Barcelona! </p>
-            <p className="mb-6 text-gray-800">
-              Te ayudamos a lograr tus objetivos personales con planes de entrenamiento completamente adaptados a ti. No importa si buscas mejorar tu rendimiento físico, reducir medidas o aumentar tu energía, diseñaremos un programa exclusivo para ti.
-            </p>
 
-            <p className="mb-6 text-gray-800">
-              Puedes optar por entrenamientos privados o unirte a un grupo, según lo que más te motive. Nuestro equipo de entrenadores personales te brindará atención 100% dedicada para garantizar que alcances el mejor de los resultados.
-            </p>
-            <p className="mb-6 text-gray-800">
-              Transformar un estilo de vida saludable en un hábito será sencillo, y nosotros nos encargamos de cada detalle. Solo dinos cuándo y dónde, ¡y nosotros nos encargamos del resto!
-            </p>
-            <p className="mb-4 text-lg font-semibold text-gray-800">
-              ¡Ven a Barcelona y comienza tu viaje hacia un nuevo tú! 🌟
-            </p>
-          </div>
+          <p className="mb-6 text-xl font-bold text-gray-900 text-center">
+            ¡Haz que tu bienestar sea una prioridad en Barcelona!
+          </p>
+
+          <p className="mb-6 text-gray-800 leading-relaxed text-center">
+            Te ayudamos a lograr tus objetivos personales con planes de entrenamiento completamente adaptados a ti. No importa si buscas mejorar tu rendimiento físico, reducir medidas o aumentar tu energía, diseñaremos un programa exclusivo para ti.
+          </p>
+
+          <p className="mb-6 text-gray-800 leading-relaxed text-center">
+            Puedes optar por entrenamientos privados o unirte a un grupo, según lo que más te motive. Nuestro equipo de entrenadores personales te brindará atención 100% dedicada para garantizar que alcances el mejor de los resultados.
+          </p>
+
+          <p className="mb-6 text-gray-800 leading-relaxed text-center">
+            Transformar un estilo de vida saludable en un hábito será sencillo, y nosotros nos encargamos de cada detalle. Solo dinos cuándo y dónde, ¡y nosotros nos encargamos del resto!
+          </p>
+
+          <p className="mt-8 text-xl font-bold text-gray-900 text-center">
+            ¡Сomienza tu viaje hacia un nuevo tú! 🌟
+          </p>
+
           <div className='flex justify-end w-full mt-4 md:mt-0'>
             <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
               onClick={() => setIsModalOpen(true)}>
@@ -139,7 +144,7 @@ const Home = () => {
           </div>
         </SectionRegular>
 
-      </div>
+      </div >
     </ContainerMain >
   )
 }

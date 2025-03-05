@@ -8,10 +8,10 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
   const [errors, setErrors] = useState({});
   const [isSent, setIsSent] = useState(false);
   const [formData, setFormData] = useState({
-    name: 'Alis',
-    email: 'alisa.nenko@gmail.com',
-    message: 'Test',
-    phone: '+3123456789',
+    name: '',
+    email: '',
+    message: '',
+    phone: '',
     contactMethod: "phone",
     timeRange: "9:00 - 12:00",
   });

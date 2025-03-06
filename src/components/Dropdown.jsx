@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { theme } from "../helpers/theme";
 
@@ -47,14 +47,14 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
       {open && (
         <div className={`${theme.primary} absolute right-0 mt-2 rounded shadow-lg w-48 z-50 max-h-[80vh] overflow-y-auto`}>
           {links.map(({ path, label }) => (
-            <Link
+            <a
               key={path}
               href={path}
               className="block px-4 pb-2 md:py-2 bg-transparent hover:bg-gray-800"
               onClick={handleItemClick}
             >
               {label}
-            </Link>
+            </a>
           ))}
         </div>
       )}

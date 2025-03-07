@@ -32,7 +32,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
         {imageUrl &&
           <div className="grow-3 justify-items-end">
             <img
-              src={`${imageUrl}?format=webp`}
+              src={`${imageUrl}`}
               alt='Training Image'
               className='rounded-lg shadow-lg max-h-[59vh] object-cover'
             />

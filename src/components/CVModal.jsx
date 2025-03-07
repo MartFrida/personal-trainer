@@ -14,7 +14,7 @@ const CVModal = ({ isOpen, onClose }) => {
           <div className={`${theme.text} p-2 md:p-6 mt-20`}>
             <div className="float-right ml-2 mb-2 md:ml-4 md:mb-4">
               <img
-                src="img/equipo/cv-foto.jpg?format=webp"
+                src="img/equipo/cv-foto.jpg"
                 alt="Amaruk Kayshapanta"
                 className="h-30 w-30 md:h-60 md:w-60 object-cover rounded-lg"
               />

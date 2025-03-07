@@ -12,15 +12,15 @@ Welcome to the **Centro de Entrenadores Personales y Terapias Integrales de la S
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/MartFrida/personal-trainer.git
    ```
 2. Navigate to the project folder:
    ```sh
-   cd your-repo
+   cd personal-trainer
    ```
 3. Install dependencies:
    ```sh
-   npm install  # or pip install -r requirements.txt
+   npm install
    ```
 
 ## 📌 Usage
@@ -44,7 +44,3 @@ Here are some screenshots of our platform:
 ## 🤝 Authors
 
 - **Mart Frida** – [GitHub](https://github.com/MartFrida)
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.

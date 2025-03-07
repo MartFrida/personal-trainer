@@ -34,6 +34,7 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
   return (
     <div className={`${theme.text} ${theme.hover} rounded relative`} ref={dropdownRef}>
       <button
+        aria-label="arrowMenu"
         onClick={handleToggle}
         className="p-2 rounded flex items-center focus:outline-none"
       >

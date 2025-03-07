@@ -42,10 +42,10 @@ const Footer = () => {
 
       {/* Социальные сети */}
       <div className="flex justify-center space-x-4 mt-4">
-        <a href="#" target="_blank" className="text-white text-xl hover:text-gray-400"><FaFacebook /></a>
-        <a href="https://www.instagram.com/centrentrenador_personal?igsh=MWE0bGRoeG0zNm0ycg==" target="_blank" className="text-white text-xl hover:text-gray-400"><FaInstagram /></a>
-        <a href="#" target="_blank" className="text-white text-xl hover:text-gray-400"><FaTwitter /></a>
-        <a href="#" target="_blank" className="text-white text-xl hover:text-gray-400"><FaWhatsapp /></a>
+        <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaFacebook /></a>
+        <a href="https://www.instagram.com/centrentrenador_personal?igsh=MWE0bGRoeG0zNm0ycg==" target="_blank" className="text-white text-xl hover:text-gray-400" aria-label="Follow us on Instagram"><FaInstagram /></a>
+        <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaTwitter /></a>
+        <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaWhatsapp /></a>
       </div>
 
       <div className="text-center mt-6 border-t border-gray-700 pt-4">

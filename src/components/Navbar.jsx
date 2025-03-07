@@ -48,6 +48,7 @@ const Navbar = () => {
 
         {/* Кнопка бургер-меню для мобильных устройств */}
         <button
+          aria-label="burgerMenu"
           className="lg:hidden p-2 focus:outline-none bg-transparent"
           onClick={() => setIsOpen(!isOpen)}
         >

@@ -7,42 +7,42 @@ const trainers = [
   {
     name: "Alejandro Gómez",
     role: "Especialista en fuerza y acondicionamiento",
-    image: "/img/equipo/equipo-3.jpeg",
+    image: "/img/equipo/equipo-3.jpeg?format=webp",
     description:
       "10 años de experiencia en entrenamiento de fuerza. Certificado en levantamiento olímpico. Ha trabajado con atletas profesionales.",
   },
   {
     name: "Laura Martínez",
     role: "Coach de fitness funcional",
-    image: "/img/equipo/trener-fitnes.jpg",
+    image: "/img/equipo/trener-fitnes.jpg?format=webp",
     description:
       "Experta en entrenamiento funcional y movilidad. Certificación en CrossFit Level 2. Enfocada en mejorar el rendimiento y prevención de lesiones.",
   },
   {
     name: "Diego Fernández",
     role: "Especialista en pérdida de peso",
-    image: "/img/equipo/equipo-5.jpeg",
+    image: "/img/equipo/equipo-5.jpeg?format=webp",
     description:
       "Más de 8 años ayudando a transformar cuerpos. Certificado en nutrición deportiva. Diseña planes personalizados de entrenamiento y dieta.",
   },
   {
     name: "Sofía Ramírez",
     role: "Instructora de yoga y pilates",
-    image: "/img/equipo/equipo-1.jpeg",
+    image: "/img/equipo/equipo-1.jpeg?format=webp",
     description:
       "Certificada en yoga terapéutico y pilates. Fomenta el bienestar físico y mental. Sesiones personalizadas para mejorar la flexibilidad y el equilibrio.",
   },
   {
     name: "Carlos Rivas",
     role: "Preparador físico para deportes",
-    image: "/img/equipo/equipo-4.jpeg",
+    image: "/img/equipo/equipo-4.jpeg?format=webp",
     description:
       "Especialista en entrenamiento deportivo. Ha trabajado con equipos de fútbol y atletas de alto rendimiento. Diseño de programas específicos según la disciplina deportiva.",
   },
   {
     name: "Valentin Torres",
     role: "Entrenador de resistencia y maratón",
-    image: "/img/equipo/equipo-6.jpeg",
+    image: "/img/equipo/equipo-6.jpeg?format=webp",
     description:
       "Expert en running y deportes de resistencia. Asesor en preparación para maratones y triatlones. Crea planes de entrenamiento adaptados a cada nivel.",
   },
@@ -75,7 +75,7 @@ const TeamSection = () => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/img/equipo/founder.jpg"
+              src="/img/equipo/founder.jpg?format=webp"
               alt="Amaruk Kaishapanta"
               className="rounded-lg shadow-lg max-h-[59vh] object-cover"
             />

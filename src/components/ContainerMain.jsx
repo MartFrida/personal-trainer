@@ -14,7 +14,7 @@ const ContainerMain = ({ children }) => {
   return (
     <div className={`${theme.background} px-2 md:px-8 min-h-screen flex justify-center flex-col overflow-auto scroll-smooth bg-fixed bg-contain gap-y-4 bg-repeat container m-auto pb-8`}
       style={bgLoaded ? {
-        backgroundImage: "url('/img/grunge-wall-texture.jpg')"
+        backgroundImage: "url('/img/grunge-wall-texture.jpg?format=webp')"
       } : {}}>
       <div className="h-18 md:h-24 "></div>
       {children}

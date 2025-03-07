@@ -12,7 +12,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
     const section = event.target.closest('[id]'); // Найдёт ближайший родительский элемент с id
     setIdElem(section ? section.id : 'Не найдено')
   };
-  // console.log(idElem)
+
   return (
     <div>
       <h2 className={`${theme.primary} text-2xl p-4 rounded-lg  hover:scale-101 transition duration-300`}>
@@ -32,7 +32,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
         {imageUrl &&
           <div className="grow-3 justify-items-end">
             <img
-              src={imageUrl}
+              src={`${imageUrl}?format=webp`}
               alt='Training Image'
               className='rounded-lg shadow-lg max-h-[59vh] object-cover'
             />

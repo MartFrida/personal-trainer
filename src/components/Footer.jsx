@@ -18,8 +18,8 @@ const Footer = () => {
         <div className="mb-6 md:mb-0">
           <h3 className="text-lg font-semibold">Servicios</h3>
           <ul className="mt-2 space-y-1">
-            <li><Link to="/personal-training" className="hover:underline">Personalized Training</Link></li>
-            <li><Link to="/claces-infantiles" className="hover:underline">Clases Infantiles</Link></li>
+            <li><Link to="/entrenador-personal" className="hover:underline">Personalized Training</Link></li>
+            <li><Link to="/clases-infantiles" className="hover:underline">Clases Infantiles</Link></li>
             <li><Link to="/nutrition" className="hover:underline">Nutrition & Diet</Link></li>
           </ul>
         </div>

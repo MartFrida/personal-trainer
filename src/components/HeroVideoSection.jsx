@@ -22,9 +22,8 @@ export default function HeroVideoSection({ videoHero, title }) {
 
       {/* Контент */}
       <div className="relative h-64 text-center align-middle text-white px-6">
-        <h2 className="text-4xl leading-relax md:text-5xl lg:text-6xl font-bold tracking-wide mt-8" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{title}</h2>
-        {/* <p className=" my-4 text-base md:text-xl tracking-widest leading-relaxed tracking-wide" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{description}
-        </p> */}
+        <h1 className="text-4xl leading-relax md:text-5xl lg:text-6xl font-bold tracking-wide mt-8" style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>{title}</h1>
+
       </div>
     </section>
   );

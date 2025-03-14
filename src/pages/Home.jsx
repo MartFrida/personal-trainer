@@ -14,10 +14,10 @@ const Home = () => {
         <div className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top bg-cover md:bg-contain h-screen mt-[-50px] mb:mt-[-20px]"
           style={{ backgroundImage: "url('/img/amaruk-hero-smc.webp')" }}>
           <div className='bg-zinc-900/60 p-4 md:p-8 rounded-lg'>
-            <p className=" tracking-widest text-5xl md:text-7xl font-bold leading-relaxed text-center text-white"
+            <h1 className=" tracking-widest text-5xl md:text-7xl font-bold leading-relaxed text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
               CIEPTIS
-            </p>
+            </h1>
             <h2 className="text-2xl md:text-3xl font-bold leading-relaxed tracking-wide text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
               CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD

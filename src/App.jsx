@@ -25,10 +25,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path='/personal-training' element={<PersonalizedTraining />} />
+          <Route path='/entrenador-personal' element={<PersonalizedTraining />} />
           <Route path='/artes-marciales' element={<ArtesMarciales />} />
           <Route path="/fisico-culturismo" element={<FisicoCulturismo />} />
-          <Route path="/claces-infantiles" element={<ClacesInfantiles />} />
+          <Route path="/clases-infantiles" element={<ClacesInfantiles />} />
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/therapy" element={<Therapy />} />
           <Route path="/tarifas" element={<Tarifas />} />

@@ -57,8 +57,8 @@ const Navbar = () => {
 
         {/* Навигация для ПК */}
         <div className="hidden lg:flex space-x-4">
-          <Dropdown title="Entrenador Personal" mainPath="/personal-training" links={linksTP} />
-          <Dropdown title="Clases Infantiles" mainPath="/claces-infantiles" links={linksCI} />
+          <Dropdown title="Entrenador Personal" mainPath="/entrenador-personal" links={linksTP} />
+          <Dropdown title="Clases Infantiles" mainPath="/clases-infantiles" links={linksCI} />
           <Dropdown title="Nutrition" mainPath="/nutrition" links={linksNutrition} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
         </div>
@@ -67,8 +67,8 @@ const Navbar = () => {
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
         <div ref={menuRef} className={`${theme.primary} lg:hidden flex flex-col items-end p-2 space-y-3 w-auto right-0 absolute`}>
-          <Dropdown title="Personalized Training" mainPath="/personal-training" links={linksTP} onItemClick={handleClose} />
-          <Dropdown title="Clases Infantiles" mainPath="/claces-infantiles" links={linksCI} onItemClick={handleClose} />
+          <Dropdown title="Personalized Training" mainPath="/entrenador-personal" links={linksTP} onItemClick={handleClose} />
+          <Dropdown title="Clases Infantiles" mainPath="/clases-infantiles" links={linksCI} onItemClick={handleClose} />
           <Dropdown title="Nutrition" mainPath="/nutrition" links={linksNutrition} onItemClick={handleClose} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Tarifas

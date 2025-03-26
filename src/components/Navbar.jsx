@@ -61,6 +61,12 @@ const Navbar = () => {
           <Dropdown title="Clases Infantiles" mainPath="/clases-infantiles" links={linksCI} />
           <Dropdown title="Nutrition" mainPath="/nutrition" links={linksNutrition} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
+          {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Fitnes
+          </Link> */}
+          {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Therapia
+          </Link> */}
         </div>
       </nav>
 
@@ -73,6 +79,14 @@ const Navbar = () => {
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Tarifas
           </Link>
+          {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Fitnes
+          </Link> */}
+          {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            Therapia
+          </Link> */}
+
+
         </div>
       )}
     </div>

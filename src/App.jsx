@@ -13,6 +13,9 @@ import { ArtesMarciales } from './pages/ArtesMarciales';
 import { ClacesInfantiles } from './pages/ClacesInfantiles';
 import { FisicoCulturismo } from './pages/FisicoCulturismo';
 import ScrollToTop from './helpers/ScrollToTop';
+import Article from './components/Blog/Article';
+import BlogCategory from './components/Blog/BlogCategory';
+
 
 function App() {
 
@@ -33,6 +36,10 @@ function App() {
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/therapy" element={<Therapy />} />
           <Route path="/tarifas" element={<Tarifas />} />
+
+          <Route path="/blog/:category" element={<BlogCategory />} />
+          <Route path="/blog/:category/:id" element={<Article />} />
+
         </Routes>
       </div>
       <Footer />

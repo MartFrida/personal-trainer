@@ -21,12 +21,14 @@ const CVModal = ({ isOpen, onClose }) => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-semibold mb-2">Formación:</h3>
-            <p className="">Licenciado en Ciencias de la Actividad Física y del Deporte por la Universidad Central del Ecuador Colegiado 52.5001.</p>
             <ul className="flex flex-col gap-y-2">
-              <li>Profesor de Musculación y Fitness Orthos año 2001.</li>
+              <li>Licenciado en Ciencias de la Actividad Física y del Deporte por la Universidad Central del Ecuador Colegiado 52.5001.</li>
+              <li>Periodista diplomado por La Academia Europea de Periodismo en España año 2025.</li>
+              <li>Entrenador de Musculación por Centro Internacional de Profesorado Deportivo LIFE año 2000 Madrid.</li>
               <li>Maestro multidisciplinar campeón Internacional de Sur América, tiene 6 Cinturones Negros 5to Dan en:</li>
-              <li>Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact.</li>
-              <li>Reconocido a nivel mundial por las Federaciones: WTF, ITF, WHF, WAKO, FIDAM, FET, ROPEC.</li>
+              <li>Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact - Sambo.</li>
+              <li>Reconocido a nivel mundial por las Federaciones: WTF, ITF, WHF, WAKO, FIDAM, FET.</li>
+              <li>Curso de Socorismo y Primeros Auxilios por la Cruz Roja Española, BCN 2025. </li>
             </ul>
 
 
@@ -39,11 +41,12 @@ const CVModal = ({ isOpen, onClose }) => {
               <li>Dietista y Nutricionista experto asesor para Culturistas profesionales y amateur.</li>
               <li>Autor de 34 libros publicados en España y en Amazon a nivel mundial.</li>
               <li>Entrenador Personal y creador del &quot;Sistem Power&quot; La transformación metamorfosis de mente, cuerpo, y espíritu.</li>
-              <li>Productor y periodista colegiado SPC-SPM - FEP de varios medios de comunicación.</li>
+              <li>Productor y periodista colegiado SPC - SPM - FEP - FIP - AEP de varios medios de comunicación.</li>
               <li>Terapeuta tradicional Andino y Motivador personal PNL. Conferencista y Catedrático educacional en universidades como: CAMU, UCM, UCE, PUSE, UAB, etc.</li>
+
             </ul>
-            <div className={`${theme.primary} w-full mt-2 p-2 rounded-lg`}>
-              <a href="https://en.wikipedia.org/wiki/Amaruk_Kayshapanta" target="_blank" >Más Información en Wikipedia.</a>
+            <div className={`${theme.primary} w-[240px] mx-auto mt-4 p-2 rounded-lg`}>
+              <a href="https://en.wikipedia.org/wiki/Amaruk_Kayshapanta" target="_blank" >Más Información en Wikipedia</a>
             </div>
 
           </div>

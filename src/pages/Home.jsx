@@ -4,9 +4,14 @@ import { theme } from '../helpers/theme';
 import ContainerMain from '../components/ContainerMain'
 import TeamSection from '../components/TeamSection';
 import ContactModal from '../components/ContactModal';
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  console.log("Перевод для home.title:", t("home.title"));
+  console.log("Переводы:", i18n.getDataByLanguage(i18n.language));
 
   return (
     <ContainerMain >
@@ -20,7 +25,8 @@ const Home = () => {
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold leading-relaxed tracking-wide text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
-              CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
+              {t("home.title")}
+              {/* CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD */}
             </h2>
             <p className="text-xl md:text-2xl mt-4 text-center text-white" style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>
               La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.

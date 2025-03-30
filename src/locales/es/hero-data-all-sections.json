@@ -1,0 +1,17 @@
+{
+  "personalTraining": {
+    "title": "Más que un entrenamiento, un estilo de vida",
+    "description": "Nuestro equipo de entrenadores y terapeutas te guiará en cada paso del camino para que alcances tus metas de forma segura y efectiva.",
+    "videoSrc": "/video/entr-pers.mp4"
+  },
+  "clacesInfantiles": {
+    "title": "Entrenamiento Personal para Niños: ¡Diversión y Movimiento!",
+    "description": "¡Deja que tu hijo descubra el placer de moverse y estar activo!",
+    "videoSrc": "/video/video_trena2.mp4"
+  },
+  "nutrition": {
+    "title": "Nutrición Inteligente para un Cuerpo Saludable",
+    "description": "Dieta, Nutricion",
+    "videoSrc": "/video/nurtition.mp4"
+  }
+}

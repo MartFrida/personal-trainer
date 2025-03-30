@@ -3,22 +3,46 @@ import { Link } from "react-router-dom";
 import { theme } from "../helpers/theme";
 import Dropdown from "./Dropdown";
 import { Menu, X } from "lucide-react"; // Иконки бургер-меню
-import namesClacesInfantiles from '../data/claces-infantiles.json'
-import namesTrenPersonal from '../data/personal-training-data.json'
-import namesNutrition from '../data/nutrition-data.json'
+import { useTranslation } from "react-i18next";
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
-  const linksCI = Object.keys(namesClacesInfantiles)
-    .map(key => namesClacesInfantiles[key]?.label ? { path: `#${key}`, label: namesClacesInfantiles[key].label } : null)
-    .filter(Boolean);
+  const { t, i18n } = useTranslation();
+  const [namesClacesInfantiles, setNamesClacesInfantiles] = useState({});
+  const [namesTrenPersonal, setNamesTrenPersonal] = useState({});
+  const [namesNutrition, setNamesNutrition] = useState({});
 
-  const linksTP = Object.keys(namesTrenPersonal)
-    .map(key => namesTrenPersonal[key]?.label ? { path: `#${key}`, label: namesTrenPersonal[key].label } : null)
-    .filter(Boolean);
+  // Динамическая загрузка JSON при смене языка
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const [ci, tp, nutrition] = await Promise.all([
+          fetch(`/locales/${i18n.language}/claces-infantiles.json`).then(res => res.json()),
+          fetch(`/locales/${i18n.language}/personal-training-data.json`).then(res => res.json()),
+          fetch(`/locales/${i18n.language}/nutrition-data.json`).then(res => res.json()),
+        ]);
+        setNamesClacesInfantiles(ci);
+        setNamesTrenPersonal(tp);
+        setNamesNutrition(nutrition);
+      } catch (error) {
+        console.error("Ошибка загрузки данных:", error);
+      }
+    };
 
-  const linksNutrition = Object.keys(namesNutrition)
-    .map(key => namesNutrition[key]?.label ? { path: `#${key}`, label: namesNutrition[key].label } : null)
-    .filter(Boolean);
+    loadData();
+  }, [i18n.language]); // Перезагружаем при смене языка
+
+
+  const createLinks = (data) => {
+    return Object.keys(data)
+      .map(key => data[key]?.label ? { path: `#${key}`, label: data[key].label } : null)
+      .filter(Boolean);
+  };
+
+
+  const linksCI = createLinks(namesClacesInfantiles);
+  const linksTP = createLinks(namesTrenPersonal);
+  const linksNutrition = createLinks(namesNutrition);
 
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Реф для отслеживания кликов вне меню
@@ -57,27 +81,28 @@ const Navbar = () => {
 
         {/* Навигация для ПК */}
         <div className="hidden lg:flex space-x-4">
-          <Dropdown title="Entrenador Personal" mainPath="/entrenador-personal" links={linksTP} />
-          <Dropdown title="Clases Infantiles" mainPath="/clases-infantiles" links={linksCI} />
-          <Dropdown title="Nutrition" mainPath="/nutrition" links={linksNutrition} />
-          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>Tarifas</Link>
+          <Dropdown titleKey="personalTraining" mainPath="/entrenador-personal" links={linksTP} />
+          <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} />
+          <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} />
+          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>{t("tarifas")}</Link>
           {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Fitnes
           </Link> */}
           {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Therapia
           </Link> */}
+          <LanguageSelector />
         </div>
       </nav>
 
       {/* Выпадающее меню для мобильных устройств */}
       {isOpen && (
         <div ref={menuRef} className={`${theme.primary} lg:hidden flex flex-col items-end p-2 space-y-3 w-auto right-0 absolute`}>
-          <Dropdown title="Personalized Training" mainPath="/entrenador-personal" links={linksTP} onItemClick={handleClose} />
-          <Dropdown title="Clases Infantiles" mainPath="/clases-infantiles" links={linksCI} onItemClick={handleClose} />
-          <Dropdown title="Nutrition" mainPath="/nutrition" links={linksNutrition} onItemClick={handleClose} />
+          <Dropdown titleKey="personalTraining" mainPath="/entrenador-personal" links={linksTP} onItemClick={handleClose} />
+          <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} onItemClick={handleClose} />
+          <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} onItemClick={handleClose} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Tarifas
+            {t("tarifas")}
           </Link>
           {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Fitnes
@@ -85,8 +110,7 @@ const Navbar = () => {
           {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Therapia
           </Link> */}
-
-
+          <LanguageSelector />
         </div>
       )}
     </div>

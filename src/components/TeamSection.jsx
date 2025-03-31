@@ -2,6 +2,7 @@ import { useState } from 'react';
 import SectionRegular from "./SectionRegular";
 import { theme } from "../helpers/theme";
 import CVModal from "./CVModal";
+import { useTranslation } from "react-i18next";
 
 const trainers = [
   {
@@ -49,7 +50,7 @@ const trainers = [
 ];
 
 const TeamSection = () => {
-
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -62,14 +63,14 @@ const TeamSection = () => {
           <div className="md:w-1/2 flex flex-col items-center md:items-end">
             <div className="text-center md:text-left py-4 lg:p-6">
               <p className="text-xl italic mb-4">
-                &quot;Invertir en ti mismo es la inversión más valiosa que puedes hacer. Estaremos encantados de guiarle en su camino hacia una mejor salud, estado físico y rendimiento.&quot;
+                &quot;{t("home.fundador.quote")}&quot;
               </p>
               <h3 className="text-lg font-semibold "> – Amaruk Kaishapanta, Founder & CEO</h3>
             </div>
 
             <button className="m-4 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
               onClick={openModal}>
-              Descubra más
+              {t("home.fundador.button")}
             </button>
             <CVModal isOpen={isModalOpen} onClose={closeModal} />
           </div>

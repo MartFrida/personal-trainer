@@ -1,6 +1,31 @@
 {
-  "personalTraining": "Entrenador PErsonal",
+  "personalTraining": "Entrenador Personal",
   "clasesInfantiles": "Clases Infantiles",
   "nutrition": "Nutrition",
-  "tarifas": "Tarifas"
+  "tarifas": "Tarifas",
+  "actionBtn": "Contáctenos",
+  "home": {
+    "title": "CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD",
+    "description": "La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.",
+    "welcome": {
+      "title": "¡Haz que tu bienestar sea una prioridad en Barcelona!",
+      "paragraf1": "Te ayudamos a lograr tus objetivos personales con planes de entrenamiento completamente adaptados a ti. No importa si buscas mejorar tu rendimiento físico, reducir medidas o aumentar tu energía, diseñaremos un programa exclusivo para ti.",
+      "paragraf2": "Puedes optar por entrenamientos privados o unirte a un grupo, según lo que más te motive. Nuestro equipo de entrenadores personales te brindará atención 100% dedicada para garantizar que alcances el mejor de los resultados.",
+      "paragraf3": "Transformar un estilo de vida saludable en un hábito será sencillo, y nosotros nos encargamos de cada detalle. Solo dinos cuándo y dónde, ¡y nosotros nos encargamos del resto!",
+      "final": "¡Сomienza tu viaje hacia un nuevo tú! "
+    },
+    "offer": {
+      "title": "Ofrecemos sesiones de entrenamiento personal en:",
+      "list": [
+        "Nuestras instalaciones",
+        "En tu casa",
+        "En tu oficina",
+        "Outdoor: en el parque, la playa…"
+      ]
+    },
+    "fundador": {
+      "button": "Descubra más",
+      "quote": "Invertir en ti mismo es la inversión más valiosa que puedes hacer. Estaremos encantados de guiarle en su camino hacia una mejor salud, estado físico y rendimiento."
+    }
+  }
 }

@@ -2,5 +2,72 @@
   "personalTraining": "Entrenador Personal",
   "clasesInfantiles": "Clases Infantiles",
   "nutrition": "Nutrition",
-  "tarifas": "Tarifas"
+  "tarifas": "Tarifas",
+  "actionBtn": "Contáctenos",
+  "home": {
+    "title": "CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD",
+    "description": "La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.",
+    "welcome": {
+      "title": "¡Haz que tu bienestar sea una prioridad en Barcelona!",
+      "paragraf1": "Te ayudamos a lograr tus objetivos personales con planes de entrenamiento completamente adaptados a ti. No importa si buscas mejorar tu rendimiento físico, reducir medidas o aumentar tu energía, diseñaremos un programa exclusivo para ti.",
+      "paragraf2": "Puedes optar por entrenamientos privados o unirte a un grupo, según lo que más te motive. Nuestro equipo de entrenadores personales te brindará atención 100% dedicada para garantizar que alcances el mejor de los resultados.",
+      "paragraf3": "Transformar un estilo de vida saludable en un hábito será sencillo, y nosotros nos encargamos de cada detalle. Solo dinos cuándo y dónde, ¡y nosotros nos encargamos del resto!",
+      "final": "¡Сomienza tu viaje hacia un nuevo tú! "
+    },
+    "offer": {
+      "title": "Ofrecemos sesiones de entrenamiento personal en:",
+      "list": [
+        "Nuestras instalaciones",
+        "En tu casa",
+        "En tu oficina",
+        "Outdoor: en el parque, la playa…"
+      ]
+    },
+    "fundador": {
+      "button": "Descubra más",
+      "quote": "Invertir en ti mismo es la inversión más valiosa que puedes hacer. Estaremos encantados de guiarle en su camino hacia una mejor salud, estado físico y rendimiento."
+    },
+    "porque": {
+      "title": "¿Por qué elegirnos?",
+      "list": [
+        "Resultados rápidos y efectivos con entrenamientos adaptados a tu nivel y evolución.",
+        "Atención personalizada con profesionales certificados en entrenamiento y salud.",
+        "Flexibilidad de horarios para que entrenes cuando mejor te convenga.",
+        "Métodos innovadores que combinan ejercicio, recuperación y bienestar integral."
+      ]
+    },
+    "programas": {
+      "title": "Las programas más solicitados",
+      "part1": {
+        "subtitle": "Entrenamiento para perder peso",
+        "listDescription": "Te ayudamos a alcanzar tu peso ideal con un plan estructurado que incluye:",
+        "list": [
+          "Ejercicios cardiovasculares y de alta intensidad para quemar grasa.",
+          "Tonificación y fortalecimiento muscular.",
+          "Asesoramiento en hábitos saludables y nutrición."
+        ]
+      },
+      "part2": {
+        "subtitle": "Entrenamiento para ganar masa muscular",
+        "listDescription": "Aumenta tu fuerza y define tu musculatura con sesiones enfocadas en:",
+        "list": [
+          "Rutinas de fuerza con cargas progresivas.",
+          "Técnicas avanzadas como superseries y entrenamiento funcional.",
+          "Desarrollo equilibrado del cuerpo, previniendo lesiones."
+        ]
+      },
+      "part3": {
+        "subtitle": "Terapias integrales de la salud",
+        "listDescription": "Complementamos tu entrenamiento con terapias diseñadas para mejorar tu bienestar físico y mental:",
+        "list": [
+          "Osteopatía y fisioterapia para la recuperación muscular.",
+          "Terapias de relajación y reducción del estrés.",
+          "Evaluaciones biomecánicas para mejorar el rendimiento."
+        ]
+      },
+      "fintitle": "La ventaja de un enfoque integral",
+      "finDescription": "Nuestros entrenadores y terapeutas trabajan juntos para potenciar tu salud desde todos los ángulos. No solo mejorarás físicamente, sino que también sentirás una mayor armonía y equilibrio en tu vida diaria.",
+      "finCall": "¡Únete a nuestra comunidad y empieza tu transformación hoy mismo!"
+    }
+  }
 }

@@ -13,7 +13,7 @@ i18n
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json", // Путь к JSON-файлам
     },
-    ns: ["common", "claces-infantiles", "hero-data-all-sections", "nutrition-data", "personal-training-data"], // Названия файлов
+    ns: ["common", "claces-infantiles", "hero-data-all-sections", "nutrition-data", "personal-training-data", "tarifas"], // Названия файлов
     defaultNS: "common", // Пространство имен по умолчанию
     interpolation: { escapeValue: false },
   }).then(() => {

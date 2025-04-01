@@ -1,4 +1,10 @@
-  {
+{
+  "clacesInfantiles": {
+    "title": "Entrenamiento Personal para Niños: ¡Diversión y Movimiento!",
+    "description": "¡Deja que tu hijo descubra el placer de moverse y estar activo!",
+    "videoSrc": "/video/video_trena2.mp4"
+  },
+  "offers": {
     "taekwondo": {
       "label": "Taekwondo",
       "title": "¡Entrena Como un Guerrero! Desarrolla Fuerza y Disciplina a Través del Taekwondo",
@@ -116,3 +122,4 @@
       "callToAction": "¡Inscríbete Ahora y Deja que tus Hijos Brillen en el Escenario!"
     }
   }
+}

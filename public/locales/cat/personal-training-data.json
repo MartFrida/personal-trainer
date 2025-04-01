@@ -1,210 +1,217 @@
-  {
+{
+  "personalTraining": {
+    "title": "Més que un entrenament, un estil de vida",
+    "description": "El nostre equip d'entrenadors i terapeutes et guiarà en cada pas del camí perquè assoleixis les teves metes de manera segura i eficaç.",
+    "videoSrc": "/video/entr-pers.mp4"
+  },
+  "offers": {
     "running": {
       "label": "Running",
-      "title": "🏃‍♂️ ¡Corre más rápido, más fuerte, más inteligente! 🏃‍♀️",
-      "description": "Ya sea que estés entrenando para tu primera carrera de 5 km, una maratón o simplemente quieras mejorar tu resistencia, mi entrenamiento de carrera personalizado te ayudará a alcanzar tus objetivos. ¡Llevemos tu carrera al siguiente nivel!",
+      "title": "🏃‍♂️ Corre més ràpid, més fort, més intel·ligent! 🏃‍♀️",
+      "description": "Ja sigui que estiguis entrenant per la teva primera cursa de 5 km, una marató o simplement vulguis millorar la teva resistència, el meu entrenament personalitzat de carrera t'ajudarà a assolir els teus objectius. Porta la teva carrera al següent nivell!",
       "items": [
-        "🔹Planes de carrera personalizados: adaptados a tu nivel de experiencia y objetivos.",
-        "🔹Análisis de técnica y forma: mejore la eficiencia y reduzca el riesgo de lesiones.",
-        "🔹Entrenamiento para maratones y carreras: 5K, 10K, media maratón, maratón completa y ultra.",
-        "🔹Entrenamientos de fuerza y movilidad: ejercicios esenciales para desarrollar el cuerpo de un corredor.",
-        "🔹Orientación nutricional personalizada: alimenta tus carreras de la manera correcta."
+        "🔹 Plans de carrera personalitzats: adaptats al teu nivell d'experiència i objectius.",
+        "🔹 Anàlisi de tècnica i forma: millora l'eficiència i redueix el risc de lesions.",
+        "🔹 Entrenament per maratons i curses: 5K, 10K, mitja marató, marató completa i ultra.",
+        "🔹 Entrenaments de força i mobilitat: exercicis essencials per desenvolupar el cos d'un corredor.",
+        "🔹 Orientació nutricional personalitzada: alimenta les teves curses de la manera correcta."
       ],
-      "callToAction": "🚀 ¿Está listo para trabajar de manera más inteligente? ¡Contácteme hoy para una evaluación gratuita!",
+      "callToAction": "🚀 Estàs llest per treballar de manera més intel·ligent? Contacta'm avui per a una avaluació gratuïta!",
       "imageUrl": "/img/foto-section/running-sect.jpg"
     },
     "calistenia": {
-      "label": "Calistenia",
-      "title": "¡Libera todo tu potencial con calistenia!",
-      "description": "Como entrenador personal certificado de Street Workout y calistenia, te ayudo a lograr una fuerza, una movilidad y una resistencia increíbles, ¡usando únicamente tu cuerpo! Ya seas principiante o un atleta avanzado, creo planes de entrenamiento personalizados para dominar las habilidades de peso corporal, como los muscle-ups, las planchas y las paradas de manos. ¡Construyamos una versión más fuerte y ágil de ti!",
+      "label": "Calistènia",
+      "title": "Libera tot el teu potencial amb calistènia!",
+      "description": "Com a entrenador personal certificat de Street Workout i calistènia, t'ajudo a aconseguir una força, mobilitat i resistència increïbles, només utilitzant el teu cos! Tant si ets principiants com un atleta avançat, creo plans d'entrenament personalitzats per dominar les habilitats de pes corporal, com els muscle-ups, les planxes i les parades de mans. Construeix una versió més forta i àgil de tu mateix!",
       "items": [
-        "👉 Planes de entrenamiento personalizados",
-        "👉 Fuerza, movilidad y pérdida de grasa",
-        "👉 Niveles principiante a avanzado",
-        "💥 ¡Entrena en cualquier lugar y en cualquier momento! 💥"
+        "👉 Plans d'entrenament personalitzats",
+        "👉 Força, mobilitat i pèrdua de greix",
+        "👉 Nivells principiants a avançats",
+        "💥 Entrena en qualsevol lloc i en qualsevol moment! 💥"
       ],
       "imageUrl": "/img/foto-section/gymnast.jpg"
     },
     "halterofilia": {
-      "label": "Halterofilia",
-      "title": "Halterofilia 🏋️‍♂️ Levanta más fuerza. Levanta más inteligentemente.🏋️‍♀️",
-      "description": "¿Estás listo para superar tus límites y desarrollar fuerza real? Ya sea que quieras batir récords personales, mejorar tu técnica o ponerte en la mejor forma de tu vida, mi entrenamiento de levantamiento de pesas está diseñado para ayudarte a lograr tus objetivos de manera segura y efectiva.",
+      "label": "Halterofília",
+      "title": "Halterofília 🏋️‍♂️ Puja més força. Puja més intel·ligentment.🏋️‍♀️",
+      "description": "Estàs llest per superar els teus límits i desenvolupar força real? Tant si vols batre els teus rècords personals, millorar la teva tècnica o posar-te en la millor forma de la teva vida, el meu entrenament de llevament de peses està dissenyat per ajudar-te a aconseguir els teus objectius de manera segura i eficaç.",
       "items": [
-        "🔹Planes de levantamiento de pesas personalizados: adaptados a sus objetivos, ya sea que busque aumentar la fuerza, desarrollar músculos o mejorar la forma.",
-        "🔹 Levantamiento de pesas olímpico: domine el clean & jerk, el arranque y otros levantamientos olímpicos con entrenamiento experto.",
-        "🔹 Entrenamiento de levantamiento de pesas: programación enfocada en sentadillas, press de banca y peso muerto para desarrollar fuerza bruta.",
-        "🔹 Technique Coaching – Improve your lift form and execution to prevent injuries and maximize results.",
-        "🔹 Strength & Mobility Workouts – Enhance your mobility and functional strength to improve performance."
+        "🔹 Plans de llevament de peses personalitzats: adaptats als teus objectius, tant si busques augmentar la força, desenvolupar músculs o millorar la forma.",
+        "🔹 Llevant de peses olímpic: domina el clean & jerk, l'arrencada i altres aixecaments olímpics amb entrenament expert.",
+        "🔹 Entrenament de llevament de peses: programació centrada en sentadelles, press de banca i pes mort per desenvolupar força bruta.",
+        "🔹 Coaching de tècnica – Millora la teva forma i execució per prevenir lesions i maximitzar els resultats.",
+        "🔹 Entrenaments de força i mobilitat – Millora la teva mobilitat i força funcional per millorar el rendiment."
       ],
-      "callToAction": "💥 Transforma tu fuerza: ¡comienza hoy!💥",
+      "callToAction": "💥 Transforma la teva força: comença avui!💥",
       "imageUrl": "/img/foto-section/halterofilia-foto.jpg"
     },
     "culturismo": {
-      "label": "Culturismo",
-      "title": "Culturismo 💪 ¡Construye el cuerpo que siempre has deseado!💪",
-      "description": "Ya sea que estés buscando ganar masa muscular, definir tu físico o esculpir tu cuerpo a la perfección, estoy aquí para guiarte en cada paso del camino. Como tu entrenador de culturismo dedicado, te ayudaré a maximizar tu entrenamiento, nutrición y recuperación para lograr los mejores resultados.",
+      "label": "Culturisme",
+      "title": "Culturisme 💪 Construeix el cos que sempre has desitjat!💪",
+      "description": "Ja sigui que estiguis buscant guanyar massa muscular, definir el teu físic o esculpir el teu cos a la perfecció, estic aquí per guiar-te en cada pas del camí. Com a teu entrenador de culturisme dedicat, t'ajudaré a maximitzar el teu entrenament, nutrició i recuperació per aconseguir els millors resultats.",
       "items": [
-        "Planes de entrenamiento de culturismo personalizados: diseñados para desarrollar músculos, mejorar la simetría y reducir la grasa corporal",
-        "Entrenamiento de fuerza y ​​masa muscular: programas enfocados para aumentar el tamaño y la fuerza de los músculos",
-        "Preparación para la competencia: entrenamiento personalizado para competencias de culturismo, que incluye poses, dieta y estrategia para la semana pico",
-        "Orientación nutricional: planes de alimentación personalizados para alimentar su cuerpo para un máximo crecimiento muscular y pérdida de grasa",
-        "Recuperación y prevención de lesiones: estrategias para una recuperación óptima, salud de las articulaciones y para evitar el agotamiento"
+        "Plans d'entrenament de culturisme personalitzats: dissenyats per desenvolupar músculs, millorar la simetria i reduir la grasa corporal",
+        "Entrenament de força i massa muscular: programes enfocats per augmentar la mida i la força dels músculs",
+        "Preparació per la competició: entrenament personalitzat per a competicions de culturisme, incloent-hi postures, dieta i estratègia per a la setmana punta",
+        "Orientació nutricional: plans d'alimentació personalitzats per alimentar el teu cos per a un màxim creixement muscular i pèrdua de greix",
+        "Recuperació i prevenció de lesions: estratègies per a una recuperació òptima, salut de les articulacions i per evitar l'esgotament"
       ],
       "imageUrl": "/img/amaruk3.jpg"
     },
     "fitnes": {
       "label": "Fitness",
-      "title": "Fitness🏋️‍♀️ ¡Consigue tu mejor forma con entrenamiento físico personalizado! 🏃‍♂️",
-      "description": "Ya sea que seas nuevo en el mundo del fitness o que estés buscando superar un estancamiento, mis programas de entrenamiento personalizados están diseñados para ayudarte a desarrollar fuerza, mejorar la resistencia y sentirte lo mejor posible. Desde la pérdida de peso hasta la ganancia de masa muscular, estoy aquí para guiarte en cada paso del camino.",
+      "title": "Fitness🏋️‍♀️ Aconsegueix la millor forma amb entrenament físic personalitzat! 🏃‍♂️",
+      "description": "Ja sigui que siguis nou al món del fitness o busquis superar un estancament, els meus programes d'entrenament personalitzats estan dissenyats per ajudar-te a desenvolupar força, millorar la resistència i sentir-te al màxim. Des de la pèrdua de pes fins a l'augment de massa muscular, estic aquí per guiar-te en cada pas del camí.",
       "items": [
-        "🔹Planes de fitness personalizados: adaptados a sus objetivos y nivel de condición física, ya sea que desee perder grasa, ganar masa muscular o mejorar su salud en general.",
-        "🔹 Fuerza y ​​acondicionamiento: desarrolle músculos, aumente la fuerza y ​​mejore su estado físico general con entrenamientos de fuerza específicos.",
-        "🔹 Entrenamiento cardiovascular y de resistencia: mejora la resistencia, la salud cardiovascular y la aguante a través de entrenamientos divertidos y desafiantes.",
-        "🔹 Programas de pérdida de peso: ejercicios efectivos y estrategias de nutrición para ayudarte a perder peso y no recuperarlo.",
-        "🔹 Entrenamiento de postura y movilidad: mejore la flexibilidad, prevenga lesiones y mejore la movilidad con ejercicios especializados."
+        "🔹 Plans de fitness personalitzats: adaptats als teus objectius i nivell de condició física, ja sigui que vulguis perdre greix, guanyar massa muscular o millorar la teva salut en general.",
+        "🔹 Força i acondicionament: desenvolupa músculs, augmenta la força i millora el teu estat físic general amb entrenaments de força específics.",
+        "🔹 Entrenament cardiovascular i de resistència: millora la resistència, la salut cardiovascular i l'aguant a través d'entrenaments divertits i desafiants.",
+        "🔹 Programes de pèrdua de pes: exercicis efectius i estratègies de nutrició per ajudar-te a perdre pes i no recuperar-lo.",
+        "🔹 Entrenament de postura i mobilitat: millora la flexibilitat, preven les lesions i millora la mobilitat amb exercicis especialitzats."
       ],
-      "callToAction": "🚀 ¿Está listo para trabajar de manera más inteligente? ¡Contácteme hoy para una evaluación gratuita!",
+      "callToAction": "🚀 Estàs llest per treballar de manera més intel·ligent? Contacta'm avui per a una avaluació gratuïta!",
       "imageUrl": "/img/foto-section/fitnes-zumba.jpg"
     },
     "natacion": {
-      "label": "Natacion",
-      "title": "Natacion 🏊‍♂️ ¡Sumérgete en tu mejor desempeño en natación!",
-      "description": "Ya sea que seas un principiante que busca aprender los conceptos básicos o un nadador experimentado que busca mejorar su técnica y resistencia, estoy aquí para ayudarte a liberar todo tu potencial en la piscina. Con entrenamiento de natación personalizado, mejoraremos la eficiencia de tus brazadas, desarrollaremos fuerza y ​​llevaremos tus habilidades de natación al siguiente nivel.",
+      "label": "Natació",
+      "title": "Natació 🏊‍♂️ Submergeix-te en el teu millor rendiment en natació!",
+      "description": "Siguis un principiant que vol aprendre els conceptes bàsics o un nedador experimentat que vol millorar la seva tècnica i resistència, estic aquí per ajudar-te a alliberar tot el teu potencial a la piscina. Amb entrenament de natació personalitzat, millorarem l'eficiència dels teus braçades, desenvoluparem força i portarem les teves habilitats de natació al següent nivell.",
       "items": [
-        "🔹 Planes de entrenamiento de natación personalizados: adaptados a tu nivel de habilidad y objetivos, ya sea para acondicionamiento físico, técnica o preparación para la competencia.",
-        "🔹 Mejora de la técnica de brazada: entrenamiento centrado en las cuatro brazadas principales (libre, braza, espalda y mariposa) para mejorar la eficiencia y la velocidad.",
-        "🔹 Entrenamiento de resistencia y velocidad: desarrolle resistencia y potencia a través de entrenamientos de natación personalizados diseñados para aumentar el rendimiento.",
-        "🔹 Entrenamiento de natación en aguas abiertas: entrenamiento para natación al aire libre, que incluye seguridad, técnica y estrategia para triatlones o fitness.",
-        "🔹 Natación para mantenerse en forma y perder peso: entrenamientos de cuerpo completo de bajo impacto que queman calorías y mejoran la salud cardiovascular."
+        "🔹 Plans d'entrenament de natació personalitzats: adaptats al teu nivell d'habilitat i objectius, ja sigui per a condició física, tècnica o preparació per a la competició.",
+        "🔹 Millora de la tècnica de braçada: entrenament centrat en les quatre braçades principals (lliure, braça, esquena i papallona) per millorar l'eficiència i la velocitat.",
+        "🔹 Entrenament de resistència i velocitat: desenvolupa resistència i potència mitjançant entrenaments de natació personalitzats dissenyats per augmentar el rendiment.",
+        "🔹 Entrenament de natació en aigües obertes: entrenament per a natació a l'aire lliure, que inclou seguretat, tècnica i estratègia per a triatlons o fitness.",
+        "🔹 Natació per mantenir-se en forma i perdre pes: entrenaments de cos complet de baix impacte que cremen calories i milloren la salut cardiovascular."
       ],
-      "callToAction": "🚀 ¡Alcanza tus objetivos de natación! Reserva una consulta hoy para hablar sobre tu plan de entrenamiento.",
+      "callToAction": "🚀 Aconsegueix els teus objectius de natació! Reserva una consulta avui per parlar sobre el teu pla d'entrenament.",
       "imageUrl": "/img/foto-section/nadar-foto.jpg"
     },
     "senderismo": {
-      "label": "Senderismo",
-      "title": "Senderismo 🥾 Entrena para los senderos: ¡desarrolla fuerza, resistencia y preparación para la aventura! 🌿",
-      "description": "Ya sea que te estés preparando para tu primera aventura de senderismo, que quieras hacer una caminata desafiante o que simplemente quieras mejorar tu estado físico al aire libre, estoy aquí para ayudarte. Mis programas de entrenamiento de senderismo personalizados se centran en la resistencia, la fuerza y ​​la movilidad para que cada caminata sea más fácil y agradable.",
+      "label": "Senderisme",
+      "title": "Senderisme 🥾 Entrena per als camins: desenvolupa força, resistència i preparació per a l'aventura! 🌿",
+      "description": "Siguis que t'estiguis preparant per a la teva primera aventura de senderisme, que vulguis fer una caminada desafiant o que simplement vulguis millorar la teva forma física a l'aire lliure, estic aquí per ajudar-te. Els meus programes d'entrenament personalitzats de senderisme es centren en la resistència, la força i la mobilitat perquè cada caminada sigui més fàcil i agradable.",
       "items": [
-        "🔹 Fuerza y ​​acondicionamiento para excursionistas: desarrolle la fuerza de las piernas, el torso y la parte superior del cuerpo para afrontar subidas empinadas y caminatas largas.",
-        "🔹 Entrenamientos cardiovasculares y de resistencia: aumente la resistencia para caminatas más largas y a mayores alturas.",
-        "🔹 Entrenamiento para mochileros y cargas: prepárese para caminatas de varios días mejorando la capacidad de carga y la estabilidad.",
-        "🔹 Movilidad y prevención de lesiones: reduzca el riesgo de dolor de rodilla, tobillo y espalda con ejercicios de flexibilidad y equilibrio.",
-        "🔹 Preparación para caminatas a gran altitud y trekking: entrenamiento específico para caminatas en altura, mejorando la respiración y la eficiencia del oxígeno."
+        "🔹 Força i acondicionament per a excursionistes: desenvolupa la força de les cames, el tronc i la part superior del cos per afrontar pujades pronunciades i caminades llargues.",
+        "🔹 Entrenaments cardiovasculars i de resistència: augmenta la resistència per a caminades més llargues i a majors altures.",
+        "🔹 Entrenament per a motxillers i càrregues: prepara't per a caminades de diversos dies millorant la capacitat de càrrega i l'estabilitat.",
+        "🔹 Mobilitat i prevenció de lesions: redueix el risc de dolor de genoll, turmell i esquena amb exercicis de flexibilitat i equilibri.",
+        "🔹 Preparació per a caminades a gran alçada i trekking: entrenament específic per a caminades en alçada, millorant la respiració i l'eficiència de l'oxigen."
       ],
-      "callToAction": "🚀 ¡Prepárate para el senderismo! Ponte en contacto conmigo hoy mismo para comenzar tu programa de entrenamiento de senderismo personalizado.",
+      "callToAction": "🚀 Prepara't per al senderisme! Contacta'm avui mateix per començar el teu programa d'entrenament de senderisme personalitzat.",
       "imageUrl": "/img/foto-section/senderizmo.jpg"
     },
     "espining": {
       "label": "Spinning",
-      "title": "Transforma tu energía con el Spinning",
-      "description": "Descubre el poder del entrenamiento en bicicleta indoor y alcanza tu mejor versión. Con sesiones personalizadas y motivadoras, mejorarás tu resistencia, fuerza y bienestar general. ¡Empieza hoy y pedalea hacia tus objetivos!",
+      "title": "Transforma la teva energia amb el Spinning",
+      "description": "Descobreix el poder de l'entrenament en bicicleta indoor i aconsegueix la teva millor versió. Amb sessions personalitzades i motivadores, milloraràs la teva resistència, força i benestar general. Comença avui i pedala cap als teus objectius!",
       "items": [
-        "Quema calorías y mejora tu condición física con sesiones de alta intensidad.",
-        "Fortalece tu corazón y pulmones con entrenamientos cardiovasculares efectivos.",
-        "Reduce el estrés y mejora tu estado de ánimo gracias a la combinación de ejercicio y música motivadora."
+        "Crema calories i millora la teva condició física amb sessions d'alta intensitat.",
+        "Fortaleix el teu cor i pulmons amb entrenaments cardiovasculars efectius.",
+        "Redueix l'estrès i millora el teu estat d'ànim gràcies a la combinació d'exercici i música motivadora."
       ],
       "imageUrl": "/img/foto-section/cycling-spinning.jpg"
     },
     "defensa": {
       "label": "Defensa Personal",
-      "title": "Defensa Personal. Aprende a Defenderte y Gana Confianza",
-      "description": "Domina técnicas efectivas de defensa personal mientras mejoras tu condición física y seguridad. Con entrenamiento adaptado a todos los niveles, desarrollarás habilidades prácticas para protegerte en cualquier situación. ¡Empieza hoy y fortalece cuerpo y mente! Te ofrezco sesiones adaptadas a tu condición física y objetivos, ya sea que quieras aprender técnicas de autodefensa, mejorar tu fuerza y resistencia o ganar confianza en situaciones de riesgo. Entrena de manera individual, en grupo o en empresas que buscan mayor seguridad para sus empleados.",
+      "title": "Defensa Personal. Aprèn a Defensar-te i Guanya Confiança",
+      "description": "Domina tècniques efectives de defensa personal mentre millores la teva condició física i seguretat. Amb entrenament adaptat a tots els nivells, desenvoluparàs habilitats pràctiques per protegir-te en qualsevol situació. Comença avui i enforteix cos i ment! T'ofereixo sessions adaptades a la teva condició física i objectius, sigui que vulguis aprendre tècniques d'autodefensa, millorar la teva força i resistència o guanyar confiança en situacions de risc. Entrena de manera individual, en grup o a empreses que busquen més seguretat per als seus empleats.",
       "items": [
-        "🔹Aumenta tu seguridad y confianza aprendiendo técnicas efectivas y fáciles de aplicar.",
-        "🔹 Mejora tu estado físico con entrenamientos dinámicos que fortalecen tu cuerpo.",
-        "🔹 Reduce el estrés y refuerza tu mentalidad al sentirte preparado ante cualquier situación.",
-        "🔹 Aprende a actuar en momentos de peligro con estrategias de respuesta rápida."
+        "🔹 Augmenta la teva seguretat i confiança aprenent tècniques efectives i fàcils d'aplicar.",
+        "🔹 Millora el teu estat físic amb entrenaments dinàmics que enforteixen el teu cos.",
+        "🔹 Redueix l'estrès i reforça la teva mentalitat en sentir-te preparat davant qualsevol situació.",
+        "🔹 Aprèn a actuar en moments de perill amb estratègies de resposta ràpida."
       ],
       "imageUrl": "/img/foto-section/defenza-personal.jpg"
     },
     "mma": {
       "label": "MMA",
-      "title": "Domina las MMA y Supera tus Límites",
-      "description": "Desarrolla fuerza, resistencia y técnica con entrenamientos personalizados en Artes Marciales Mixtas. Aprende golpes, derribos y sumisiones mientras mejoras tu condición física y confianza. ¡Entrena como un luchador, sin importar tu nivel! Ofrezco clases individuales y grupales de MMA para todos los niveles. Aprenderás técnicas efectivas de golpeo, agarre y defensa, combinando la intensidad de un deporte de combate con ejercicios funcionales que mejoran tu fuerza y resistencia. ¡Entrena con un plan diseñado para tus objetivos!",
+      "title": "Domina les MMA i Supera els Teus Límits",
+      "description": "Desenvolupa força, resistència i tècnica amb entrenaments personalitzats en Arts Marcials Mixtes. Aprèn cops, derribaments i subjeccions mentre millores la teva condició física i confiança. Entrena com un lluitador, sense importar el teu nivell! Ofereixo classes individuals i grupals de MMA per a tots els nivells. Aprendràs tècniques efectives de cop, agafament i defensa, combinant la intensitat d'un esport de combat amb exercicis funcionals que milloren la teva força i resistència. Entrena amb un pla dissenyat per als teus objectius!",
       "items": [
-        "🔹 Desarrolla fuerza, velocidad y resistencia con entrenamientos intensivos.",
-        "🔹 Aprende técnicas de golpeo y combate en el suelo para defensa personal o competencia.",
-        "🔹 Mejora tu confianza y mentalidad con estrategias de lucha efectivas.",
-        "🔹 Quema calorías y mejora tu estado físico mientras aprendes habilidades de combate."
+        "🔹 Desenvolupa força, velocitat i resistència amb entrenaments intensius.",
+        "🔹 Aprèn tècniques de cop i combat a terra per a defensa personal o competició.",
+        "🔹 Millora la teva confiança i mentalitat amb estratègies de lluita efectives.",
+        "🔹 Crema calories i millora el teu estat físic mentre aprens habilitats de combat."
       ],
       "imageUrl": "/img/foto-section/pt-mma.jpg"
     },
     "taichi": {
       "label": "Tai Chi",
-      "title": "Equilibrio, Energía y Bienestar con Tai Chi",
-      "description": "Descubre el poder del Tai Chi para mejorar tu salud física y mental. Con movimientos fluidos y controlados, aprenderás a fortalecer tu cuerpo, reducir el estrés y aumentar tu vitalidad. ¡Empieza hoy tu camino hacia el equilibrio!",
+      "title": "Equilibri, Energia i Benestar amb Tai Chi",
+      "description": "Descobreix el poder del Tai Chi per millorar la teva salut física i mental. Amb moviments suaus i controlats, aprendràs a enfortir el teu cos, reduir l'estrès i augmentar la teva vitalitat. Comença avui el teu camí cap a l'equilibri!",
       "items": [
-        "🔹 Mejora tu equilibrio y coordinación con movimientos suaves y controlados.",
-        "🔹 Reduce el estrés y la ansiedad mediante técnicas de respiración y concentración.",
-        "🔹 Fortalece tu cuerpo y mente con una práctica que mejora la flexibilidad y la circulación.",
-        "🔹 Aumenta tu energía vital con un entrenamiento que armoniza cuerpo y espíritu."
+        "🔹 Millora el teu equilibri i coordinació amb moviments suaus i controlats.",
+        "🔹 Redueix l'estrès i l'ansietat mitjançant tècniques de respiració i concentració.",
+        "🔹 Enforteix el teu cos i ment amb una pràctica que millora la flexibilitat i la circulació.",
+        "🔹 Augmenta la teva energia vital amb un entrenament que harmonitza cos i esperit."
       ],
-      "callToAction": "Conéctate con tu cuerpo y mente a través del Tai Chi. Escríbeme para más información y reserva tu primera sesión. ¡Empieza tu camino hacia una vida más armoniosa!",
+      "callToAction": "Connecta amb el teu cos i ment a través del Tai Chi. Escriu-me per a més informació i reserva la teva primera sessió. Comença el teu camí cap a una vida més harmònica!",
       "imageUrl": "/img/foto-section/tp-tay-chi.jpg"
     },
     "estreching": {
       "label": "Stretching",
-      "title": "Flexibilidad, Movilidad y Bienestar con Stretching",
-      "description": "Descubre el poder del stretching para mejorar tu movilidad, reducir tensiones y prevenir lesiones. Con sesiones personalizadas, aprenderás técnicas efectivas para relajar y fortalecer tu cuerpo. ¡Empieza hoy a sentirte más ágil y libre de molestias!",
+      "title": "Flexibilitat, Mobilitat i Benestar amb Stretching",
+      "description": "Descobreix el poder del stretching per millorar la teva mobilitat, reduir tensions i prevenir lesions. Amb sessions personalitzades, aprendràs tècniques efectives per relaxar i enfortir el teu cos. Comença avui a sentir-te més àgil i lliure de molèsties!",
       "items": [
-        "🔹 Aumenta tu flexibilidad y movilidad con estiramientos adaptados a tu cuerpo.",
-        "🔹 Alivia dolores y tensiones musculares mejorando la circulación y la postura.",
-        "🔹 Previene lesiones y mejora tu rendimiento en cualquier actividad física.",
-        "🔹 Reduce el estrés y la fatiga a través de movimientos suaves y controlados."
+        "🔹 Augmenta la teva flexibilitat i mobilitat amb estiraments adaptats al teu cos.",
+        "🔹 Alleuja dolors i tensions musculars millorant la circulació i la postura.",
+        "🔹 Prevé lesions i millora el teu rendiment en qualsevol activitat física.",
+        "🔹 Redueix l'estrès i la fatiga a través de moviments suaus i controlats."
       ],
-      "callToAction": "Empieza a Sentirte Más Libre y Ágil! No esperes a sentir molestias para mejorar tu movilidad. Escríbeme y reserva tu primera sesión de stretching. ¡Tu cuerpo te lo agradecerá!",
+      "callToAction": "Comença a Sentir-te Més Lliure i Àgil! No esperis a sentir molèsties per millorar la teva mobilitat. Escriu-me i reserva la teva primera sessió de stretching. El teu cos t'ho agrairà!",
       "imageUrl": "/img/foto-section/streching.jpg"
     },
     "pilates": {
       "label": "Pilates",
-      "title": "Fortalece tu Cuerpo y Mente con Pilates",
-      "description": "Ofrezco entrenamientos individuales y grupales de Pilates, diseñados para mejorar tu postura, tonificar tu cuerpo y prevenir lesiones. Ya sea que busques Pilates en suelo o con accesorios, te guiaré en cada ejercicio para maximizar sus beneficios. Disponible en formato presencial y online.",
+      "title": "Enforteix el teu Cos i Ment amb Pilates",
+      "description": "Ofereixo entrenaments individuals i grupals de Pilates, dissenyats per millorar la teva postura, tonificar el teu cos i prevenir lesions. Sigui que busquis Pilates a terra o amb accessoris, et guiaré en cada exercici per maximitzar els seus beneficis. Disponible en format presencial i online.",
       "items": [
-        "🔹 Mejora tu postura y alinea tu cuerpo con ejercicios controlados.",
-        "🔹 Fortalece tu core y mejora tu estabilidad para prevenir dolores y lesiones.",
-        "🔹 Aumenta tu flexibilidad y movilidad con movimientos fluidos y precisos.",
-        "🔹 Reduce el estrés y mejora tu concentración a través de la respiración y el control del cuerpo."
+        "🔹 Millora la teva postura i alinea el teu cos amb exercicis controlats.",
+        "🔹 Enforteix el teu core i millora la teva estabilitat per prevenir dolors i lesions.",
+        "🔹 Augmenta la teva flexibilitat i mobilitat amb moviments suaus i precisos.",
+        "🔹 Redueix l'estrès i millora la teva concentració a través de la respiració i el control del cos."
       ],
-      "callToAction": "Cuida tu cuerpo y mente con un entrenamiento diseñado para mejorar tu bienestar. Escríbeme para más información y reserva tu primera sesión. ¡Tu cambio empieza hoy!",
+      "callToAction": "Cuida el teu cos i ment amb un entrenament dissenyat per millorar el teu benestar. Escriu-me per a més informació i reserva la teva primera sessió. El teu canvi comença avui!",
       "imageUrl": "/img/foto-section/pilates.jpg"
     },
     "yoga": {
-      "label": "Yoga",
-      "title": "Equilibra tu Cuerpo y Mente con Yoga",
-      "description": "Descubre los beneficios del yoga para fortalecer tu cuerpo, mejorar tu flexibilidad y reducir el estrés. Con sesiones personalizadas, te guiaré en cada postura y técnica de respiración para que alcances bienestar y armonía. ¡Empieza hoy tu transformación!",
+      "label": "Ioga",
+      "title": "Equilibra el teu Cos i Ment amb Ioga",
+      "description": "Descobreix els beneficis de l'ioga per enfortir el teu cos, millorar la flexibilitat i reduir l'estrès. Amb sessions personalitzades, et guiaré en cada postura i tècnica de respiració perquè assoleixis benestar i harmonia. Comença avui la teva transformació!",
       "items": [
-        "🔹 Mejora tu flexibilidad y equilibrio con posturas adaptadas a tu nivel.",
-        "🔹 Fortalece tu cuerpo y alivia dolores con movimientos suaves y efectivos.",
-        "🔹Reduce el estrés y la ansiedad a través de técnicas de respiración y meditación.",
-        "🔹 Aumenta tu energía y bienestar al conectar cuerpo, mente y respiración."
+        "🔹 Millora la teva flexibilitat i equilibri amb postures adaptades al teu nivell.",
+        "🔹 Enforteix el teu cos i alleuja els dolors amb moviments suaus i efectius.",
+        "🔹 Redueix l'estrès i l'ansietat mitjançant tècniques de respiració i meditació.",
+        "🔹 Augmenta la teva energia i benestar connectant cos, ment i respiració."
       ],
-      "callToAction": "Empieza Tu Viaje con el Yoga Conéctate contigo mismo a través del yoga. Escríbeme para más información y reserva tu primera sesión. ¡Tu bienestar te espera!",
+      "callToAction": "Comença el teu Viatge amb l'Ioga. Connecta amb tu mateix a través de l'ioga. Escriu-me per a més informació i reserva la teva primera sessió. El teu benestar t'espera!",
       "imageUrl": "/img/foto-section/yoga-mom.jpg"
     },
     "meditación": {
-      "label": "La Meditación al Aire Libre",
-      "title": "🌿 Clases Personalizadas de Meditación al Aire Libre 🌿",
-      "description": "Libérate del estrés y mejora tu bienestar con nuestras sesiones de meditación al aire libre. Diseñadas para ayudarte a conectar contigo mismo y con la naturaleza, estas clases te enseñarán técnicas de respiración, relajación y mindfulness para alcanzar un estado de calma y claridad mental. ¡Inscríbete hoy y da el primer paso hacia una vida más equilibrada!",
+      "label": "Meditació a l'Aire Lliure",
+      "title": "🌿 Classes Personalitzades de Meditació a l'Aire Lliure 🌿",
+      "description": "Allibera't de l'estrès i millora el teu benestar amb les nostres sessions de meditació a l'aire lliure. Dissenyades per ajudar-te a connectar amb tu mateix i amb la natura, aquestes classes t'ensenyaran tècniques de respiració, relaxació i mindfulness per aconseguir un estat de calma i claredat mental. Inscriu-te avui i fes el primer pas cap a una vida més equilibrada!",
       "items": [
-        "🔹 Reducción del Estrés y la Ansiedad 🧘‍♂️: Aprende a controlar tus emociones y a encontrar serenidad en medio del ritmo acelerado del día a día.",
-        "🔹 Mayor Concentración y Enfoque 🎯: La práctica de la meditación fortalece la mente, mejorando tu capacidad de atención y toma de decisiones.",
-        "🔹Conexión con la Naturaleza 🍃: Respirar aire puro y meditar en espacios abiertos potencia la sensación de bienestar y armonía interior.",
-        "🔹 Bienestar Físico y Emocional 💖: Relaja tu cuerpo, mejora la calidad del sueño y refuerza la autoestima a través de la meditación guiada."
+        "🔹 Reducció de l'Estrès i l'Ansietat 🧘‍♂️: Aprèn a controlar les teves emocions i a trobar serenitat enmig del ritme accelerat del dia a dia.",
+        "🔹 Major Concentració i Enfocament 🎯: La pràctica de la meditació enforteix la ment, millorant la teva capacitat d'atenció i presa de decisions.",
+        "🔹 Connexió amb la Natura 🍃: Respirar aire pur i meditar en espais oberts potencia la sensació de benestar i harmonia interior.",
+        "🔹 Benestar Físic i Emocional 💖: Relaxa el teu cos, millora la qualitat del son i reforça l'autoestima a través de la meditació guiada."
       ],
-      "callToAction": "¡Empieza tu camino hacia la tranquilidad hoy mismo!",
+      "callToAction": "Comença el teu camí cap a la tranquil·litat avui mateix!",
       "imageUrl": "/img/foto-section/meditacion-al-aire-libre.webp"
     },
     "boxing": {
-      "label": "Boxeo",
-      "title": "Entrena Como un Boxeador, Transforma tu Cuerpo",
-      "description": "Descubre el poder del boxeo para mejorar tu fuerza, resistencia y confianza. Con sesiones personalizadas, aprenderás técnica, estrategia y acondicionamiento físico mientras te pones en la mejor forma de tu vida. ¡Empieza hoy y golpea tus límites!",
+      "label": "Boxeig",
+      "title": "Entrena com un Boxejador, Transforma el teu Cos",
+      "description": "Descobreix el poder del boxeig per millorar la teva força, resistència i confiança. Amb sessions personalitzades, aprendràs tècnica, estratègia i condicionament físic mentre t'hi posis en la millor forma de la teva vida. Comença avui i colpeja els teus límits!",
       "items": [
-        "🔹 Mejora tu resistencia y fuerza con entrenamientos de alto impacto.",
-        "🔹 Aprende técnicas de golpeo y defensa para ganar confianza y seguridad.",
-        "🔹 Quema calorías y mejora tu condición física con rutinas dinámicas y desafiantes.",
-        "🔹 Reduce el estrés y mejora tu concentración a través de la disciplina del boxeo."
+        "🔹 Millora la teva resistència i força amb entrenaments d'alt impacte.",
+        "🔹 Aprèn tècniques de colpeig i defensa per guanyar confiança i seguretat.",
+        "🔹 Cremar calories i millorar la teva condició física amb rutines dinàmiques i desafiants.",
+        "🔹 Redueix l'estrès i millora la teva concentració mitjançant la disciplina del boxeig."
       ],
-      "callToAction": "Escríbeme y agenda tu primera sesión. ¡Es hora de subir al ring!",
+      "callToAction": "Escriu-me i agenda la teva primera sessió. És hora d'entrar al ring!",
       "imageUrl": "/img/foto-section/boxing.jpg"
     }
   }
+}

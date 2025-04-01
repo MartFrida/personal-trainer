@@ -42,12 +42,12 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className="relative my-2" ref={menuRef}>
+    <div className="relative m-2" ref={menuRef}>
       {/* Кнопка выбора языка */}
       <a
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2  bg-gray-800 text-white rounded-lg 
-                   hover:bg-gray-700 transition duration-300 cursor-pointer"
+        className="flex items-center gap-2 px-4 py-2  text-white rounded-lg 
+                   hover:bg-gray-800 transition duration-200 cursor-pointer"
       >
         <FaGlobe className="text-xl" />
         {!isMobile && <span>{selectedLanguage}</span>}

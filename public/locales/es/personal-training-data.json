@@ -1,4 +1,10 @@
-  {
+{
+  "personalTraining": {
+    "title": "Más que un entrenamiento, un estilo de vida",
+    "description": "Nuestro equipo de entrenadores y terapeutas te guiará en cada paso del camino para que alcances tus metas de forma segura y efectiva.",
+    "videoSrc": "/video/entr-pers.mp4"
+  },
+  "offers": {
     "running": {
       "label": "Running",
       "title": "🏃‍♂️ ¡Corre más rápido, más fuerte, más inteligente! 🏃‍♀️",
@@ -208,3 +214,4 @@
       "imageUrl": "/img/foto-section/boxing.jpg"
     }
   }
+}

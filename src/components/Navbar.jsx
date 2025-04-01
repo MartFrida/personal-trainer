@@ -21,9 +21,9 @@ const Navbar = () => {
           fetch(`/locales/${i18n.language}/personal-training-data.json`).then(res => res.json()),
           fetch(`/locales/${i18n.language}/nutrition-data.json`).then(res => res.json()),
         ]);
-        setNamesClacesInfantiles(ci);
-        setNamesTrenPersonal(tp);
-        setNamesNutrition(nutrition);
+        setNamesClacesInfantiles(ci.offers);
+        setNamesTrenPersonal(tp.offers);
+        setNamesNutrition(nutrition.offers);
       } catch (error) {
         console.error("Ошибка загрузки данных:", error);
       }
@@ -34,11 +34,11 @@ const Navbar = () => {
 
 
   const createLinks = (data) => {
+    if (!data) return []; // Проверка на null или undefined
     return Object.keys(data)
       .map(key => data[key]?.label ? { path: `#${key}`, label: data[key].label } : null)
       .filter(Boolean);
   };
-
 
   const linksCI = createLinks(namesClacesInfantiles);
   const linksTP = createLinks(namesTrenPersonal);
@@ -70,27 +70,29 @@ const Navbar = () => {
           <img src="/logo.png" alt="Logo" className="h-16 w-auto hover:scale-120 transition duration-200" />
         </Link>
 
-        {/* Кнопка бургер-меню для мобильных устройств */}
-        <button
-          aria-label="burgerMenu"
-          className="lg:hidden p-2 focus:outline-none bg-transparent"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        <div className="flex flex-row">
+          {/* Кнопка бургер-меню для мобильных устройств */}
+          <button
+            aria-label="burgerMenu"
+            className="lg:hidden p-2 focus:outline-none bg-transparent"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
 
-        {/* Навигация для ПК */}
-        <div className="hidden lg:flex space-x-4">
-          <Dropdown titleKey="personalTraining" mainPath="/entrenador-personal" links={linksTP} />
-          <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} />
-          <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} />
-          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto`}>{t("tarifas")}</Link>
-          {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+          {/* Навигация для ПК */}
+          <div className="hidden lg:flex space-x-4 items-center">
+            <Dropdown titleKey="personalTraining" mainPath="/entrenador-personal" links={linksTP} />
+            <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} />
+            <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} />
+            <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto mr-2`}>{t("tarifas")}</Link>
+            {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Fitnes
           </Link> */}
-          {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Therapia
           </Link> */}
+          </div>
           <LanguageSelector />
         </div>
       </nav>
@@ -110,7 +112,6 @@ const Navbar = () => {
           {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Therapia
           </Link> */}
-          <LanguageSelector />
         </div>
       )}
     </div>

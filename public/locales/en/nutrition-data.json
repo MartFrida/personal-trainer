@@ -1,28 +1,35 @@
-  {
+{
+  "nutrition": {
+    "title": "Smart Nutrition for a Healthy Body",
+    "description": "Diet, Nutrition",
+    "videoSrc": "/video/nutrition.mp4"
+  },
+  "offers": {
     "nutrition": {
       "label": "Nutrition",
-      "title": " Planes Personalizados para Potenciar tu Entrenamiento",
-      "description": "La alimentación es la clave para obtener los mejores resultados en tu entrenamiento. Con asesoría nutricional personalizada, aprenderás a nutrir tu cuerpo de manera equilibrada, optimizando tu energía y rendimiento físico. ¡Inscríbete hoy y transforma tu salud desde adentro!",
+      "title": "Customized Plans to Enhance Your Training",
+      "description": "Nutrition is the key to achieving the best results in your training. With personalized nutritional guidance, you will learn to nourish your body in a balanced way, optimizing your energy and physical performance. Sign up today and transform your health from the inside out!",
       "items": [
-        "🔹Más Energía y Rendimiento ⚡: Aliméntate de forma inteligente para mejorar tu desempeño en el entrenamiento y en la vida diaria.",
-        "🔹Mejor Recuperación Muscular 💪: Aprende qué comer antes y después del ejercicio para maximizar tus resultados y reducir la fatiga.",
-        "🔹Control de Peso y Composición Corporal 🔥: Descubre cómo equilibrar tu dieta para ganar músculo, perder grasa o mantenerte en tu mejor forma.",
-        "🔹Hábitos Saludables para Toda la Vida 🥦: Adopta una alimentación consciente y sostenible que te ayude a sentirte bien por dentro y por fuera."
+        "🔹More Energy and Performance ⚡: Eat smart to improve your performance in training and daily life.",
+        "🔹Better Muscle Recovery 💪: Learn what to eat before and after exercise to maximize your results and reduce fatigue.",
+        "🔹Weight Control and Body Composition 🔥: Discover how to balance your diet to gain muscle, lose fat, or maintain your best shape.",
+        "🔹Healthy Habits for a Lifetime 🥦: Adopt a conscious and sustainable diet that helps you feel good inside and out."
       ],
-      "callToAction": "¡Descubre el poder de la nutrición personalizada y lleva tu rendimiento al siguiente nivel!",
+      "callToAction": "Discover the power of personalized nutrition and take your performance to the next level!",
       "imageUrl": ""
     },
-    "dieta": {
-      "label": "Dieta",
-      "title": "🥑 Diseña la Dieta Perfecta para Tus Objetivos",
-      "description": "Alcanzar tus metas fitness no solo depende del ejercicio, sino también de lo que comes. Con una dieta personalizada según tu cuerpo y objetivos, optimizarás tu energía, mejorarás tu rendimiento y transformarás tu salud. ¡Empieza hoy y dale a tu cuerpo el combustible que necesita!",
+    "diet": {
+      "label": "Diet",
+      "title": "🥑 Design the Perfect Diet for Your Goals",
+      "description": "Reaching your fitness goals depends not only on exercise but also on what you eat. With a personalized diet tailored to your body and objectives, you will optimize your energy, improve your performance, and transform your health. Start today and give your body the fuel it needs!",
       "items": [
-        "🔹 Pérdida de Peso o Ganancia Muscular 🏆: Ajusta tu alimentación para quemar grasa o desarrollar músculo de manera efectiva.",
-        "🔹 Mejor Digestión y Salud General 🌿: Aprende a elegir los alimentos adecuados para mejorar tu bienestar y vitalidad.",
-        "🔹 Control de Porciones y Hábitos Saludables 🍽️: No se trata de comer menos, sino de comer mejor y de forma consciente.",
-        "🔹 Más Energía y Menos Fatiga ⚡: Sigue una dieta que mantenga tu cuerpo activo y en su mejor versión cada día."
+        "🔹Weight Loss or Muscle Gain 🏆: Adjust your diet to effectively burn fat or build muscle.",
+        "🔹Better Digestion and Overall Health 🌿: Learn to choose the right foods to improve your well-being and vitality.",
+        "🔹Portion Control and Healthy Habits 🍽️: It’s not about eating less, but about eating better and more consciously.",
+        "🔹More Energy and Less Fatigue ⚡: Follow a diet that keeps your body active and in its best shape every day."
       ],
-      "callToAction": "¡¡Empieza Hoy Tu Cambio con un Plan de Dieta a Medida!",
+      "callToAction": "Start Your Change Today with a Custom Diet Plan!",
       "imageUrl": ""
     }
   }
+}

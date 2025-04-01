@@ -1,4 +1,10 @@
-  {
+{
+  "nutrition": {
+    "title": "Nutrición Inteligente para un Cuerpo Saludable",
+    "description": "Dieta, Nutricion",
+    "videoSrc": "/video/nurtition.mp4"
+  },
+  "offers": {
     "nutrition": {
       "label": "Nutrition",
       "title": " Planes Personalizados para Potenciar tu Entrenamiento",
@@ -26,3 +32,4 @@
       "imageUrl": ""
     }
   }
+}

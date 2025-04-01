@@ -10,10 +10,8 @@ export const Nutrition = () => {
   const heroData = t('nutrition-data:nutrition', { returnObjects: true })
   const contentNutr = t('nutrition-data:offers', { returnObjects: true })
 
-  console.log(heroData)
-
   const sections = Object.keys(contentNutr)
-  console.log(sections)
+
   return (
     <ContainerMain
       className={`$${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}

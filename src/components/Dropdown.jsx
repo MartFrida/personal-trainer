@@ -3,8 +3,10 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { theme } from "../helpers/theme";
+import { useTranslation } from "react-i18next";
 
-const Dropdown = ({ title, links, mainPath, onItemClick }) => {
+const Dropdown = ({ titleKey, links, mainPath, onItemClick }) => {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
   const navigate = useNavigate(); // Хук для программного перехода
@@ -38,7 +40,7 @@ const Dropdown = ({ title, links, mainPath, onItemClick }) => {
         onClick={handleToggle}
         className="p-2 rounded flex items-center focus:outline-none"
       >
-        <span className="mr-2 text-white">{title}</span>
+        <span className="mr-2 text-white">{t(titleKey)}</span>
         {open ? (
           <FaChevronUp className="text-white bg-transparent" />
         ) : (

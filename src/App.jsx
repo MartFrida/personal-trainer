@@ -15,6 +15,7 @@ import { FisicoCulturismo } from './pages/FisicoCulturismo';
 import ScrollToTop from './helpers/ScrollToTop';
 import Article from './components/Blog/Article';
 import BlogCategory from './components/Blog/BlogCategory';
+import { NotFound } from './pages/NotFound';
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
 
           <Route path="/blog/:category" element={<BlogCategory />} />
           <Route path="/blog/:category/:id" element={<Article />} />
+
+          <Route path='*' element={<NotFound />} />
 
         </Routes>
       </div>

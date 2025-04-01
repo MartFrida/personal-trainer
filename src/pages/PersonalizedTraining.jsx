@@ -2,13 +2,16 @@ import ContainerMain from "../components/ContainerMain";
 import { InfoSection } from "../components/SectionInfo";
 import SectionRegular from "../components/SectionRegular";
 import { theme } from "../helpers/theme";
-import contentPT from "../data/personal-training-data.json";
 import HeroVideoSection from "../components/HeroVideoSection";
-import heroData from "../data/hero-data-all-sections.json"
+import { useTranslation } from "react-i18next";
 
 export const PersonalizedTraining = () => {
+  const { t } = useTranslation();
+  const personalTraining = t('personal-training-data:personalTraining', { returnObjects: true })
+  const contentPT = t('personal-training-data:offers', { returnObjects: true })
+
   const sections = Object.keys(contentPT)
-  const { personalTraining } = heroData
+
   return (
     <ContainerMain
       className={`$${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}

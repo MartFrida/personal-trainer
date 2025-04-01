@@ -4,9 +4,13 @@ import { theme } from '../helpers/theme';
 import ContainerMain from '../components/ContainerMain'
 import TeamSection from '../components/TeamSection';
 import ContactModal from '../components/ContactModal';
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useTranslation();
+  const listOffer = t('home.offer.list', { returnObjects: true });
+  const listPorque = t('home.porque.list', { returnObjects: true });
 
   return (
     <ContainerMain >
@@ -20,10 +24,11 @@ const Home = () => {
             </h1>
             <h2 className="text-2xl md:text-3xl font-bold leading-relaxed tracking-wide text-center text-white"
               style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.9)" }}>
-              CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
+              {t("home.title")}
+              {/* CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD */}
             </h2>
             <p className="text-xl md:text-2xl mt-4 text-center text-white" style={{ textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9)" }}>
-              La motivación es lo que te hace empezar. El hábito es lo que mantiene el progreso.
+              {t("home.description")}
             </p>
           </div>
         </div>
@@ -33,54 +38,52 @@ const Home = () => {
         <SectionRegular>
 
           <p className="mb-6 text-xl font-bold text-gray-900 text-center">
-            ¡Haz que tu bienestar sea una prioridad en Barcelona!
+            {t("home.welcome.title")}
           </p>
 
           <p className="mb-6 text-gray-800 leading-relaxed text-center">
-            Te ayudamos a lograr tus objetivos personales con planes de entrenamiento completamente adaptados a ti. No importa si buscas mejorar tu rendimiento físico, reducir medidas o aumentar tu energía, diseñaremos un programa exclusivo para ti.
+            {t("home.welcome.paragraf1")}
           </p>
 
           <p className="mb-6 text-gray-800 leading-relaxed text-center">
-            Puedes optar por entrenamientos privados o unirte a un grupo, según lo que más te motive. Nuestro equipo de entrenadores personales te brindará atención 100% dedicada para garantizar que alcances el mejor de los resultados.
+            {t("home.welcome.paragraf2")}
           </p>
 
           <p className="mb-6 text-gray-800 leading-relaxed text-center">
-            Transformar un estilo de vida saludable en un hábito será sencillo, y nosotros nos encargamos de cada detalle. Solo dinos cuándo y dónde, ¡y nosotros nos encargamos del resto!
+            {t("home.welcome.paragraf3")}
           </p>
 
           <p className="mt-8 text-xl font-bold text-gray-900 text-center">
-            ¡Сomienza tu viaje hacia un nuevo tú! 🌟
+            {t("home.welcome.final")} 🌟
           </p>
 
           <div className='flex justify-end w-full mt-4 md:mt-0'>
             <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
               onClick={() => setIsModalOpen(true)}>
-              Contáctenos
+              {t("actionBtn")}
             </button>
             <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>
         </SectionRegular>
 
         <SectionRegular>
-          <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>Ofrecemos sesiones de entrenamiento personal en:</h2>
-          <ul className="list-disc pl-6 mt-4 md:my-6 ">
-            <li>Nuestras instalaciones</li>
-            <li>En tu casa</li>
-            <li>En tu oficina</li>
-            <li>Outdoor: en el parque, la playa…</li>
+          <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>{t("home.offer.title")}</h2>
+          <ul className="list-disc pl-6 mt-4 md:my-6">
+            {listOffer.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </SectionRegular>
 
         <TeamSection />
 
         <SectionRegular>
-          <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>¿Por qué elegirnos?</h2>
+          <h2 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>{t("home.porque.title")}</h2>
           <div className='flex flex-col lg:flex-row my-4 gap-4 '>
             <ul className=" list-inside list-decimal my-4 md:pl-6 list-none">
-              <li>✔️ Resultados rápidos y efectivos con entrenamientos adaptados a tu nivel y evolución.</li>
-              <li>✔️ Atención personalizada con profesionales certificados en entrenamiento y salud.</li>
-              <li>✔️ Flexibilidad de horarios para que entrenes cuando mejor te convenga.</li>
-              <li>✔️ Métodos innovadores que combinan ejercicio, recuperación y bienestar integral.</li>
+              {listPorque.map((item, index) => (
+                <li key={index}>✔️ {item}</li>
+              ))}
             </ul>
             <div className="grow-3 justify-items-end">
               <img
@@ -94,31 +97,31 @@ const Home = () => {
         </SectionRegular>
 
         <SectionRegular className="mt-8">
-          <h2 className={`${theme.primary} text-2xl p-4 rounded-lg`}>Las programas más solicitados</h2>
+          <h2 className={`${theme.primary} text-2xl p-4 rounded-lg`}>{t("home.programas.title")}</h2>
           <div className='flex flex-col lg:flex-row my-4 gap-4'>
             <div>
-              <h3 className="text-xl font-semibold py-4 ">Entrenamiento para perder peso</h3>
-              <p>Te ayudamos a alcanzar tu peso ideal con un plan estructurado que incluye:</p>
+              <h3 className="text-xl font-semibold py-4 ">{t("home.programas.part1.subtitle")}</h3>
+              <p>{t("home.programas.part1.listDescription")}</p>
               <ul className="list-inside list-disc md:pl-6 list-none">
-                <li>✔️ Ejercicios cardiovasculares y de alta intensidad para quemar grasa.</li>
-                <li>✔️ Tonificación y fortalecimiento muscular.</li>
-                <li>✔️ Asesoramiento en hábitos saludables y nutrición.</li>
+                {(t('home.programas.part1.list', { returnObjects: true })).map((item, index) => (
+                  <li key={index}>✔️ {item}</li>
+                ))}
               </ul>
 
-              <h3 className="text-xl font-semibold py-4 ">Entrenamiento para ganar masa muscular</h3>
-              <p>Aumenta tu fuerza y define tu musculatura con sesiones enfocadas en:</p>
+              <h3 className="text-xl font-semibold py-4 ">{t("home.programas.part2.subtitle")}</h3>
+              <p>{t("home.programas.part2.listDescription")}</p>
               <ul className="list-inside list-disc md:pl-6 list-none">
-                <li>✔️ Rutinas de fuerza con cargas progresivas.</li>
-                <li>✔️ Técnicas avanzadas como superseries y entrenamiento funcional.</li>
-                <li>✔️ Desarrollo equilibrado del cuerpo, previniendo lesiones.</li>
+                {(t('home.programas.part2.list', { returnObjects: true })).map((item, index) => (
+                  <li key={index}>✔️ {item}</li>
+                ))}
               </ul>
 
-              <h3 className="text-xl font-semibold py-4 ">Terapias integrales de la salud</h3>
-              <p>Complementamos tu entrenamiento con terapias diseñadas para mejorar tu bienestar físico y mental:</p>
+              <h3 className="text-xl font-semibold py-4 ">{t("home.programas.part3.subtitle")}</h3>
+              <p>{t("home.programas.part3.listDescription")}</p>
               <ul className="list-inside list-disc md:pl-6 list-none">
-                <li>✔️ Osteopatía y fisioterapia para la recuperación muscular.</li>
-                <li>✔️ Terapias de relajación y reducción del estrés.</li>
-                <li>✔️ Evaluaciones biomecánicas para mejorar el rendimiento.</li>
+                {(t('home.programas.part3.list', { returnObjects: true })).map((item, index) => (
+                  <li key={index}>✔️ {item}</li>
+                ))}
               </ul>
             </div>
             <div className="grow-3 justify-items-end">
@@ -131,14 +134,14 @@ const Home = () => {
           </div>
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold py-4 ">La ventaja de un enfoque integral</h3>
-            <p>Nuestros entrenadores y terapeutas trabajan juntos para potenciar tu salud desde todos los ángulos. No solo mejorarás físicamente, sino que también sentirás una mayor armonía y equilibrio en tu vida diaria.</p>
-            <p>📍 ¡Únete a nuestra comunidad y empieza tu transformación hoy mismo!</p>
+            <h3 className="text-xl font-semibold py-4 ">{t("home.programas.fintitle")}</h3>
+            <p>{t("home.programas.finDescription")}</p>
+            <p>📍 {t("home.programas.finCall")}</p>
           </div>
           <div className='flex justify-end w-full mt-4 md:mt-0'>
             <button className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
               onClick={() => setIsModalOpen(true)}>
-              Contáctenos
+              {t("actionBtn")}
             </button>
             <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>

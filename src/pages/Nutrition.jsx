@@ -9,12 +9,11 @@ export const Nutrition = () => {
   const { t } = useTranslation();
   const heroData = t('nutrition-data:nutrition', { returnObjects: true })
   const contentNutr = t('nutrition-data:offers', { returnObjects: true })
-
   const sections = Object.keys(contentNutr)
 
   return (
     <ContainerMain
-      className={`$${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}
+      className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}
     >
       <section className={`${theme.primary} flex flex-col lg:flex-row   rounded-lg gap-4 w-full`}>
         <HeroVideoSection videoHero={heroData.videoSrc} title={heroData.title} description={heroData.description} />

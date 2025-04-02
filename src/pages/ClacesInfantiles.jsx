@@ -1,18 +1,20 @@
 import ContainerMain from "../components/ContainerMain";
 import SectionRegular from "../components/SectionRegular";
-import contentCInf from '../data/claces-infantiles.json'
 import { InfoSection } from "../components/SectionInfo";
 import { theme } from "../helpers/theme";
 import HeroVideoSection from "../components/HeroVideoSection";
-import heroData from "../data/hero-data-all-sections.json"
+import { useTranslation } from "react-i18next";
 
-const { clacesInfantiles } = heroData
-
-const sectionsContent = Object.keys(contentCInf)
-  .map(key => contentCInf[key]?.label ? { id: `${key}`, content: contentCInf[key] } : null)
-  .filter(Boolean);
 
 export const ClacesInfantiles = () => {
+  const { t } = useTranslation();
+  const clacesInfantiles = t('claces-infantiles:clacesInfantiles', { returnObjects: true })
+  const contentCInf = t('claces-infantiles:offers', { returnObjects: true })
+
+  const sectionsContent = Object.keys(contentCInf)
+    .map(key => contentCInf[key]?.label ? { id: `${key}`, content: contentCInf[key] } : null)
+    .filter(Boolean);
+
   return (
     <ContainerMain className={`${theme.background} p-8`}>
       <section className={`${theme.primary} flex flex-col lg:flex-row rounded-lg gap-4 w-full`}>

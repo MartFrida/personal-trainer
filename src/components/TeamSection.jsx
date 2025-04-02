@@ -11,7 +11,6 @@ const TeamSection = () => {
   const closeModal = () => setIsModalOpen(false);
 
   const trainers = t('home.equipo', { returnObjects: true });
-  console.log(trainers)
 
   return (
     <>

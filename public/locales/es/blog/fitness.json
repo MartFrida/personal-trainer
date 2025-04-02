@@ -1,0 +1,9 @@
+{
+  "title": "Fitness",
+  "articles": {
+    "how-to-train": {
+      "title": "How to train properly",
+      "content": "# How to train properly\n\nFollow these steps..."
+    }
+  }
+}

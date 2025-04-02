@@ -86,9 +86,9 @@ const Navbar = () => {
             <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} />
             <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} />
             <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto mr-2`}>{t("tarifas")}</Link>
-            {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Fitnes
-          </Link> */}
+            <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+              Fitnes
+            </Link>
             {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             Therapia
           </Link> */}

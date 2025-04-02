@@ -11,9 +11,19 @@ i18n
     lng: "es",
     fallbackLng: "es",
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json", // Путь к JSON-файлам
+      allowMultiLoading: true, // Разрешаем загружать из нескольких путей
+      loadPath: (lng, ns) => {
+        if (!ns) return `/locales/${lng}/common.json`; // Защита от undefined/null
+        const namespace = Array.isArray(ns) ? ns[0] : ns; // Приводим `ns` к строке
+        if (typeof namespace !== "string") return `/locales/${lng}/common.json`; // Проверяем, что это строка
+
+        if (namespace.startsWith("blog/")) {
+          return `/locales/${lng}/blog/${namespace.replace("blog/", "")}.json`; // Путь для блога
+        }
+        return `/locales/${lng}/${namespace}.json`; // Путь для остальных
+      },
     },
-    ns: ["common", "claces-infantiles", "nutrition-data", "personal-training-data", "tarifas"], // Названия файлов
+    ns: ["common", "claces-infantiles", "nutrition-data", "personal-training-data", "tarifas", "blog"], // Названия файлов
     defaultNS: "common", // Пространство имен по умолчанию
     interpolation: { escapeValue: false },
   }).then(() => {
@@ -22,6 +32,7 @@ i18n
       clasesInfantiles: "Clases Infantiles",
       nutrition: "Nutrition",
       tarifas: "Tarifas",
+      blog: "Blog"
     });
   });;
 

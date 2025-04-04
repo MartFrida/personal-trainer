@@ -3,8 +3,10 @@ import { useState } from "react";
 import SectionRegular from "../SectionRegular";
 import { theme } from "../../helpers/theme";
 import Article from "./Article";
+import { useTranslation } from "react-i18next";
 
 const BlogCategory = ({ category }) => {
+  const { t } = useTranslation();
   const [isCutDescription, setIsCutDescription] = useState(true)
   return (
     <SectionRegular key={category.label} id={category.label} >
@@ -14,9 +16,9 @@ const BlogCategory = ({ category }) => {
       <div className='flex justify-end w-full mt-4 md:mt-0'>
         {isCutDescription ?
           <button onClick={() => setIsCutDescription(false)} className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">
-            leer más
+            {t("leermas")}
           </button> :
-          <button onClick={() => setIsCutDescription(true)} className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white" >leer menos
+          <button onClick={() => setIsCutDescription(true)} className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white" >{t("leermeno")}
           </button>
         }
       </div>

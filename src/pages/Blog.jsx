@@ -6,7 +6,6 @@ import BlogCategory from "../components/Blog/BlogCategory";
 
 export const Blog = () => {
   const { i18n } = useTranslation();
-
   const [categoriesBlog, setcategoriesBlog] = useState({});
 
   // Динамическая загрузка JSON при смене языка
@@ -33,7 +32,6 @@ export const Blog = () => {
   };
 
   const listBlog = createLinks(categoriesBlog)
-  console.log(listBlog)
 
   return (
     <ContainerMain

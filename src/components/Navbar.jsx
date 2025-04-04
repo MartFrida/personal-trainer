@@ -11,19 +11,22 @@ const Navbar = () => {
   const [namesClacesInfantiles, setNamesClacesInfantiles] = useState({});
   const [namesTrenPersonal, setNamesTrenPersonal] = useState({});
   const [namesNutrition, setNamesNutrition] = useState({});
+  const [namesBlog, setNamesBlog] = useState({});
 
   // Динамическая загрузка JSON при смене языка
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [ci, tp, nutrition] = await Promise.all([
+        const [ci, tp, nutrition, blog] = await Promise.all([
           fetch(`/locales/${i18n.language}/claces-infantiles.json`).then(res => res.json()),
           fetch(`/locales/${i18n.language}/personal-training-data.json`).then(res => res.json()),
           fetch(`/locales/${i18n.language}/nutrition-data.json`).then(res => res.json()),
+          fetch(`/locales/${i18n.language}/blog/topics.json`).then(res => res.json()),
         ]);
         setNamesClacesInfantiles(ci.offers);
         setNamesTrenPersonal(tp.offers);
         setNamesNutrition(nutrition.offers);
+        setNamesBlog(blog)
       } catch (error) {
         console.error("Ошибка загрузки данных:", error);
       }
@@ -31,7 +34,6 @@ const Navbar = () => {
 
     loadData();
   }, [i18n.language]); // Перезагружаем при смене языка
-
 
   const createLinks = (data) => {
     if (!data) return []; // Проверка на null или undefined
@@ -43,6 +45,7 @@ const Navbar = () => {
   const linksCI = createLinks(namesClacesInfantiles);
   const linksTP = createLinks(namesTrenPersonal);
   const linksNutrition = createLinks(namesNutrition);
+  const linksBlog = createLinks(namesBlog)
 
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null); // Реф для отслеживания кликов вне меню
@@ -85,13 +88,12 @@ const Navbar = () => {
             <Dropdown titleKey="personalTraining" mainPath="/entrenador-personal" links={linksTP} />
             <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} />
             <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} />
+
+            <Dropdown titleKey="blog" mainPath="/blog" links={linksBlog} />
             <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto mr-2`}>{t("tarifas")}</Link>
-            <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+            {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
               Fitnes
-            </Link>
-            {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Therapia
-          </Link> */}
+            </Link> */}
           </div>
           <LanguageSelector />
         </div>
@@ -103,15 +105,11 @@ const Navbar = () => {
           <Dropdown titleKey="personalTraining" mainPath="/entrenador-personal" links={linksTP} onItemClick={handleClose} />
           <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} onItemClick={handleClose} />
           <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} onItemClick={handleClose} />
+          <Dropdown titleKey="blog" mainPath="/blog" links={linksBlog} />
           <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
             {t("tarifas")}
           </Link>
-          {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Fitnes
-          </Link> */}
-          {/* <Link to="/blog/therapy" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
-            Therapia
-          </Link> */}
+
         </div>
       )}
     </div>

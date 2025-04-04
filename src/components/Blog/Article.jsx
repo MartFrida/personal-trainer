@@ -9,7 +9,7 @@ const Article = () => {
   const { category, id } = useParams();
   const article = articles[category]?.find((a) => a.id === id);
 
-  if (!article) return <div className="text-center text-red-500 ">Статья не найдена</div>;
+  if (!article) return <div className="text-center text-red-500 ">Estamos preparando los artículos, estarán disponible pronto</div>;
 
   return (
     <ContainerMain

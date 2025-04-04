@@ -7,6 +7,7 @@ i18n
   .use(HttpBackend) // Позволяет загружать JSON файлы
   .use(initReactI18next)
   .use(LanguageDetector)
+
   .init({
     lng: "es",
     fallbackLng: "es",
@@ -23,7 +24,7 @@ i18n
         return `/locales/${lng}/${namespace}.json`; // Путь для остальных
       },
     },
-    ns: ["common", "claces-infantiles", "nutrition-data", "personal-training-data", "tarifas", "blog"], // Названия файлов
+    ns: ["common", "claces-infantiles", "nutrition-data", "personal-training-data", "tarifas", "blog", "blog/topics"], // Названия файлов
     defaultNS: "common", // Пространство имен по умолчанию
     interpolation: { escapeValue: false },
   }).then(() => {
@@ -32,7 +33,7 @@ i18n
       clasesInfantiles: "Clases Infantiles",
       nutrition: "Nutrition",
       tarifas: "Tarifas",
-      blog: "Blog"
+      blog: "Blog",
     });
   });;
 

@@ -6,10 +6,9 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import i18n from "../../i18n";
 
-
 const BlogCategory = () => {
   const { category } = useParams();
-  console.log(category)
+
   const categoryArticles = articles[category];
   const { t } = useTranslation();
 
@@ -17,7 +16,7 @@ const BlogCategory = () => {
     i18n.loadNamespaces([`blog/${category}`]); // Загружаем из папки /blog/
   }, [category, i18n]);
 
-  if (!categoryArticles) return <div className="text-center text-red-500">Категория не найдена</div>;
+  if (!categoryArticles) return <div className="text-center text-red-500">Categoría no encontrada</div>;
 
   return (
     <ContainerMain

@@ -1,10 +1,9 @@
 {
-  "fitness": "Ejercicio",
-  "therapy": "Terapia",
+  "title": "Fitness",
   "articles": {
     "how-to-train": {
-      "title": "Cómo entrenar correctamente",
-      "content": "# Cómo entrenar correctamente\n\nSigue estos pasos..."
+      "title": "How to train properly",
+      "content": "# How to train properly\n\nFollow these steps..."
     }
   }
 }

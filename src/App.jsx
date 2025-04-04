@@ -16,6 +16,7 @@ import ScrollToTop from './helpers/ScrollToTop';
 import Article from './components/Blog/Article';
 import BlogCategory from './components/Blog/BlogCategory';
 import { NotFound } from './pages/NotFound';
+import { Blog } from './pages/Blog';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/therapy" element={<Therapy />} />
           <Route path="/tarifas" element={<Tarifas />} />
 
+          <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:category" element={<BlogCategory />} />
           <Route path="/blog/:category/:id" element={<Article />} />
 

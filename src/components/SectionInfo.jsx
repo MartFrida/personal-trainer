@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
-
+import { useTranslation } from "react-i18next";
 import { useState } from "react"
 import { theme } from "../helpers/theme"
 import ContactModal from "./ContactModal";
 
 export const InfoSection = ({ title, description, items, callToAction, imageUrl }) => {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [idElem, setIdElem] = useState()
 
@@ -52,7 +53,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
             setIsModalOpen(true);
           }}
         >
-          Contáctenos
+          {t("actionBtn")}
         </button>
         <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem} />
       </div>

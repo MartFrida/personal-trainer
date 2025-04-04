@@ -1,42 +1,27 @@
-import { Link, useParams } from "react-router-dom";
-import articles from "../../data/articles";
-import ContainerMain from "../ContainerMain";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
+import SectionRegular from "../SectionRegular";
 import { theme } from "../../helpers/theme";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-import i18n from "../../i18n";
+import Article from "./Article";
 
-const BlogCategory = () => {
-  const { category } = useParams();
-
-  const categoryArticles = articles[category];
-  const { t } = useTranslation();
-
-  useEffect(() => {
-    i18n.loadNamespaces([`blog/${category}`]); // Загружаем из папки /blog/
-  }, [category, i18n]);
-
-  if (!categoryArticles) return <div className="text-center text-red-500">Categoría no encontrada</div>;
-
+const BlogCategory = ({ category }) => {
+  const [isCutDescription, setIsCutDescription] = useState(true)
   return (
-    <ContainerMain
-      className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}
-    >
-      <div className="max-w-2xl mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4 capitalize">{t("title", { ns: `blog/${category}` })}</h1>
-        <ul>
-          {categoryArticles.map((article) => (
-            <li key={article.id} className="mt-20">
-              <Link to={`/blog/${category}/${article.id}`} className="text-blue-500 hover:underline">
-                {article.title}
-              </Link>
-
-            </li>
-          ))}
-        </ul>
+    <SectionRegular key={category.label} id={category.label} >
+      <h3 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>{category.label}</h3>
+      <p className="leading-relaxed tracking-wide text-gray-700 text-xl my-4">{category.description}</p>
+      {!isCutDescription && <Article />}
+      <div className='flex justify-end w-full mt-4 md:mt-0'>
+        {isCutDescription ?
+          <button onClick={() => setIsCutDescription(false)} className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">
+            leer más
+          </button> :
+          <button onClick={() => setIsCutDescription(true)} className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white" >leer menos
+          </button>
+        }
       </div>
-    </ContainerMain>
+
+    </SectionRegular>
   );
 };
-
-export default BlogCategory;
+export default BlogCategory

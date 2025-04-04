@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
 import ContainerMain from "../components/ContainerMain";
-
-import SectionRegular from "../components/SectionRegular";
 import { theme } from "../helpers/theme";
 import { useTranslation } from "react-i18next";
-import Article from "../components/Blog/Article";
+import BlogCategory from "../components/Blog/BlogCategory";
 
 export const Blog = () => {
-  const { t, i18n } = useTranslation();
-  const heroData = t('blog/topics:entrenamiento', { returnObjects: true })
-
-  console.log(heroData)
+  const { i18n } = useTranslation();
 
   const [categoriesBlog, setcategoriesBlog] = useState({});
 
@@ -44,14 +39,9 @@ export const Blog = () => {
     <ContainerMain
       className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}
     >
-
-      {listBlog?.map((category, index) => (
-        <SectionRegular key={index} id={index} >
-          <h3 className="text-black">{category.label}</h3>
-          <p className="text-black">{category.description}</p>
-          <Article />
-        </SectionRegular>
-      ))}
+      {listBlog.map((category) => {
+        return <BlogCategory key={category.path} category={category} />
+      })}
     </ContainerMain>
   );
 };

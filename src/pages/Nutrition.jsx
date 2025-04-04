@@ -15,7 +15,7 @@ export const Nutrition = () => {
     <ContainerMain
       className={`${theme.background} ${theme.text} p-8 mt-20 flex justify-center flex-col overflow-auto scroll-smooth w-full`}
     >
-      <section className={`${theme.primary} flex flex-col lg:flex-row   rounded-lg gap-4 w-full`}>
+      <section className={`${theme.primary} flex flex-col lg:flex-row rounded-lg gap-4 w-full`}>
         <HeroVideoSection videoHero={heroData.videoSrc} title={heroData.title} description={heroData.description} />
       </section>
       {sections?.map((id, index) => (

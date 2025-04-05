@@ -9,7 +9,7 @@ const BlogCategory = ({ category }) => {
   const { t } = useTranslation();
   const [isCutDescription, setIsCutDescription] = useState(true)
   return (
-    <SectionRegular key={category.label} id={category.label} >
+    <SectionRegular key={category.label} id={category.path} >
       <h3 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>{category.label}</h3>
       <p className="leading-relaxed tracking-wide text-gray-700 text-xl my-4">{category.description}</p>
       {!isCutDescription && <Article />}

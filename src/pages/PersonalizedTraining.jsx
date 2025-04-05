@@ -11,6 +11,7 @@ export const PersonalizedTraining = () => {
   const contentPT = t('personal-training-data:offers', { returnObjects: true })
 
   const sections = Object.keys(contentPT)
+  console.log(sections)
 
   return (
     <ContainerMain

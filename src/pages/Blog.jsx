@@ -27,11 +27,12 @@ export const Blog = () => {
   const createLinks = (data) => {
     if (!data) return []; // Проверка на null или undefined
     return Object.keys(data)
-      .map(key => data[key]?.label ? { path: `#${key}`, label: data[key].label, description: data[key].description } : null)
+      .map(key => data[key]?.label ? { path: `${key}`, label: data[key].label, description: data[key].description } : null)
       .filter(Boolean);
   };
 
   const listBlog = createLinks(categoriesBlog)
+  console.log(listBlog)
 
   return (
     <ContainerMain

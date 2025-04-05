@@ -5,8 +5,11 @@ import articles from "../../data/articles";
 import ContainerMain from "../ContainerMain";
 import { theme } from "../../helpers/theme";
 
+
 const Article = () => {
+
   const { category, id } = useParams();
+  console.log(id)
   const article = articles[category]?.find((a) => a.id === id);
 
   if (!article) return <div className="text-center text-blue-500 ">Estamos preparando los artículos, estarán disponible pronto</div>;

@@ -2,8 +2,30 @@
 import ReactMarkdown from 'react-markdown';
 import { theme } from "../../helpers/theme"
 import rehypeRaw from 'rehype-raw'  // Добавляем rehype-raw для рендеринга HTML
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const Article = ({ title, content }) => {
+const Article = () => {
+  const { category, id } = useParams();
+  const ns = `blog/${category}`;
+  const { t, i18n } = useTranslation(ns);
+
+  useEffect(() => {
+    i18n.loadNamespaces(ns); // загружаем нужный JSON
+  }, [ns, i18n]);
+
+  const article = t(`articles.${id}`, { returnObjects: true });
+
+  // Если статья не найдена (вернётся строка, а не объект)
+  if (typeof article !== "object" || !article.title) {
+    return (
+      <div className="p-6 text-center">
+        <h2 className="text-2xl font-bold text-red-600">Artículo no encontrado</h2>
+        <p className="mt-4 text-gray-500">Verifica que el enlace sea correcto.</p>
+      </div>
+    );
+  }
 
   // Функция для вставки изображения в контент
   const renderImage = (content) => {
@@ -17,12 +39,12 @@ const Article = ({ title, content }) => {
   };
 
   // Подготовка контента для рендеринга
-  const transformedContent = renderImage(content);
+  const transformedContent = renderImage(article.content);
 
   return (
     <div className={`${theme.text} relative text-xl flex flex-col gap-2`}>
       <h2 className="text-4xl p-4 rounded-lg">
-        {title}
+        {article.title}
       </h2>
       <ReactMarkdown
         rehypePlugins={[rehypeRaw]}  // Подключаем rehypeRaw для рендеринга HTML

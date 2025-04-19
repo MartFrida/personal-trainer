@@ -32,7 +32,6 @@ export const Blog = () => {
   };
 
   const listBlog = createLinks(categoriesBlog)
-  console.log(listBlog)
 
   return (
     <ContainerMain

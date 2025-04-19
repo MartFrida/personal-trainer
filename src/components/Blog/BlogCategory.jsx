@@ -22,7 +22,7 @@ const BlogCategory = ({ category }) => {
       <h3 className={`${theme.primary} text-2xl p-4 rounded-lg hover:scale-101 transition duration-300`}>
         {category.label}
       </h3>
-      <p className="leading-relaxed tracking-wide text-gray-700 text-xl my-4">{category.description}</p>
+      {isCutDescription && <p className="leading-relaxed tracking-wide text-gray-700 text-xl my-4">{category.description}</p>}
 
       {!isCutDescription && (
         <div className="grid gap-6 mt-6 md:grid-cols-2">
@@ -41,7 +41,7 @@ const BlogCategory = ({ category }) => {
       <div className="flex justify-end w-full mt-4">
         <button
           onClick={() => setIsCutDescription(!isCutDescription)}
-          className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white px-4 py-2 rounded"
+          className={`${theme.buttonmy} px-4 py-2 rounded`}
         >
           {isCutDescription ? t("leermas") : t("leermeno")}
         </button>

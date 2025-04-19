@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import { theme } from "../../helpers/theme";
 
 const ArticlePreview = ({ id, title, content, categoryPath }) => {
   // Получим первые 200 символов контента без Markdown
@@ -13,7 +14,7 @@ const ArticlePreview = ({ id, title, content, categoryPath }) => {
       <p className="text-gray-600 mb-4">{shortText}</p>
       <Link
         to={`/blog/${categoryPath}/${id}`}
-        className="text-indigo-600 hover:underline font-medium"
+        className={`${theme.buttonmy} px-4 py-2 rounded`}
       >
         Leer artículo completo →
       </Link>

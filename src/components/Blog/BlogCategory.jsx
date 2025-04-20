@@ -43,7 +43,7 @@ const BlogCategory = ({ category }) => {
           onClick={() => setIsCutDescription(!isCutDescription)}
           className={`${theme.buttonmy} px-4 py-2 rounded`}
         >
-          {isCutDescription ? t("leermas") : t("leermeno")}
+          {isCutDescription ? t("leermas") : t("leermenos")}
         </button>
       </div>
     </SectionRegular>

@@ -1,10 +1,21 @@
 {
-  "fitness": "Ejercicio",
-  "therapy": "Terapia",
+  "fitness": "Exercise",
+  "therapy": "Therapy",
   "articles": {
     "how-to-train": {
-      "title": "Cómo entrenar correctamente",
-      "content": "# Cómo entrenar correctamente\n\nSigue estos pasos..."
+      "id": "how-to-train",
+      "title": "The article will be available soon.",
+      "content": ""
+    },
+    "dieta": {
+      "id": "dieta",
+      "title": "The article will be available soon.",
+      "content": ""
+    },
+    "nutry": {
+      "id": "nutry",
+      "title": "The article will be available soon.",
+      "content": ""
     }
   }
 }

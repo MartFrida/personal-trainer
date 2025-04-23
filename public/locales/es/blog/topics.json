@@ -1,12 +1,12 @@
 {
-  "nutrition": {
-    "label": "Nutrición",
-    "description": "🥗 Nutrición funcional para entrenar mejor, recuperarte más rápido y sentirte increíble.",
-    "videoSrc": ""
-  },
   "entrenamiento": {
     "label": "Entrenamientos",
     "description": "🔥 Sobre entrenamientos, técnicas y motivación.",
+    "videoSrc": ""
+  },
+  "nutrition": {
+    "label": "Nutrición",
+    "description": "🥗 Nutrición funcional para entrenar mejor, recuperarte más rápido y sentirte increíble.",
     "videoSrc": ""
   },
   "therapy": {

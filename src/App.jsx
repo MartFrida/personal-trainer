@@ -35,6 +35,7 @@ function App() {
           <Route path='/artes-marciales' element={<ArtesMarciales />} />
           <Route path="/fisico-culturismo" element={<FisicoCulturismo />} />
           <Route path="/clases-infantiles" element={<ClacesInfantiles />} />
+          <Route path="/claces-infantiles" element={<ClacesInfantiles />} />
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/therapy" element={<Therapy />} />
           <Route path="/tarifas" element={<Tarifas />} />

@@ -1,27 +1,27 @@
 {
   "entrenamiento": {
-    "label": "Entrenamientos",
-    "description": "🔥 Sobre entrenamientos, técnicas y motivación.",
+    "label": "Entrenament",
+    "description": "🔥 Sobre entrenaments, tècniques i motivació.",
+    "videoSrc": ""
+  },
+  "nutrition": {
+    "label": "Nutrició",
+    "description": "🥗 Nutrició funcional per entrenar millor, recuperar-te més ràpid i sentir-te increïble.",
     "videoSrc": ""
   },
   "therapy": {
-    "label": "Bienestar y Terapias",
-    "description": "🌿 Terapias, bienestar y salud mental para lograr una armonía cuerpo-mente.",
-    "videoSrc": ""
-  },
-  "nutricion": {
-    "label": "Nutrición",
-    "description": "🥗 Nutrición funcional para entrenar mejor, recuperarte más rápido y sentirte increíble.",
+    "label": "Benestar i Teràpies",
+    "description": "🌿 Teràpies, benestar i salut mental per aconseguir una harmonia cos-ment.",
     "videoSrc": ""
   },
   "miniGuerrreros": {
-    "label": "Mini Guerreros",
-    "description": "🎈 Clases infantiles, juegos activos y artes marciales para pequeños con grandes sueños.",
+    "label": "Mini Guerrers",
+    "description": "🎈 Classes infantils, jocs actius i arts marcials per a petits amb grans somnis.",
     "videoSrc": ""
   },
   "vidaFitInBCN": {
-    "label": "Vida Fit en BCN",
-    "description": "🌇 Estilo de vida saludable en Barcelona: rutas, eventos y espacios deportivos.",
+    "label": "Vida Fit a BCN",
+    "description": "🌇 Estil de vida saludable a Barcelona: rutes, esdeveniments i espais esportius.",
     "videoSrc": ""
   }
 }

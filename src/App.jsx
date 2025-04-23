@@ -17,7 +17,7 @@ import Article from './components/Blog/Article';
 import BlogCategory from './components/Blog/BlogCategory';
 import { NotFound } from './pages/NotFound';
 import { Blog } from './pages/Blog';
-
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 function App() {
 
@@ -48,6 +48,7 @@ function App() {
 
         </Routes>
       </div>
+      <ScrollToTopButton />
       <Footer />
     </Router>
   );

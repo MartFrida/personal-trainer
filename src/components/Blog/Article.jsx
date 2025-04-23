@@ -25,8 +25,8 @@ const Article = () => {
   if (typeof article !== "object" || !article) {
     return (
       <div className="p-6 text-center">
-        <h2 className="text-2xl font-bold text-red-600">Artículo no encontrado</h2>
-        <p className="mt-4 text-gray-500">Verifica que el enlace sea correcto.</p>
+        <h2 className="text-2xl font-bold text-red-600">{t("erroNnoEncontrado", { ns: 'blog/common' })}</h2>
+        <p className="mt-4 text-gray-500">{t("errorVerifica", { ns: 'blog/common' })}</p>
       </div>
     );
   }
@@ -77,7 +77,7 @@ const Article = () => {
               <button
                 onClick={goToNextArticle}
                 className={`${theme.buttonmy} px-4 py-2 rounded`}>
-                Siguiente artículo →
+                {t('nextBtn', { ns: 'blog/common' })} →
               </button>
             </div>
           )}

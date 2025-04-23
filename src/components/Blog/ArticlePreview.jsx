@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { theme } from "../../helpers/theme";
+import { useTranslation } from 'react-i18next'
 
 const ArticlePreview = ({ id, title, content, categoryPath }) => {
+  const { t } = useTranslation("blog/common");
   // Получим первые 200 символов контента без Markdown
   const shortText = content
     .replace(/[#_*`>\-[\]()]/g, "") // удалим markdown
@@ -16,7 +18,7 @@ const ArticlePreview = ({ id, title, content, categoryPath }) => {
         to={`/blog/${categoryPath}/${id}`}
         className={`${theme.buttonmy} px-4 py-2 rounded`}
       >
-        Leer artículo completo →
+        {t('foolArticle')} →
       </Link>
     </div>
   );

@@ -24,7 +24,7 @@ i18n
         return `/locales/${lng}/${namespace}.json`; // Путь для остальных
       },
     },
-    ns: ["common", "claces-infantiles", "nutrition-data", "personal-training-data", "tarifas", "blog", "blog/topics", "blog/entrenamiento", "blog/vidaFitInBCN", "blog/therapy", "blog/nutrition", "blog/miniGuerrreros"], // Названия файлов
+    ns: ["common", "claces-infantiles", "nutrition-data", "personal-training-data", "tarifas", "blog", "blog/common", "blog/topics", "blog/entrenamiento", "blog/vidaFitInBCN", "blog/therapy", "blog/nutrition", "blog/miniGuerrreros"], // Названия файлов
     defaultNS: "common", // Пространство имен по умолчанию
     interpolation: { escapeValue: false },
   }).then(() => {

@@ -28,7 +28,32 @@
     },
     "fundador": {
       "button": "Descobreix més",
-      "quote": "Invertir en tu mateix és la inversió més valuosa que pots fer. Estarem encantats de guiar-te en el teu camí cap a una millor salut, condició física i rendiment."
+      "quote": "Invertir en tu mateix és la inversió més valuosa que pots fer. Estarem encantats de guiar-te en el teu camí cap a una millor salut, condició física i rendiment.",
+      "cv": {
+        "titleFormacion": "Formació:",
+        "listFormacion": [
+          "Llicenciat en Ciències de l'Activitat Física i de l'Esport per la Universitat Central de l'Equador, col·legiat núm. 52.5001.",
+          "Periodista diplomat per l'Acadèmia Europea de Periodisme a Espanya, any 2025.",
+          "Entrenador de musculació pel Centre Internacional de Professorat Esportiu LIFE, any 2000, Madrid.",
+          "Mestre multidisciplinari i campió internacional de Sud-amèrica, posseeix 6 cinturons negres 5è Dan en:",
+          "Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact - Sambo.",
+          "Reconeixement internacional per les federacions: WTF, ITF, WHF, WAKO, FIDAM, FET.",
+          "Curs de Socorrisme i Primers Auxilis impartit per la Creu Roja Espanyola, BCN 2025."
+        ],
+        "titleExperiencia": "Experiència:",
+        "listExperiencia": [
+          "Director tècnic i professor de diversos centres esportius a Espanya i a l'Equador.",
+          "Entrenador personal d'esportistes d'elit, celebritats, models i persones que volen portar una vida sana i saludable.",
+          "Expert en rendiment esportiu i preparació d'oposicions per a policies, bombers i vigilants de seguretat.",
+          "Metge acupuntor i especialista en digitopuntura diplomat al \"Center Acupuntura Kee Wong Youg\", Barcelona 2004.",
+          "Dietista i nutricionista, assessor expert per a culturistes professionals i amateurs.",
+          "Autor de 34 llibres publicats a Espanya i a nivell mundial a Amazon.",
+          "Entrenador personal i creador del \"Sistem Power\" — la transformació metamòrfica de ment, cos i esperit.",
+          "Productor i periodista col·legiat SPC - SPM - FEP - FIP - AEP en diversos mitjans de comunicació.",
+          "Terapeuta tradicional andí i motivador personal amb PNL. Conferenciant i catedràtic en universitats com: CAMU, UCM, UCE, PUSE, UAB, etc."
+        ],
+        "masInfoBtn": "Més informació a la Viquipèdia"
+      }
     },
     "equipoTitle": "El Nostre Equip d'Entrenadors Personals",
     "equipo": [
@@ -105,5 +130,19 @@
       "finDescription": "Els nostres entrenadors i terapeutes treballen junts per potenciar la teva salut des de tots els angles. No només milloraràs físicament, sinó que també sentiràs una major harmonia i equilibri en la teva vida diària.",
       "finCall": "Uneix-te a la nostra comunitat i comença la teva transformació avui mateix!"
     }
+  },
+  "contactForm": {
+    "isSent": "Formulari enviat amb èxit!",
+    "inputName": "Nom",
+    "inputEmail": "Correu electrònic",
+    "inputPhone": "Telèfon",
+    "inputMessage": "Missatge",
+    "methodCommunication": "Mètode de comunicació preferit:",
+    "methodComTel": "Trucada",
+    "methodComWrite": "SMS",
+    "methodComEmail": "Correu electrònic",
+    "choiseHorary": "Tria una hora convenient perquè ens puguem posar en contacte amb tu:",
+    "choiseAntes": "Tan aviat com sigui possible",
+    "sendBtn": "Enviar"
   }
 }

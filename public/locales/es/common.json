@@ -28,7 +28,32 @@
     },
     "fundador": {
       "button": "Descubra más",
-      "quote": "Invertir en ti mismo es la inversión más valiosa que puedes hacer. Estaremos encantados de guiarle en su camino hacia una mejor salud, estado físico y rendimiento."
+      "quote": "Invertir en ti mismo es la inversión más valiosa que puedes hacer. Estaremos encantados de guiarle en su camino hacia una mejor salud, estado físico y rendimiento.",
+      "cv": {
+        "titleFormacion": "Formación:",
+        "listFormacion": [
+          "Licenciado en Ciencias de la Actividad Física y del Deporte por la Universidad Central del Ecuador Colegiado 52.5001.",
+          "Periodista diplomado por La Academia Europea de Periodismo en España año 2025.",
+          "Entrenador de Musculación por Centro Internacional de Profesorado Deportivo LIFE año 2000 Madrid.",
+          "Maestro multidisciplinar campeón Internacional de Sur América, tiene 6 Cinturones Negros 5to Dan en:",
+          "Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact - Sambo.",
+          "Reconocido a nivel mundial por las Federaciones: WTF, ITF, WHF, WAKO, FIDAM, FET.",
+          "Curso de Socorismo y Primeros Auxilios por la Cruz Roja Española, BCN 2025."
+        ],
+        "titleExperiencia": "Experiencia:",
+        "listExperiencia": [
+          "Director Técnico y Profesor de varios centros deportivos en España y Ecuador.",
+          "Entrenador personal de deportistas de élite, celebrities, modelos y personas que quieren llevar una vida sana y saludable.",
+          "Experto en Rendimiento Deportivo y oposiciones para Policías, Bomberos, Guardias de Seguridad.",
+          "Médico Acupunturista y Digito-puntura Diplomado en &quot;Center Acupuntura Kee Wong Youg&quot; Barcelona 2004.",
+          "Dietista y Nutricionista experto asesor para Culturistas profesionales y amateur.",
+          "Autor de 34 libros publicados en España y en Amazon a nivel mundial.",
+          "Entrenador Personal y creador del &quot;Sistem Power&quot; La transformación metamorfosis de mente, cuerpo, y espíritu.",
+          "Productor y periodista colegiado SPC - SPM - FEP - FIP - AEP de varios medios de comunicación.",
+          "Terapeuta tradicional Andino y Motivador personal PNL. Conferencista y Catedrático educacional en universidades como: CAMU, UCM, UCE, PUSE, UAB, etc."
+        ],
+        "masInfoBtn": "Más Información en Wikipedia"
+      }
     },
     "equipoTitle": "Nuestro Equipo de Entrenadores Personales",
     "equipo": [
@@ -105,5 +130,19 @@
       "finDescription": "Nuestros entrenadores y terapeutas trabajan juntos para potenciar tu salud desde todos los ángulos. No solo mejorarás físicamente, sino que también sentirás una mayor armonía y equilibrio en tu vida diaria.",
       "finCall": "¡Únete a nuestra comunidad y empieza tu transformación hoy mismo!"
     }
+  },
+  "contactForm": {
+    "isSent": "¡Formulario enviado exitosamente!",
+    "inputName": "Nombre",
+    "inputEmail": "E-mail",
+    "inputPhone": "Teléfono",
+    "inputMessage": "Mensaje",
+    "methodCommunication": "NomMétodo de comunicación preferido:",
+    "methodComTel": "Llamar",
+    "methodComWrite": "SMS",
+    "methodComEmail": "Email",
+    "choiseHorary": "Elija un horario conveniente para usted para contactarnos:",
+    "choiseAntes": "Lo antes posible",
+    "sendBtn": "Enviar"
   }
 }

@@ -28,7 +28,32 @@
     },
     "fundador": {
       "button": "Discover More",
-      "quote": "Investing in yourself is the most valuable investment you can make. We will be happy to guide you on your journey to better health, fitness, and performance."
+      "quote": "Investing in yourself is the most valuable investment you can make. We will be happy to guide you on your journey to better health, fitness, and performance.",
+      "cv": {
+        "titleFormacion": "Education:",
+        "listFormacion": [
+          "Bachelor's Degree in Physical Activity and Sports Sciences from the Central University of Ecuador, registered under number 52.5001.",
+          "Certified Journalist from the European Academy of Journalism in Spain, class of 2025.",
+          "Certified Strength Training Coach by the International Center for Sports Teaching LIFE, year 2000, Madrid.",
+          "Multidisciplinary Master and International Champion of South America, holds 6 Black Belts, 5th Dan in:",
+          "Taekwondo - Hapkido - Kick Boxing - Judo - Full Contact - Sambo.",
+          "Internationally recognized by the following federations: WTF, ITF, WHF, WAKO, FIDAM, FET.",
+          "Certified in Lifeguarding and First Aid by the Spanish Red Cross, BCN 2025."
+        ],
+        "titleExperiencia": "Experience:",
+        "listExperiencia": [
+          "Technical Director and Instructor at various sports centers in Spain and Ecuador.",
+          "Personal trainer for elite athletes, celebrities, models, and individuals seeking a healthy lifestyle.",
+          "Expert in Sports Performance and competitive training for Police, Firefighters, and Security Guards.",
+          "Certified Acupuncturist and Digitopuncture Specialist from 'Center Acupuntura Kee Wong Youg', Barcelona 2004.",
+          "Dietitian and Nutritionist, expert advisor for both professional and amateur bodybuilders.",
+          "Author of 34 published books in Spain and on Amazon worldwide.",
+          "Personal Trainer and creator of the 'Sistem Power' — a metamorphic transformation of mind, body, and spirit.",
+          "Producer and registered journalist with SPC - SPM - FEP - FIP - AEP, contributing to various media outlets.",
+          "Traditional Andean Therapist and Personal Motivator using NLP. Lecturer and Professor at universities such as: CAMU, UCM, UCE, PUSE, UAB, etc."
+        ],
+        "masInfoBtn": "More Information on Wikipedia"
+      }
     },
     "equipoTitle": "Our Team of Personal Trainers",
     "equipo": [
@@ -105,5 +130,19 @@
       "finDescription": "Our trainers and therapists work together to enhance your health from all angles. Not only will you improve physically, but you will also feel a greater sense of harmony and balance in your daily life.",
       "finCall": "Join our community and start your transformation today!"
     }
+  },
+  "contactForm": {
+    "isSent": "Form successfully submitted!",
+    "inputName": "Name",
+    "inputEmail": "Email",
+    "inputPhone": "Phone",
+    "inputMessage": "Message",
+    "methodCommunication": "Preferred method of communication:",
+    "methodComTel": "Call",
+    "methodComWrite": "SMS",
+    "methodComEmail": "Email",
+    "choiseHorary": "Choose a convenient time for us to contact you:",
+    "choiseAntes": "As soon as possible",
+    "sendBtn": "Send"
   }
 }

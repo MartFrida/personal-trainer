@@ -18,6 +18,7 @@ import BlogCategory from './components/Blog/BlogCategory';
 import { NotFound } from './pages/NotFound';
 import { Blog } from './pages/Blog';
 import ScrollToTopButton from './components/ScrollToTopButton'
+import ChatWidget from './components/ChatWidget'
 
 function App() {
 
@@ -47,6 +48,10 @@ function App() {
           <Route path='*' element={<NotFound />} />
 
         </Routes>
+      </div>
+      <div className="App">
+        <h1 className="text-2xl font-bold text-center mt-4">GPT-бот</h1>
+        <ChatWidget />
       </div>
       <ScrollToTopButton />
       <Footer />

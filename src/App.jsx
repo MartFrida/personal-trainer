@@ -49,10 +49,7 @@ function App() {
 
         </Routes>
       </div>
-      <div className="App">
-        <h1 className="text-2xl font-bold text-center mt-4">GPT-бот</h1>
-        <ChatWidget />
-      </div>
+      <ChatWidget />
       <ScrollToTopButton />
       <Footer />
     </Router>

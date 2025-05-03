@@ -1,6 +1,7 @@
+//http://localhost:3000/ask
 // src/api/ask.js
 export async function askQuestion(query) {
-  const res = await fetch('http://localhost:3000/ask', {
+  const res = await fetch('https://cieptis-backend.onrender.com/ask', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

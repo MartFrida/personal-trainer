@@ -35,8 +35,24 @@ const LanguageSelector = () => {
 
   const languages = ["en", "es", "cat"];
 
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+    if (savedLanguage) {
+      setSelectedLanguage(savedLanguage);
+      i18n.changeLanguage(savedLanguage);
+    } else {
+      const browserLang = navigator.language.slice(0, 2);
+      const fallbackLang = ["cat", "en"].includes(browserLang) ? browserLang : "es";
+
+      setSelectedLanguage(fallbackLang);
+      localStorage.setItem("selectedLanguage", fallbackLang);
+      i18n.changeLanguage(fallbackLang);
+    }
+  }, [i18n]);
+
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
+    localStorage.setItem("selectedLanguage", language);
     setIsOpen(false);
     i18n.changeLanguage(language);
   };

@@ -1,7 +1,10 @@
-//http://localhost:3000/ask
+
 // src/api/ask.js
+
+const backendPath = import.meta.env.VITE_BACKEND_PATH;
+
 export async function askQuestion(query) {
-  const res = await fetch('https://cieptis-backend.onrender.com/ask', {
+  const res = await fetch(backendPath, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

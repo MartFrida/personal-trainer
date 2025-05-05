@@ -5,6 +5,7 @@ import { SendHorizonal, ChevronDown, ChevronUp } from "lucide-react";
 import { franc } from "franc-min";
 import { askQuestion } from "../api/ask";
 import { theme } from "../helpers/theme";
+import ReactMarkdown from 'react-markdown';
 
 export default function ChatWidget() {
   const [messages, setMessages] = useState([
@@ -99,7 +100,28 @@ export default function ChatWidget() {
                   : "bg-blue-100 self-start"
                   }`}
               >
-                <p className="text-sm text-gray-800">{msg.text}</p>
+                {msg.role === "bot" ? (
+                  <ReactMarkdown
+                    components={{
+                      p: ({ node, ...props }) => (
+                        <p className="text-sm text-gray-800" {...props} />
+                      ),
+                      a: ({ node, ...props }) => (
+                        <a
+                          className="text-gray-900 underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          {...props}
+                        />
+                      )
+                    }}
+                  >
+                    {msg.text}
+                  </ReactMarkdown>
+
+                ) : (
+                  <p className="text-sm text-gray-800">{msg.text}</p>
+                )}
 
               </motion.div>
             ))}

@@ -90,7 +90,7 @@ const Navbar = () => {
             <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} />
 
             <Dropdown titleKey="blog" mainPath="/blog" links={linksBlog} />
-            <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto mr-2`}>{t("tarifas")}</Link>
+            <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded my-auto mr-2 text-white`}>{t("tarifas")}</Link>
             {/* <Link to="/blog/fitness" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
               Fitnes
             </Link> */}
@@ -106,7 +106,7 @@ const Navbar = () => {
           <Dropdown titleKey="clasesInfantiles" mainPath="/clases-infantiles" links={linksCI} onItemClick={handleClose} />
           <Dropdown titleKey="nutrition" mainPath="/nutrition" links={linksNutrition} onItemClick={handleClose} />
           <Dropdown titleKey="blog" mainPath="/blog" links={linksBlog} />
-          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded`} onClick={handleClose}>
+          <Link to="/tarifas" className={`${theme.text} ${theme.hover} p-2 rounded text-white`} onClick={handleClose}>
             {t("tarifas")}
           </Link>
 

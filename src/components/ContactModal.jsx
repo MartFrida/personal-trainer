@@ -95,39 +95,39 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-top md:items-center justify-center backdrop-blur-sm z-50 ">
-      <div className={`${theme.primary} text-white max-w-md p-6 rounded-lg shadow-lg relative max-h-[90vh] overflow-y-auto`}>
-        <button className="absolute top-2 right-2 text-white" onClick={onClose}>✖</button>
-        <h2 className="text-2xl font-bold mb-4">{t("actionBtn")}</h2>
-        {isSent && <p className="text-green-600 mb-4">{t("contactForm.isSent")}</p>}
-        <form onSubmit={handleSubmit}>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder={t("contactForm.inputName")} className="w-full p-2 mb-2 border rounded-md" required />
-          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder={t("contactForm.inputEmail")} className="w-full p-2 mb-2 border rounded-md" required />
-          {errors.email && <p className="text-red-400 text-sm">{errors.email}</p>}
-          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder={t("contactForm.inputPhone")} className="w-full p-2 mb-2 border rounded-md" required />
-          {errors.phone && <p className="text-red-400 text-sm">{errors.phone}</p>}
-          <textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("contactForm.inputMessage")} className="w-full p-2 mb-2 border rounded-md" rows="4" />
 
-          <label className="block mb-2">{t("contactForm.methodCommunication")}</label>
-          <select name="contactMethod" value={formData.contactMethod} onChange={handleChange} className="w-full p-2 mb-2 border rounded-md bg-gray-800 text-white">
-            <option value="phone">{t("contactForm.methodComTel")}</option>
-            <option value="sms">{t("contactForm.methodComWrite")}</option>
-            <option value="email">{t("contactForm.methodComEmail")}</option>
-          </select>
+    <div className={`${theme.primary} text-white max-w-md p-6 rounded-lg shadow-lg relative max-h-[90vh] overflow-y-auto`}>
+      <button className="absolute top-2 right-2 text-white" onClick={onClose}>✖</button>
+      <h2 className="text-2xl font-bold mb-4">{t("actionBtn")}</h2>
+      {isSent && <p className="text-green-600 mb-4">{t("contactForm.isSent")}</p>}
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder={t("contactForm.inputName")} className="w-full p-2 mb-2 border rounded-md" required />
+        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder={t("contactForm.inputEmail")} className="w-full p-2 mb-2 border rounded-md" required />
+        {errors.email && <p className="text-red-400 text-sm">{errors.email}</p>}
+        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder={t("contactForm.inputPhone")} className="w-full p-2 mb-2 border rounded-md" required />
+        {errors.phone && <p className="text-red-400 text-sm">{errors.phone}</p>}
+        <textarea name="message" value={formData.message} onChange={handleChange} placeholder={t("contactForm.inputMessage")} className="w-full p-2 mb-2 border rounded-md" rows="4" />
 
-          <label className="block mb-2">{t("contactForm.choiseHorary")}</label>
-          <select name="timeRange" value={formData.timeRange} onChange={handleChange} className="w-full p-2 mb-2 border rounded-md bg-gray-800 text-white">
-            <option value="9:00 - 12:00" >9:00 - 12:00</option>
-            <option value="12:00 - 15:00">12:00 - 15:00</option>
-            <option value="15:00 - 18:00">15:00 - 18:00</option>
-            <option value="18:00 - 21:00">18:00 - 21:00</option>
-            <option value="asap">{t("contactForm.choiseAntes")}</option>
-          </select>
+        <label className="block mb-2">{t("contactForm.methodCommunication")}</label>
+        <select name="contactMethod" value={formData.contactMethod} onChange={handleChange} className="w-full p-2 mb-2 border rounded-md bg-gray-800 text-white">
+          <option value="phone">{t("contactForm.methodComTel")}</option>
+          <option value="sms">{t("contactForm.methodComWrite")}</option>
+          <option value="email">{t("contactForm.methodComEmail")}</option>
+        </select>
 
-          <button type="submit" className="mx-auto block py-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">{t("contactForm.sendBtn")}</button>
-        </form>
-      </div>
+        <label className="block mb-2">{t("contactForm.choiseHorary")}</label>
+        <select name="timeRange" value={formData.timeRange} onChange={handleChange} className="w-full p-2 mb-2 border rounded-md bg-gray-800 text-white">
+          <option value="9:00 - 12:00" >9:00 - 12:00</option>
+          <option value="12:00 - 15:00">12:00 - 15:00</option>
+          <option value="15:00 - 18:00">15:00 - 18:00</option>
+          <option value="18:00 - 21:00">18:00 - 21:00</option>
+          <option value="asap">{t("contactForm.choiseAntes")}</option>
+        </select>
+
+        <button type="submit" className="mx-auto block py-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white">{t("contactForm.sendBtn")}</button>
+      </form>
     </div>
+
   );
 };
 

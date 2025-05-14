@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react"
 import { theme } from "../helpers/theme"
-import ContactModal from "./ContactModal";
+import ContactDropdown from "./ContactDropdown";
 
 export const InfoSection = ({ title, description, items, callToAction, imageUrl }) => {
   const { t } = useTranslation();
@@ -55,7 +55,7 @@ export const InfoSection = ({ title, description, items, callToAction, imageUrl 
         >
           {t("actionBtn")}
         </button>
-        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem} />
+        {isModalOpen && <ContactDropdown isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem} />}
       </div>
     </div>
   );

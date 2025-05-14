@@ -19,7 +19,7 @@ export default function ChatWidget() {
   const [input, setInput] = useState("");
   const [language, setLanguage] = useState("es");
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const messagesEndRef = useRef(null);
 
   const detectLanguage = (text) => {
@@ -77,7 +77,7 @@ export default function ChatWidget() {
   const toggleOpen = () => setIsOpen((prev) => !prev);
 
   return (
-    <div className="fixed bottom-4 right-4 w-80 bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col">
+    <div className="fixed bottom-6 right-4 w-80 max-w-9/10 bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col ">
       <div
         className={`${theme.primary} leading-relaxed text-white p-4 font-bold text-center uppercase cursor-pointer flex justify-between items-center`}
         onClick={toggleOpen}
@@ -148,7 +148,7 @@ export default function ChatWidget() {
             />
             <button
               onClick={handleSend}
-              className="ml-2 p-2 bg-blue-500 text-white rounded-full"
+              className={`${theme.buttonmy} ml-2 p-2`}
               disabled={loading}
             >
               <SendHorizonal size={18} />

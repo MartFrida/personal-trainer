@@ -97,7 +97,7 @@ const ContactModal = ({ isOpen, onClose, sectionId }) => {
   return (
 
     <div className={`${theme.primary} text-white max-w-md p-6 rounded-lg shadow-lg relative max-h-[90vh] overflow-y-auto`}>
-      <button className="absolute top-2 right-2 text-white" onClick={onClose}>✖</button>
+      <button className="absolute top-2 right-2 text-white" onClick={onClose ? onClose : undefined}>✖</button>
       <h2 className="text-2xl font-bold mb-4">{t("actionBtn")}</h2>
       {isSent && <p className="text-green-600 mb-4">{t("contactForm.isSent")}</p>}
       <form onSubmit={handleSubmit}>

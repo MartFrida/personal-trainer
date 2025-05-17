@@ -1,10 +1,13 @@
 import ContactModal from '../components/ContactModal';
 import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 export default function ContactPage() {
+  const { t } = useTranslation();
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 space-y-12">
-      <h1 className="text-4xl font-bold text-center">Contáctanos</h1>
+    <div className="max-w-4xl mx-auto px-4 py-12 space-y-12 ">
+      <div className="h-4"></div>
+      <h1 className="text-4xl font-bold text-center">{t("actionBtn")}</h1>
       <p className="text-center text-lg max-w-2xl mx-auto">
         ¿Tienes dudas sobre nuestras sesiones? ¿Quieres reservar una evaluación? Estamos aquí para ayudarte.
       </p>

@@ -42,7 +42,7 @@ export default function ChatWidget() {
     setLoading(true);
 
     try {
-      const res = await askQuestion(input);
+      const res = await askQuestion(input, detectedLang);
       const botReply = res.answer;
 
       setMessages((prev) => [
@@ -51,7 +51,7 @@ export default function ChatWidget() {
           role: "bot",
           text: botReply,
           textEn: detectedLang === "en" ? botReply : null,
-          // textCa: detectedLang === "ca" ? botReply : null
+          textCa: detectedLang === "ca" ? botReply : null
         }
       ]);
     } catch (err) {
@@ -64,7 +64,7 @@ export default function ChatWidget() {
           textCa: "Ho sento, hi ha hagut un error."
         }
       ]);
-      console.error("Ошибка при запросе к API:", err);
+      console.error("Error while requesting API:", err);
     }
 
     setLoading(false);

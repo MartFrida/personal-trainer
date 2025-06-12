@@ -1,11 +1,9 @@
+// const backendPath = import.meta.env.PROD.VITE_BACKEND_PATH
 
-// src/api/ask.js
-
-const backendPath = import.meta.env.PROD
-  ? 'https://cieptis-backend.vercel.app/ask'
-  : 'http://localhost:3000/ask';
+const backendPath = import.meta.env.VITE_BACKEND_PATH
 
 export async function askQuestion(query, language = 'es') {
+  console.log(backendPath)
   const res = await fetch(backendPath, {
     method: 'POST',
     headers: {

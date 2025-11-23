@@ -1,6 +1,6 @@
 # 📌 CENTER FOR PERSONAL TRAINERS AND INTEGRATIVE HEALTH THERAPIES
 
-<img width="1871" height="936" alt="Знімок екрана 2025-11-23 224729" src="https://github.com/user-attachments/assets/00a55c67-f372-4ab3-a05c-24c9a336e24b" />
+<img width="1871" height="936" alt="CIEPTIS screen" src="https://github.com/user-attachments/assets/00a55c67-f372-4ab3-a05c-24c9a336e24b" />
 
 ## 📖 Description
 
@@ -62,8 +62,8 @@ npm run dev
 
 Here are some screenshots of our platform:
 
-<img width="745"  alt="Знімок екрана 2025-11-23 225131" src="https://github.com/user-attachments/assets/c5763d3a-9a1a-4f87-b107-184ec1deea8f" />
-<img width="220" height="544" alt="Знімок екрана 2025-11-23 225252" src="https://github.com/user-attachments/assets/d46b4f03-8f4d-43c6-8951-a4ebf139b547" />
+<img width="745"  alt="CIEPTIS desktop" src="https://github.com/user-attachments/assets/c5763d3a-9a1a-4f87-b107-184ec1deea8f" />
+<img width="220" height="544" alt="CIEPTIS mobile" src="https://github.com/user-attachments/assets/d46b4f03-8f4d-43c6-8951-a4ebf139b547" />
 
 ## 🤝 Authors
 

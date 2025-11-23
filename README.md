@@ -1,12 +1,12 @@
-# 📌 CENTRO DE ENTRENADORES PERSONALES Y TERAPIAS INTEGRALES DE LA SALUD
+# 📌 CENTER FOR PERSONAL TRAINERS AND INTEGRATIVE HEALTH THERAPIES
 
-![Project Image](https://via.placeholder.com/800x400.png?text=CENTRO+DE+ENTRENADORES+PERSONALES)
+<img width="1871" height="936" alt="Знімок екрана 2025-11-23 224729" src="https://github.com/user-attachments/assets/00a55c67-f372-4ab3-a05c-24c9a336e24b" />
 
 ## 📖 Description
 
 Welcome to the **Centro de Entrenadores Personales y Terapias Integrales de la Salud**. Our center is dedicated to providing professional personal training and holistic health therapies to help individuals achieve their fitness and wellness goals.
 
-🌐 **Website:** [Visit here](https://entrenador-personal.netlify.app)
+🌐 **Website:** [Visit here](https://centroentrenadores.com/)
 
 ## 🚀 Installation
 
@@ -39,7 +39,9 @@ npm run dev
 ## 📷 Screenshots
 
 Here are some screenshots of our platform:
-![Screenshot](https://via.placeholder.com/800x400.png?text=Website+Preview)
+
+<img width="745"  alt="Знімок екрана 2025-11-23 225131" src="https://github.com/user-attachments/assets/c5763d3a-9a1a-4f87-b107-184ec1deea8f" />
+<img width="220" height="544" alt="Знімок екрана 2025-11-23 225252" src="https://github.com/user-attachments/assets/d46b4f03-8f4d-43c6-8951-a4ebf139b547" />
 
 ## 🤝 Authors
 

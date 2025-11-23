@@ -32,9 +32,31 @@ npm run dev
 ```
 
 ## 🛠 Technologies
+### Frontend
+- JavaScript (ES6+)
+- HTML5 / CSS3
+- TailwindCSS – utility-first CSS framework
+- Vite – fast dev server and build tool
+- EmailJS – client-side email sending
+- React Router – routing and navigation (if used)
+- Axios / Fetch API – handling API requests
 
-- HTML / Tailwind / JavaScript
-- React / EmailJS
+### Backend
+- Node.js
+- Express.js – REST API framework
+- MongoDB – NoSQL database
+- Mongoose – ODM for MongoDB
+- JWT – authentication and authorization
+- bcrypt – password hashing
+- dotenv – environment variables management
+- Netlify – frontend deployment
+- Render – backend hosting
+
+### Additional Tools
+
+- Responsive Design – mobile-first layout
+- SEO Optimization – metadata and structured content
+- Image Optimization – WebP, compression, lazy loading
 
 ## 📷 Screenshots
 

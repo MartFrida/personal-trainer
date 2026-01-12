@@ -43,7 +43,7 @@ const Tarifas = () => {
               </span>
 
 <button
-          className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
+          className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white px-3.5 py-2.5 mt-4 self-center"
           onClick={(ev) => {
             handleClick(ev);
             setIsModalOpen(true);
@@ -51,14 +51,12 @@ const Tarifas = () => {
         >
                 {t("tarifas:actionBtn")}
               </button>
-              
-              
+                            
             </div>
           ))}
         </div>
         <div className="flex justify-end w-full">
         {isModalOpen && <ContactDropdown isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem}/>}
-
         </div>
         
       </section>

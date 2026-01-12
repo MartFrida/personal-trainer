@@ -1,27 +1,27 @@
 {
   "title": "Les Nostres Tarifes",
-  "actionBtn": "Triar",
+  "actionBtn": "Escollir",
   "variados": [
     {
-      "title": "Entrenament a Distància (ONLINE)",
-      "description": "Entrenament personalitzat des de la comoditat de casa teva.",
-      "por1clase": "€20 per 1 classe / 1 hora",
-      "por1mes8": "€160 €150 per 1 mes / 8 hores",
-      "por1mes12": "€240 €220 per 1 mes / 12 hores"
+      "title": "Entrenament Online",
+      "description": "Entrenament online personalitzat amb acompanyament complet.",
+      "por1clase": "Sessió individual (60 min) — 25 €",
+      "por1mes8": "8 sessions / mes — 180 € (Estalvia 20 €)",
+      "por1mes12": "12 sessions / mes — 260 € (Ideal per a la constància)"
     },
     {
-      "title": "Entrenament a Domicili / Parc",
-      "description": "Entrenament personal a casa teva o en un parc proper.",
-      "por1clase": "€25 per 1 classe / 1 hora",
-      "por1mes8": "€200 €180 per 1 mes / 8 hores",
-      "por1mes12": "€300 €280 per 1 mes / 12 hores"
+      "title": "Entrenament a Casa / Parc",
+      "description": "Entrenament personal a casa teva o en espais a l’aire lliure a Barcelona.",
+      "por1clase": "Sessió individual (60 min) — 35 €",
+      "por1mes8": "8 sessions / mes — 240 € (Estalvia 40 €) ⭐",
+      "por1mes12": "12 sessions / mes — 330 € (Millor opció)"
     },
     {
       "title": "Entrenament en Gimnàs",
-      "description": "Entrenament en un gimnàs amb accés a totes les instal·lacions.",
-      "por1clase": "€35 per 1 classe / 1 hora",
-      "por1mes8": "€280 €250 per 1 mes / 8 hores",
-      "por1mes12": "€420 €380 per 1 mes / 12 hores"
+      "description": "Entrenament personal en un gimnàs totalment equipat.",
+      "por1clase": "Sessió individual (60 min) — 45 €",
+      "por1mes8": "8 sessions / mes — 320 € (Més popular) ⭐",
+      "por1mes12": "12 sessions / mes — 450 € (Estalvia 90 €)"
     }
   ]
 }

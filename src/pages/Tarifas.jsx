@@ -1,4 +1,4 @@
-import ContactModal from "../components/ContactModal";
+import ContactDropdown from "../components/ContactDropdown";
 import ContainerMain from "../components/ContainerMain";
 import { useState } from "react"
 import { theme } from "../helpers/theme"
@@ -7,6 +7,12 @@ import { useTranslation } from "react-i18next";
 const Tarifas = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [idElem, setIdElem] = useState()
+
+  const handleClick = (event) => {
+    const section = event.target.closest('[id]'); // Найдёт ближайший родительский элемент с id
+    setIdElem(section ? section.id : 'Не найдено')
+  };
   const { t } = useTranslation();
   const tarifasData = t('tarifas:variados', { returnObjects: true });
 
@@ -21,29 +27,40 @@ const Tarifas = () => {
               <p className="text-gray-800 mb-4">{tarifa.description}</p>
 
               <span>
-                <span className="text-gray-800 text-lg font-bold"> {tarifa.por1clase.split(" ")[0]}</span>
+                <span className="text-gray-800 text-lg"> {tarifa.por1clase.split(" ")[0]}</span>
                 <span className="text-gray-800 text-lg"> {tarifa.por1clase.split(" ").slice(1).join(' ')}</span>
               </span>
               <span>
-                <span className="text-gray-800 line-through "> {tarifa.por1mes8.split(" ")[0]}</span>
-                <span className="text-gray-800 text-lg font-bold"> {tarifa.por1mes8.split(" ").slice(1, 2).join(' ')}</span>
+                <span className="text-gray-800 "> {tarifa.por1mes8.split(" ")[0]}</span>
+                <span className="text-gray-800 text-lg "> {tarifa.por1mes8.split(" ").slice(1, 2).join(' ')}</span>
                 <span className="text-gray-800 text-lg"> {tarifa.por1mes8.split(" ").slice(2).join(' ')}</span>
               </span>
 
               <span>
-                <span className="text-gray-800 line-through "> {tarifa.por1mes12.split(" ")[0]}</span>
-                <span className="text-gray-800 text-lg font-bold"> {tarifa.por1mes12.split(" ").slice(1, 2).join(' ')}</span>
+                <span className="text-gray-800"> {tarifa.por1mes12.split(" ")[0]}</span>
+                <span className="text-gray-800 text-lg "> {tarifa.por1mes12.split(" ").slice(1, 2).join(' ')}</span>
                 <span className="text-gray-800 text-lg"> {tarifa.por1mes12.split(" ").slice(2).join(' ')}</span>
               </span>
 
-              <button className="mt-4 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
-                onClick={() => setIsModalOpen(true)}>
+<button
+          className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white"
+          onClick={(ev) => {
+            handleClick(ev);
+            setIsModalOpen(true);
+          }}
+        >
                 {t("tarifas:actionBtn")}
               </button>
-              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+              
+              
             </div>
           ))}
         </div>
+        <div className="flex justify-end w-full">
+        {isModalOpen && <ContactDropdown isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} sectionID={idElem}/>}
+
+        </div>
+        
       </section>
     </ContainerMain>
   )

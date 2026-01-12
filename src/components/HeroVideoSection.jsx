@@ -18,7 +18,7 @@ export default function HeroVideoSection({ videoHero, title }) {
       </video>
 
       {/* Затемнение для читаемости текста */}
-      <div className=" absolute top-0 left-0 h-64 md:h-full inset-0 bg-gray-950/50 md:bg-gray-950/85 rounded-lg"></div>
+      <div className=" absolute top-0 left-0 h-64 md:h-full inset-0 bg-gray-950/25 md:bg-gray-950/25 rounded-lg"></div>
 
       {/* Контент */}
       <div className="relative h-64 text-center align-middle text-white px-6">

@@ -45,15 +45,34 @@ const Footer = () => {
       {/* Социальные сети */}
       <div className="flex justify-center space-x-4 mt-4">
         <a href="https://www.facebook.com/share/1BkKFsVxPq/" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaFacebook /></a>
-        <a href="https://www.instagram.com/personal_training_bcn?utm_source=qr&igsh=MWE0bGRoeG0zNm0ycg==" target="_blank" className="text-white text-xl hover:text-gray-400" aria-label="Follow us on Instagram"><FaInstagram /></a>
+        <a href="https://www.instagram.com/cieptis" target="_blank" className="text-white text-xl hover:text-gray-400" aria-label="Follow us on Instagram"><FaInstagram /></a>
         <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaTwitter /></a>
         <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaWhatsapp /></a>
       </div>
 
       <div className="text-center mt-6 border-t border-gray-700 pt-4">
         <p>&copy; {new Date().getFullYear()} {t("home.title")}</p>
-        {/* <p> Reservados todos los derechos</p> */}
+       
       </div>
+       <a
+          href="https://portfolio-mary-fryda.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            group
+            text-neutral-500
+            transition
+            hover:text-neutral-300
+            text-center sm:text-right
+          "
+        >
+          <span className="opacity-80 group-hover:opacity-100">
+            Mary Fryda
+          </span>
+          <span className="ml-2 opacity-60 group-hover:opacity-70">
+            · Digital craft
+          </span>
+        </a>
     </footer>
   );
 };

@@ -1,6 +1,6 @@
 import { theme } from "../helpers/theme";
 import { Link } from "react-router-dom";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -46,8 +46,8 @@ const Footer = () => {
       <div className="flex justify-center space-x-4 mt-4">
         <a href="https://www.facebook.com/share/1BkKFsVxPq/" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaFacebook /></a>
         <a href="https://www.instagram.com/cieptis" target="_blank" className="text-white text-xl hover:text-gray-400" aria-label="Follow us on Instagram"><FaInstagram /></a>
-        <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaTwitter /></a>
-        <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaWhatsapp /></a>
+        {/* <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaTwitter /></a>
+        <a href="javascript:void(0);" target="_blank" className="text-white text-xl hover:text-gray-400" aria-disabled="true"><FaWhatsapp /></a> */}
       </div>
 
       <div className="text-center mt-6 border-t border-gray-700 pt-4">

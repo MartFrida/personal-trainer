@@ -20,7 +20,7 @@ export default function ContactPage() {
           <p className="flex items-center gap-2"><MapPin size={20} /> Barcelona y alrededores</p>
           <div className="flex gap-4 pt-2">
             <a href="https://www.facebook.com/profile.php?id=61574773471202" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+            <a href="https://www.instagram.com/cieptis" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
           </div>
 
           <div className="pt-6">

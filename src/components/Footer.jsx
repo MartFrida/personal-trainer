@@ -31,7 +31,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">{t("actionBtn")}</h3>
           <ul className="mt-2 space-y-1">
             <li className="flex justify-center md:justify-start items-center">
-              <a href="tel:+34696869949" className="flex flex-row items-center"> <FaPhone className="mr-2" /> +34 696 869 949</a>
+              <a href="tel:+34613758331" className="flex flex-row items-center"> <FaPhone className="mr-2" /> +34 613 758 331</a>
             </li>
             <li className="flex justify-center md:justify-start items-center">
               <a href="mailto:cieptis.atencion@gmail.com" className="flex flex-row items-center">

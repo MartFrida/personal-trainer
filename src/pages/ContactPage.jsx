@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Información de contacto</h2>
-          <p className="flex items-center gap-2"><Phone size={20} /> <a href="tel:+34696869949">+34 696 869 949</a></p>
+          <p className="flex items-center gap-2"><Phone size={20} /> <a href="tel:+34613758331">+34 613 758 331</a></p>
           <p className="flex items-center gap-2"><Mail size={20} /> <a href="mailto:info@centroentrenadores.com">cieptis.atencion@gmail.com</a></p>
           <p className="flex items-center gap-2"><MapPin size={20} /> Barcelona y alrededores</p>
           <div className="flex gap-4 pt-2">

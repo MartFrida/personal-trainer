@@ -24,7 +24,7 @@ const Home = () => {
       <section className="relative rounded-lg">
         <div
           className=" flex justify-center flex-col bg-fixed bg-no-repeat bg-top bg-cover md:bg-contain h-screen mt-[-50px] mb:mt-[-20px]"
-          style={{backgroundImage: "url('/img/amaruk-hero-smc.webp')"}}
+          style={{backgroundImage: "url('/img/hero-main-trainer.webp')"}}
         >
           <div className="bg-zinc-900/60 p-4 md:p-8 rounded-lg">
             <h1

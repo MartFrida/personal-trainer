@@ -19,6 +19,7 @@ import { Blog } from './pages/Blog';
 import ScrollToTopButton from './components/ScrollToTopButton'
 import ChatWidget from './components/ChatWidget'
 import ContactPage from './pages/ContactPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/blog/:category/:id" element={<Article />} />
 
           <Route path='*' element={<NotFound />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
 
         </Routes>
       </div>

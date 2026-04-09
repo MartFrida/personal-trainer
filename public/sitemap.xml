@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://centroentrenadores.com/</loc>
-        <lastmod>2024-03-04</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,7 +11,8 @@
         <loc>https://centroentrenadores.com/clases-infantiles</loc>
         <loc>https://centroentrenadores.com/nutrition</loc>
         <loc>https://centroentrenadores.com/tarifas</loc>
-        <lastmod>2024-03-04</lastmod>
+        <loc>https://centroentrenadores.com/privacy-policy</loc>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

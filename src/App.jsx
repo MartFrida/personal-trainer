@@ -20,6 +20,7 @@ import ScrollToTopButton from './components/ScrollToTopButton'
 import ChatWidget from './components/ChatWidget'
 import ContactPage from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import RetirosPage from './pages/RetirosPage';
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
           <Route path="/clases-infantiles" element={<ClacesInfantiles />} />
           <Route path="/claces-infantiles" element={<ClacesInfantiles />} />
           <Route path="/nutrition" element={<Nutrition />} />
+          <Route path="/retiros" element={<RetirosPage />} />
+          <Route path="/retiros/retiro-espiritual-pirineos-2026" element={<RetirosPage />} />
+          <Route path="/retiros/retiro-espiritual-pirineos-2026/" element={<RetirosPage />} />
           <Route path="/therapy" element={<Therapy />} />
           <Route path="/tarifas" element={<Tarifas />} />
 

@@ -234,6 +234,11 @@ export default function RetirosPage() {
 
       <main>
         <section className="relative isolate overflow-hidden bg-gradient-to-br from-gray-700 via-gray-900 to-gray-950 text-white">
+        <img
+            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80"
+            alt="Paisaje de montaña en la naturaleza"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,0.92),rgba(10,10,10,0.7)),url('/img/retiros/pirineos-hero.webp')] bg-cover bg-center" />
           <div className="relative mx-auto flex min-h-[75vh] max-w-7xl flex-col justify-center px-6 py-24 sm:px-8 lg:px-12">
             <motion.div
@@ -364,10 +369,13 @@ export default function RetirosPage() {
                   </Link>
                 </div>
               </div>
-              <div className="relative min-h-[320px] overflow-hidden bg-gradient-to-br from-gray-700 via-gray-900 to-gray-950 lg:min-h-full">
-                <div className="absolute inset-0 bg-[url('/img/retiros/retiro-pirineos.webp')] bg-cover bg-center opacity-80" />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/70 to-transparent" />
-              </div>
+              <div className="min-h-[320px] overflow-hidden rounded-[2rem] bg-[#4E6A45]">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                alt="Meditación en la naturaleza con montañas al fondo"
+                className="h-full w-full object-cover"
+              />
+            </div>
             </motion.div>
           </div>
         </section>

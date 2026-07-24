@@ -22,6 +22,7 @@ import ContactPage from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import RetirosPage from './pages/RetirosPage';
 import RetiroPageStyle from './pages/RetiroPageStyle';
+import RetiroPageStyle2 from './pages/RetiroPageStyle2';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/claces-infantiles" element={<ClacesInfantiles />} />
           <Route path="/nutrition" element={<Nutrition />} />
           <Route path="/retiros-style" element={<RetiroPageStyle />} />
+          <Route path="/retiros-style2" element={<RetiroPageStyle2 />} />
           <Route path="/retiros" element={<RetirosPage />} />
           <Route path="/retiros/retiro-espiritual-pirineos-2026" element={<RetirosPage />} />
           <Route path="/retiros/retiro-espiritual-pirineos-2026/" element={<RetirosPage />} />
